@@ -1,0 +1,16 @@
+﻿<Project Synchronized="False" SyncFilter="*.ps1;*.psm1;*.psd1;*.ps1xml;*.psf;*.pss;*.xml;*.help.txt">
+  <Version>2.1</Version>
+  <FileID>2df6ecdd-5a63-4ea4-903f-324274d3673a</FileID>
+  <ProjectType>0</ProjectType>
+  <RememberPowerShellVersion>True</RememberPowerShellVersion>
+  <PowerShellVersion>Local Machine - PowerShell V5 (64 Bit)</PowerShellVersion>
+  <Folders />
+  <Files>
+    <File Build="0">Startup.pss</File>
+    <File Build="0" Shared="True" ReferenceFunction="Invoke-Global_ps1">Globals.ps1</File>
+    <File Build="0" ReferenceFunction="Show-Wizard_psf">Wizard.psf</File>
+    <File Build="0" ReferenceFunction="Show-GlobalSettings_psf">GlobalSettings.psf</File>
+    <File Build="0" ReferenceFunction="Show-messageform_psf">messageform.psf</File>
+    <File Build="0" ReferenceFunction="Show-BuildSettings_psf">BuildSettings.psf</File>
+  </Files>
+</Project>
