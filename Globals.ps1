@@ -215,9 +215,10 @@ function Get-KAddons
 	$addonsfolder = Read-GlobalParam -key "AddonsFolder"
 	$modname = Read-ModParam -key "ModName"
 	$packedmodname = '@' + $modname
-	$modlist = Read-GlobalParam -key "PackedModFolder"
-	$modlist = Add-Folder -Source $modlist -Folder $packedmodname
-	$modlist += ';'
+	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	$packedmodpath = Add-Folder -Source $packedmodpath -Folder $packedmodname
+
+	$modlist = $modlist + $packedmodpath + ';'
 	$addonsstr = Read-ModParam -key "AdditionalMPMods"
 	if ($addonsstr)
 	{
@@ -297,9 +298,10 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
-	# $mods = "`"-mod=" + $modlist + "`""
-	# $params = "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Workbench\dayz.gproj"
+    $mods = "`"-mod=" + $modlist + "`""
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
+	$params = $mods
+	
 	
 	if ($commandline)
 	{
@@ -365,7 +367,7 @@ function Start-Build
 		$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
 		$paramsetting = "P:\" + $modname
 		$paramsetting = $paramsetting + ","  + $packedmodf
-		$paramsetting = $paramsetting + ", -clear, -project=P:"
+		$paramsetting = $paramsetting + ", -project=P:"
 		
 		$params = $paramsetting.Split(',')
 		
