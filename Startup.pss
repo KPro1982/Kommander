@@ -45,7 +45,7 @@ function Main {
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="False">25</Line>
+    <Line Disabled="True">25</Line>
   </BreakPoints>
   <TracePoints />
 </File>

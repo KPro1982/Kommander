@@ -1,3 +1,5 @@
 {
-    "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\RationalGPS S:\\Mod-Packed\\@RationalGPS\\addons  -clear  -project=P:"
+    "Title":  "Help",
+    "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\FirstMod S:\\Mod-Packed\\@FirstMod\\addons  -project=P:",
+    "Message":  "This is the subfolder location that contains all of your mods. This should be a subfolder not the root folder because Kommand will treat all subfolders within it as mods"
 }

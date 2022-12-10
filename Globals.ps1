@@ -731,12 +731,12 @@ function Set-Folder
 	Set-Location -Path $foldername
 	
 }
-function Set-CommandlineMessage
+function Set-PopupMessage
 {
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $false)]
+		[string]$Title,
 		[string]$Message,
 		[switch]$Clear
 	)
@@ -744,24 +744,38 @@ function Set-CommandlineMessage
 	#TODO: Place script here
 	if (-not $Clear)
 	{
-		Write-TempParam -key "Commandline" -value $Message
+		Write-TempParam -key "Message" -value $Message
 	}
 	else
 	{
 		$Message = ""
-		Write-TempParam -key "Commandline" -value $Message
+		Write-TempParam -key "Message" -value $Message
 		
 	}
 	
+	if ($Title)
+	{
+		Write-TempParam -key "Title" -value $Title
+		
+	}
 }
-function Get-CommandlineMessage
+function Get-PopupMessage
 {
 	[CmdletBinding()]
 	[OutputType([string])]
 	param ()
 	
 	#TODO: Place script here
-	return Read-TempParam -key "Commandline"
+	return Read-TempParam -key "Message"
+}
+function Get-PopupTitle
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param ()
+	
+	#TODO: Place script here
+	return Read-TempParam -key "Title"
 }
 
 function Confirm-Globals

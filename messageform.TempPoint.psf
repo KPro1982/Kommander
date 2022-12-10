@@ -74,37 +74,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAHeuaZ/wMx9ZeBWrPr
 twAAAABJRU5ErkJggg==</Preview>
-  <Form>2SH/10/LXggAACODCAAAAAAABAC1ld9v2jAQx98n7X+w8rAnVKBAAQ0ilXSVJmAgwrpHZJwDPBwb2c4K++t3
-IURQCot5qJAinNz3fvg+Z3dG89/ArPE/fyKkky2I3W2g64U7YyG++8VlpF7N3bPScfYskUufSuQF
-tOFKdut3lfRXIkEibKKhKyGxmooSGSdzwVkfdlO1BtmdN5u0wRoP1XatDpVW2yOSxhh5oeNAxTGV
-0YBL8AhbcRFpFHiBklYrYbx9vpjxWKsNaLs7KB8Zg43tJdYqmdug1QQWgHoGB7P53mDU90g5d1TO
-PV3znFgVMirgiccg0zoxiYcSqdbcpUMVgec/Yw2FmkBwkDbkf1FQrdRaGKjVKlSljegpHYEO7U6k
-sfgWoidOhVoWiod0y2MM2FNbFFJhoFjC5a2SH/j0/LcdLhSFlmo7VoZbnvY1wK3BEpkGkIXaKWwt
-SrJo5HK4b3/Q48F+oGh0nuAsfdkp781yTfGsTDhbpdFxdz58ZOzWOo7MJWok7tCQM62MWlgSUmlI
-CJovkLr7zXtY37sYKEaz3lRrF2fiGghv83aQ5SORxak7KKZ0/l1GgIRWXaz3uFwyPIUktQpWVC4h
-Oq9hdvLtDJlyxow7QdlB9uHwHI/DW7B5lGyltOf3FKrxUpjw5cqFlew4moDBbD1/1L8Jr3ajin1v
-uAOW1+aMVrNRIvcu/o9cVZy5+kLjzVenZH4aQKg2WPZcQCqeAAbTXC49f6oTl1FBFy/cJFTsL4Me
-ZetAibRj1/SnhOMFxNbH7Zvt1//h+WSR/zX+P441qoBeCAAA</Form>
+  <Form>aocg1QlUGwgAACODCAAAAAAABAC1lU2P2jAQhu+V+h+sHHqKgBRYQIVIS7YrVbAFAd0ekePMgotjI8dpob++
+k4QIlo/Ge1ghRZjMM1/veOhPwl/ATOJ//EBIvzgQs9/CwJnvEwNx7SeXkfqT1B6VjounS669cskz
+6IQrOWjVGtnHJUEqTKphICE1mgqXTNNQcDaC/UJtQA7CToe2WfvO6zVb0Oj2HCJpjJFfdByoOKYy
+GnMJDmFrLiKNgBMoabQSiZPnixlPtdqCNvsDec8YbM0wNUbJ0gatZvACyDM4mIW5wWTkkHrpqF56
+uuU5NWrOqIAHHoPM6sQk7lziNe3RJxWB4z9iDZVMIDhIM+d/EfAazS4G6nYrqUyIodIR6LnZiywW
+30H0wKlQq0r4ie54jAGHaocgFQlUI1y+FfmOT8d/rXAlNDdUm6lKuOGZrgG2BktkGkBWsgvYGUSK
+aOR6uK+/0ePBfqxodJ7gMvuxX8/NSqb6rsw4W2fRsTvvfmXMzlhemcsOjRWjRWO95tWBvqXi66AW
+WDnPRZyWBbGg4TcZAY6XZ2Oda33N8FThzCpYU7mC6LyG5cm7M73rheD28hdb6N2VP+6yt2h+L9la
+accfKqRxo8/4an25lS65YpfMIMFsHX8yskCO49Vre6h7237AytqsR6vTdslnG//HuWpYz9UnGm+/
+WCXzIwEcqi2WHQrI4BlgMM3lyvEXOrW5KujimScpFfkmH1K2CZTIFLvFn044/nuwzbF9y/z8n3k+
+OZRfE/8foOMq5hsIAAA=</Form>
   <Code><![CDATA[
 $frmCommandLine_Load={
 	#TODO: Initialize Form Controls here
-	$txtCommandLine.Text = Get-PopupMessage
-	$title = Get-PopupTitle
-	if ($title)
-	{
-		$frmCommandLine.Text = $title
-		
-	}
+	$txtCommandLine.Text = Get-CommandlineMessage
 }
 
 $txtCommandLine_TextChanged={
 	#TODO: Place custom script here
-	Set-PopupMessage -Clear
+	Set-CommandlineMessage -Clear
 }
 
 $buttonOK_Click={
 	#TODO: Place custom script here
-	Set-PopupMessage -Clear
+	Set-CommandlineMessage -Clear
 }
 
 
