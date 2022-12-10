@@ -1,5 +1,5 @@
 {
     "Title":  "Help",
     "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\FirstMod S:\\Mod-Packed\\@FirstMod\\addons  -project=P:",
-    "Message":  "This is the subfolder location that contains all of your mods. This should be a subfolder not the root folder because Kommand will treat all subfolders within it as mods"
+    "Message":  "Select the mods that you want to load with your mod.  Click on left panel to select a mod. Click on right panel to deselect a mod"
 }
