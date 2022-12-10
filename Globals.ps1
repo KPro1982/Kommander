@@ -249,7 +249,7 @@ function Start-kServer
 	
 	if ($commandline)
 	{
-		return $command + " " + $params
+		return $command + "`n" + $params
 	}
 	else
 	{
@@ -275,7 +275,7 @@ function Start-kMPGame
 	
 	if ($commandline)
 	{
-		return $command + " " + $params
+		return $command + "`n" + $params
 	}
 	else
 	{
@@ -305,7 +305,7 @@ function Start-kWorkbench
 	
 	if ($commandline)
 	{
-		 return $command + " " + $params
+		 return $command + "`n" + $params
 
 	}
 	else
@@ -343,7 +343,7 @@ function Start-Build
 		
 		if ($commandline)
 		{
-			return $command + " " + $params
+			return $command + "`n" + $params
 		}
 		else
 		{
@@ -373,7 +373,7 @@ function Start-Build
 		
 		if ($commandline)
 		{
-			return $command + " " + $params
+			return $command + "`n" + $params
 			
 		}
 		
@@ -834,6 +834,54 @@ function Confirm-Globals
 	return  $true
 }
 
+<#
+	.SYNOPSIS
+		Copy addons to wb\addons
+	
+	.DESCRIPTION
+		A detailed description of the Copy-Addons function.
+	
+	.PARAMETER Clear
+		A description of the Clear parameter.
+	
+	.EXAMPLE
+				PS C:\> Copy-Addons
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Link-Addons
+{
+	[CmdletBinding()]
+	param
+	(
+		[switch]$Clear
+	)
+	
+	$dayzf = Read-GlobalParam -key "GameFolder"
+	$dzaddonsf = Add-Folder -Source $dayzf -Folder "Addons"
+	$addonsf = Read-GlobalParam -key "AddonsFolder"
+	$addons = Read-ModParam -key "AdditionalMPMods"
+	$addonlist = $addons.Split(';')
+	
+	foreach ($mod in $addonlist)
+	{
+		$modfilter = Add-Folder -Source $addonsf -Folder "$mod\addons\*"
+		
+		$files = @(Get-ChildItem -Path $modfilter)
+		
+		foreach ($file in $files) {
+			$link = Add-Folder -Source $dzaddonsf -Folder $file.Name
+			$target = $file.FullName
+			New-Item -ItemType SymbolicLink -Path $link -Target $target
+		}
+		
+		
+		
+		
+	}
+	
+}
 
 
 
