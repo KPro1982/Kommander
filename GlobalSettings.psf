@@ -381,7 +381,7 @@ vl/gktlDAAA=</Form>
 
 
 $frmGlobalSettings_Load= {
-	#TODO: Initialize Form Controls here
+
 	
 	$btnSave.Enabled = $false
 
@@ -445,7 +445,7 @@ function Update-SaveButton
 	[OutputType([bool])]
 	param ()
 	
-	#TODO: Place script here
+
 	Save-Globals
 	$completed = Confirm-Globals
 	$btnSave.Enabled = $completed
