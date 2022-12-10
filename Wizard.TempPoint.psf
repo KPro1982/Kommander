@@ -869,6 +869,7 @@ $frmWizard_Load={
 	$modsource = Read-GlobalParam -key ModSourceFolder
 	Update-ListBox $listSelectAdditionalMods (Get-ChildItem -Path "$workshop" -Directory)
 	Update-ListBox $listSelectMod (Get-ChildItem -Path "$modsource" -Directory)
+	$txtScriptsFolder.Text = Read-ModParam -key "ScriptsFolder"
 	$textpboname.Text = Read-ModParam -key "PboName"
 	$buildmethod = Read-GlobalParam -key "BuildMethod"
 	if ($buildmethod -eq "Mikero")
@@ -1185,14 +1186,12 @@ $listSelectMod_SelectedIndexChanged= {
 	#TODO: Place custom script here
 	$modname = $listSelectMod.Items.Item($listSelectMod.SelectedIndex)
 	$lblModName.Text = $modname
+
 	$curmodfolder = Read-GlobalParam -key "ModSourceFolder"
 	$curmodfolder = Add-Folder -Source $curmodfolder -Folder $modname
 	Write-GlobalParam -key "CurrentModFolder" -value $curmodfolder
 	Write-ModParam -key "ModName" -value $modname
-	
-	# initialize elements that require a modname
 	Initialize-Listbox
-	$txtScriptsFolder.Text = Read-ModParam -key "ScriptsFolder"
 	Update-NavButtons
 }
 
@@ -1307,9 +1306,9 @@ $listAdditionalMods_SelectedIndexChanged={
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="True">149</Line>
-    <Line Disabled="False">347</Line>
-    <Line Disabled="True">434</Line>
+    <Line Disabled="True">150</Line>
+    <Line Disabled="False">348</Line>
+    <Line Disabled="True">433</Line>
   </BreakPoints>
   <TracePoints />
   <Mode>1</Mode>

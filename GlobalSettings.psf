@@ -380,6 +380,9 @@ jf8HU7uFklI0AAA=</Form>
 
 $frmGlobalSettings_Load= {
 	#TODO: Initialize Form Controls here
+	
+	$btnSave.Enabled = $false
+
 	$testpath = ""
 	if (Read-GlobalParam("GameFolder"))
 	{
@@ -431,7 +434,24 @@ $frmGlobalSettings_Load= {
 	
 	$txtPackedModFolder.Text = Read-GlobalParam("PackedModFolder")
 	$txtModSourceFolder.Text = Read-GlobalParam("ModSourceFolder")
+	Update-SaveButton
 }
+
+function Update-SaveButton
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param ()
+	
+	#TODO: Place script here
+	Save-Globals
+	$completed = Confirm-Globals
+	$btnSave.Enabled = $completed
+	
+}
+
+
+
 
 $lblProjectDrive_Click={
 	#TODO: Place custom script here
@@ -449,6 +469,7 @@ $btnBrowseGameFolder_Click = {
 		$txtGameFolder.Text = $folderbrowserdialog1.SelectedPath
 		
 	}
+	Update-SaveButton
 }
 
 $txtGameFolder_TextChanged={
@@ -464,6 +485,7 @@ $btnBrowseServerFolder_Click={
 		Write-GlobalParam -key "ServerFolder" -value $folderbrowserdialog1.SelectedPath
 		$txtServerFolder.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 
 $btnBrowseWorkbenchFolder_Click={
@@ -474,6 +496,7 @@ $btnBrowseWorkbenchFolder_Click={
 		Write-GlobalParam -key "WorkbenchFolder" -value $folderbrowserdialog1.SelectedPath
 		$txtWorkbenchFolder.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 
 $btnBrowseProjectDrive_Click={
@@ -484,6 +507,7 @@ $btnBrowseProjectDrive_Click={
 		Write-GlobalParam -key "ProjectDrive" -value $folderbrowserdialog1.SelectedPath
 		$txtProjectDrive.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 
 $btnBrowsePackedModFolder_Click={
@@ -494,6 +518,7 @@ $btnBrowsePackedModFolder_Click={
 		Write-GlobalParam -key "PackedModFolder" -value $folderbrowserdialog1.SelectedPath
 		$txtPackedModFolder.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 $btnModSourceFolder_Click = {
 	#TODO: Place custom script here
@@ -503,6 +528,7 @@ $btnModSourceFolder_Click = {
 		Write-GlobalParam -key "ModSourceFolder" -value $folderbrowserdialog1.SelectedPath
 		$txtModSourceFolder.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 $btnAddonsFolder_Click = {
 	#TODO: Place custom script here
@@ -512,10 +538,20 @@ $btnAddonsFolder_Click = {
 		Write-GlobalParam -key "AddonsFolder" -value $folderbrowserdialog1.SelectedPath
 		$txtAddonsFolder.Text = $folderbrowserdialog1.SelectedPath
 	}
+	Update-SaveButton
 }
 
 $btnSave_Click={
 	#TODO: Place custom script here
+	Save-Globals
+}
+
+function Save-Globals
+{
+	[CmdletBinding()]
+	param ()
+	
+	#TODO: Place script here
 	Write-GlobalParam -key "GameFolder" -value $txtGameFolder.Text
 	Write-GlobalParam -key "ServerFolder" -value $txtServerFolder.Text
 	Write-GlobalParam -key "WorkbenchFolder" -value $txtWorkbenchFolder.Text
@@ -524,6 +560,7 @@ $btnSave_Click={
 	Write-GlobalParam -key "ModSourceFolder" -value $txtModSourceFolder.Text
 	Write-GlobalParam -key "AddonsFolder" -value $txtAddonsFolder.Text
 }
+
 
 
 $labelModSourceFolder_Click={
@@ -542,7 +579,7 @@ $txtModSourceFolder_TextChanged={
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="True">143</Line>
+    <Line Disabled="False">73</Line>
   </BreakPoints>
   <TracePoints />
   <Mode>1</Mode>

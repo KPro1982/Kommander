@@ -40,22 +40,17 @@ function Get-Settings
 		[string]$settingpath
 	)
 	
-	if ($settingpath)
+	if (-not $settingpath)
 	{
-		$ksettingpath = $settingpath + "\" + $settingname
-		
-	}
-	else
-	{
-		$ksettingpath = Get-ScriptDirectory
-		$ksettingpath = $ksettingpath + "\" + $settingname
+		$settingpath = Get-ScriptDirectory
 	}
 	
+	$fullsettingpath = Add-Folder -Source $settingpath -Folder "$settingname"
 
 	$hashtable = @{ }
 	try
 	{
-		$json = Get-Content $ksettingpath | Out-String
+		$json = Get-Content $fullsettingpath | Out-String
 	}
 	catch
 	{
@@ -81,7 +76,7 @@ function Set-Settings
 		[string]$settingpath
 	)
 	
-	$hashtable = Get-Settings -settingname $settingname
+	
 	
 	if ($settingpath)
 	{
@@ -89,17 +84,20 @@ function Set-Settings
 		{
 			New-Item -Path $settingpath -ItemType Directory
 		}
-		$ksettingpath = $settingpath + "\" + $settingname
+
 		
 	}
 	else
 	{
-		$ksettingpath = Get-ScriptDirectory
-		$ksettingpath = $ksettingpath + "\" + $settingname
-	}
+		$settingpath = Get-ScriptDirectory
 
+	}
+	
+	
+	$hashtable = Get-Settings -settingpath $settingpath -settingname $settingname
+	$fullsettingpath = Add-Folder -Source $settingpath -Folder $settingname
 	$hashtable[$key] = $value	
-	$hashtable | ConvertTo-Json | Set-Content $ksettingpath
+	$hashtable | ConvertTo-Json | Set-Content $fullsettingpath
 }
 
 function Read-ModParam
@@ -116,7 +114,7 @@ function Read-ModParam
 	$settingpath = Add-Folder -Source $settingpath -Folder "Kommander"
 	$settingname = "ModSettings.json"
 	
-	$hashtable = Get-Settings -settingpath $settingpath  -settingname $settingpath
+	$hashtable = Get-Settings -settingpath $settingpath  -settingname $settingname
 	$value = $hashtable[$key]
 	return $value
 }
@@ -300,7 +298,7 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
 	# $mods = "`"-mod=" + $modlist + "`""
-	$params = "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Workbench\dayz.gproj"
+	# $params = "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Workbench\dayz.gproj"
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
 	
 	if ($commandline)
@@ -764,6 +762,61 @@ function Get-CommandlineMessage
 	return Read-TempParam -key "Commandline"
 }
 
+function Confirm-Globals
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param ()
+	
+	#TODO: Place script here
+	
+	$txtAddonsFolder = Read-GlobalParam -key "AddonsFolder"
+	$txtGameFolder = Read-GlobalParam -key "GameFolder"
+	$txtModSourceFolder = Read-GlobalParam -key "ModSourceFolder"
+	$txtPackedModFolder = Read-GlobalParam -key "PackedModFolder"
+	$txtProjectDrive = Read-GlobalParam -key "ProjectDrive"
+	$txtServerFolder = Read-GlobalParam -key "ServerFolder"
+	$txtWorkbenchFolder = Read-GlobalParam -key "WorkbenchFolder"
+	
+	
+	
+	if (-not $txtAddonsFolder)
+	{
+		return $false
+	}
+	
+	if (-not $txtGameFolder)
+	{
+		return  $false
+	}
+	
+	if (-not $txtModSourceFolder)
+	{
+		return $false
+	}
+	
+	if (-not $txtPackedModFolder)
+	{
+		return $false
+	}
+	
+	if (-not $txtProjectDrive)
+	{
+		return $false
+	}
+	
+	if (-not $txtServerFolder)
+	{
+		return  $false
+	}
+	
+	if (-not $txtWorkbenchFolder)
+	{
+		return $false
+	}
+	
+	return  $true
+}
 
 
 

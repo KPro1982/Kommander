@@ -24,6 +24,14 @@ function Main {
 	
 	
 	#--------------------------------------------------------------------------
+	$confirmed = Confirm-Globals
+	if (-not $confirmed)
+	{
+		if ((Show-GlobalSettings_psf) -eq 'OK')
+		{
+			
+		}
+	}
 	
 	if((Show-Wizard_psf) -eq 'OK')
 	{
@@ -35,4 +43,9 @@ function Main {
 
 
 ]]></Code>
+  <Bookmarks />
+  <BreakPoints>
+    <Line Disabled="False">25</Line>
+  </BreakPoints>
+  <TracePoints />
 </File>
