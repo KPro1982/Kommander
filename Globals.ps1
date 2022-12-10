@@ -329,6 +329,8 @@ function Start-Build
 		[string]$BuildMethod
 	)
 	
+	Link-All
+	
 	if($BuildMethod -eq "Mikero")
 	{
 		# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
@@ -616,6 +618,18 @@ function Link-Scripts
 	
 }
 
+function Link-All
+{
+	[CmdletBinding()]
+	param ()
+	
+	Link-Packed
+	Link-Scripts
+	Link-Source
+	Link-Workbench
+	Link-Addons
+}
+
 function Link-Source
 {
 	[CmdletBinding()]
@@ -882,6 +896,20 @@ function Link-Addons
 	}
 	
 }
+
+
+function Mount-Pdrive
+{
+	[CmdletBinding()]
+	param ()
+	
+	$testpath = ""
+	Assert-ToolsFolder -outpath ([ref]$testpath)
+	$command = Add-Folder -Source $testpath -Folder "\WorkDrive\WorkDrive.exe"
+	$params = '/mount'
+	Start-Process $command -ArgumentList $params
+}
+
 
 
 
