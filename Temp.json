@@ -1,5 +1,5 @@
 {
     "Title":  "Help",
     "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\FirstMod S:\\Mod-Packed\\@FirstMod\\addons  -project=P:",
-    "Message":  "Select the mods that you want to load with your mod.  Click on left panel to select a mod. Click on right panel to deselect a mod"
+    "Message":  "This is folder that contains your the additional mods that you want to load with your mod. Typically, this will be the !workshop folder within the dayz game folder."
 }
