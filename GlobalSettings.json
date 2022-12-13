@@ -1,12 +1,15 @@
 {
-    "ModSourceFolder":  "S:\\Mod-Source",
-    "ProjectDrive":  "P:\\",
+    "TemplateFolder":  "S:\\Kommander\\TemplateMod",
     "WorkbenchFolder":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Workbench",
-    "CurrentModFolder":  "S:\\Mod-Source\\FirstMod",
-    "AddonsFolder":  "S:\\Steam\\steamapps\\common\\DayZ\\!Workshop",
-    "DepboFolder":  "",
-    "ServerFolder":  "S:\\Steam\\steamapps\\common\\DayZ",
+    "AddonBuilderParams":  "-clear",
+    "PackedModFolder":  "S:\\Mod-Packed",
+    "PboProjectParams":  "",
+    "CurrentModFolder":  "S:\\Mod-Source\\TEST3",
+    "ProjectDrive":  "P:\\",
     "BuildMethod":  "Tools",
+    "ModSourceFolder":  "S:\\Mod-Source",
+    "DepboFolder":  "",
     "GameFolder":  "S:\\Steam\\steamapps\\common\\DayZ",
-    "PackedModFolder":  "S:\\Mod-Packed"
+    "AddonsFolder":  "S:\\Steam\\steamapps\\common\\DayZ\\!Workshop",
+    "ServerFolder":  "S:\\Steam\\steamapps\\common\\DayZ"
 }

@@ -1,5 +1,5 @@
 {
     "Title":  "Help",
     "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\FirstMod S:\\Mod-Packed\\@FirstMod\\addons  -project=P:",
-    "Message":  "This is folder that contains your the additional mods that you want to load with your mod. Typically, this will be the !workshop folder within the dayz game folder."
+    "Message":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Workbench\\workbenchApp.exe\n\"-mod=S:\\Mod-Packed\\@Apple2\""
 }
