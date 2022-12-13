@@ -1,5 +1,5 @@
 {
     "Title":  "Help",
     "Commandline":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\AddonBuilder\\addonbuilder.exe P:\\FirstMod S:\\Mod-Packed\\@FirstMod\\addons  -project=P:",
-    "Message":  "Select the mods that you want to load with your mod.  Click on left panel to select a mod. Click on right panel to deselect a mod"
+    "Message":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Workbench\\workbenchApp.exe\n\"-mod=S:\\Mod-Packed\\@Apple2\""
 }

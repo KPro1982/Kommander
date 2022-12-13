@@ -1,0 +1,19 @@
+{
+    "Departments": [{
+        "DepartmentName": "Development",
+        "Sections": [{
+                "SectionName": "Developers",
+                "SectionLines": [
+                    "Kpro1982"
+
+                ]
+            },
+            {
+                "SectionName": "Translators",
+                "SectionLines": [
+                    "Kpro1982"
+                ]
+            }
+        ]
+    }]
+}
