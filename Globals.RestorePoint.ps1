@@ -249,7 +249,7 @@ function Start-kServer
 	
 	if ($commandline)
 	{
-		return $command + " " + $params
+		return $command + "`n" + $params
 	}
 	else
 	{
@@ -275,7 +275,7 @@ function Start-kMPGame
 	
 	if ($commandline)
 	{
-		return $command + " " + $params
+		return $command + "`n" + $params
 	}
 	else
 	{
@@ -305,7 +305,7 @@ function Start-kWorkbench
 	
 	if ($commandline)
 	{
-		 return $command + " " + $params
+		 return $command + "`n" + $params
 
 	}
 	else
@@ -329,6 +329,8 @@ function Start-Build
 		[string]$BuildMethod
 	)
 	
+	Link-All
+	
 	if($BuildMethod -eq "Mikero")
 	{
 		# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
@@ -343,7 +345,7 @@ function Start-Build
 		
 		if ($commandline)
 		{
-			return $command + " " + $params
+			return $command + "`n" + $params
 		}
 		else
 		{
@@ -369,11 +371,14 @@ function Start-Build
 		$paramsetting = $paramsetting + ","  + $packedmodf
 		$paramsetting = $paramsetting + ", -project=P:"
 		
+		$additionalsettings = Read-GlobalParam -key "AddonBuilderParams"
+		$paramsetting = $paramsetting + ',' + $additionalsettings
+		
 		$params = $paramsetting.Split(',')
 		
 		if ($commandline)
 		{
-			return $command + " " + $params
+			return $command + "`n" + $params
 			
 		}
 		
@@ -616,6 +621,18 @@ function Link-Scripts
 	
 }
 
+function Link-All
+{
+	[CmdletBinding()]
+	param ()
+	
+	Link-Packed
+	Link-Scripts
+	Link-Source
+	Link-Workbench
+	Link-Addons
+}
+
 function Link-Source
 {
 	[CmdletBinding()]
@@ -731,37 +748,51 @@ function Set-Folder
 	Set-Location -Path $foldername
 	
 }
-function Set-CommandlineMessage
+function Set-PopupMessage
 {
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $false)]
+		[string]$Title,
 		[string]$Message,
-		[switch]$Clear
+		[switch]$ClearMessage
 	)
 	
 	#TODO: Place script here
-	if (-not $Clear)
+	if (-not $ClearMessage)
 	{
-		Write-TempParam -key "Commandline" -value $Message
+		Write-TempParam -key "Message" -value $Message
 	}
 	else
 	{
 		$Message = ""
-		Write-TempParam -key "Commandline" -value $Message
+		Write-TempParam -key "Message" -value $Message
 		
 	}
 	
+	if ($Title)
+	{
+		Write-TempParam -key "Title" -value $Title
+		
+	}
 }
-function Get-CommandlineMessage
+function Get-PopupMessage
 {
 	[CmdletBinding()]
 	[OutputType([string])]
 	param ()
 	
 	#TODO: Place script here
-	return Read-TempParam -key "Commandline"
+	return Read-TempParam -key "Message"
+}
+function Get-PopupTitle
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param ()
+	
+	#TODO: Place script here
+	return Read-TempParam -key "Title"
 }
 
 function Confirm-Globals
@@ -818,6 +849,68 @@ function Confirm-Globals
 	}
 	
 	return  $true
+}
+
+<#
+	.SYNOPSIS
+		Copy addons to wb\addons
+	
+	.DESCRIPTION
+		A detailed description of the Copy-Addons function.
+	
+	.PARAMETER Clear
+		A description of the Clear parameter.
+	
+	.EXAMPLE
+				PS C:\> Copy-Addons
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Link-Addons
+{
+	[CmdletBinding()]
+	param
+	(
+		[switch]$Clear
+	)
+	
+	$dayzf = Read-GlobalParam -key "GameFolder"
+	$dzaddonsf = Add-Folder -Source $dayzf -Folder "Addons"
+	$addonsf = Read-GlobalParam -key "AddonsFolder"
+	$addons = Read-ModParam -key "AdditionalMPMods"
+	$addonlist = $addons.Split(';')
+	
+	foreach ($mod in $addonlist)
+	{
+		$modfilter = Add-Folder -Source $addonsf -Folder "$mod\addons\*"
+		
+		$files = @(Get-ChildItem -Path $modfilter)
+		
+		foreach ($file in $files) {
+			$link = Add-Folder -Source $dzaddonsf -Folder $file.Name
+			$target = $file.FullName
+			New-Item -ItemType SymbolicLink -Path $link -Target $target
+		}
+		
+		
+		
+		
+	}
+	
+}
+
+
+function Mount-Pdrive
+{
+	[CmdletBinding()]
+	param ()
+	
+	$testpath = ""
+	Assert-ToolsFolder -outpath ([ref]$testpath)
+	$command = Add-Folder -Source $testpath -Folder "\WorkDrive\WorkDrive.exe"
+	$params = '/mount'
+	Start-Process $command -ArgumentList $params
 }
 
 

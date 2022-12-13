@@ -4,10 +4,14 @@
   <OpenFolders />
   <OpenFiles>
     <File>Startup.pss</File>
-    <File>Globals.ps1</File>
     <File>Wizard.psf</File>
     <File>GlobalSettings.psf</File>
     <File>messageform.psf</File>
     <File>Buildsettings.psf</File>
+    <File>Globals.ps1</File>
+    <File>TemplateSettings.psf</File>
+    <File>ReplacementTools.ps1</File>
+    <File>DisplayLogs.psf</File>
+    <File>CreateMod.psf</File>
   </OpenFiles>
 </ProjectState>

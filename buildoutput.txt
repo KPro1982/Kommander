@@ -1,0 +1,41 @@
+[2022-12-12 14:40:03,710] [INFO ]: ==========================================================================
+[2022-12-12 14:40:03,711] [INFO ]: WELCOME TO ADDON BUILDER
+[2022-12-12 14:40:03,712] [INFO ]: Version: 1.0.240639
+[2022-12-12 14:40:03,714] [INFO ]: ==========================================================================
+[2022-12-12 14:40:03,714] [INFO ]: 
+[2022-12-12 14:40:03,714] [INFO ]: DayZ Tools path retrived from the last use with steam 'S:\Steam\steamapps\common\DayZ Tools'.
+[2022-12-12 14:40:03,718] [INFO ]: --------------------
+[2022-12-12 14:40:03,719] [INFO ]:        Binarize -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\Binarize\binarize.exe'.
+[2022-12-12 14:40:03,719] [INFO ]:      CfgConvert -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\CfgConvert\CfgConvert.exe'.
+[2022-12-12 14:40:03,719] [INFO ]:      DsSignFile -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\DsUtils\DSSignFile.exe'.
+[2022-12-12 14:40:03,719] [INFO ]:        FileBank -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\PboUtils\FileBank.exe'.
+[2022-12-12 14:40:03,719] [INFO ]: --------------------
+[2022-12-12 14:40:03,721] [INFO ]: Builder starting...
+[2022-12-12 14:40:03,723] [INFO ]: Clearing temp folder. [temp=]=C:\Users\Daniel\AppData\Local\Temp\npcpro
+[2022-12-12 14:40:04,124] [INFO ]: Done.
+[2022-12-12 14:40:04,125] [INFO ]: 
+[2022-12-12 14:40:04,126] [INFO ]: Syncing folders... [source]=P:\NPCPro, [sync]=C:\Users\Daniel\AppData\Local\Temp\npcpro
+[2022-12-12 14:40:04,131] [INFO ]: Done.
+[2022-12-12 14:40:04,131] [INFO ]: 
+[2022-12-12 14:40:04,131] [INFO ]: Converting configs ...
+[2022-12-12 14:40:04,137] [INFO ]:  - Converting cfg "P:\NPCPro\Scripts\config.cpp"
+[2022-12-12 14:40:04,164] [INFO ]:  - Converting cfg "C:\Users\Daniel\AppData\Local\Temp\npcpro\Scripts\config.txt"
+[2022-12-12 14:40:04,184] [INFO ]: Converting done.
+[2022-12-12 14:40:04,184] [INFO ]: Done.
+[2022-12-12 14:40:04,185] [INFO ]: 
+[2022-12-12 14:40:04,185] [INFO ]: Binarizing ...
+[2022-12-12 14:40:06,445] [INFO ]: Done.
+[2022-12-12 14:40:06,445] [INFO ]: 
+[2022-12-12 14:40:06,446] [INFO ]: Deleting empty folders in "C:\Users\Daniel\AppData\Local\Temp\npcpro"
+[2022-12-12 14:40:06,446] [INFO ]: Done.
+[2022-12-12 14:40:06,446] [INFO ]: 
+[2022-12-12 14:40:06,447] [INFO ]: Binarizing texture headers...
+[2022-12-12 14:40:06,472] [INFO ]: Done.
+[2022-12-12 14:40:06,473] [INFO ]: 
+[2022-12-12 14:40:06,474] [INFO ]: Packing "C:\Users\Daniel\AppData\Local\Temp\npcpro"...
+[2022-12-12 14:40:06,557] [INFO ]: Done.
+[2022-12-12 14:40:06,557] [INFO ]: 
+[2022-12-12 14:40:06,557] [INFO ]: Copying PBO. [source]=C:\Users\Daniel\AppData\Local\Temp\NPCPro.pbo, [dest]=S:\Mod-Packed\@NPCPro\addons\NPCPro.pbo
+[2022-12-12 14:40:06,558] [INFO ]: Done.
+[2022-12-12 14:40:06,558] [INFO ]: 
+[2022-12-12 14:40:06,558] [INFO ]: Build Successful

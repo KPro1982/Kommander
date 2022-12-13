@@ -12,5 +12,9 @@
     <File Build="0" ReferenceFunction="Show-GlobalSettings_psf">GlobalSettings.psf</File>
     <File Build="0" ReferenceFunction="Show-messageform_psf">messageform.psf</File>
     <File Build="0" ReferenceFunction="Show-BuildSettings_psf">BuildSettings.psf</File>
+    <File Build="0" ReferenceFunction="Show-CreateMod_psf">CreateMod.psf</File>
+    <File Build="0" ReferenceFunction="Show-TemplateSettings_psf">TemplateSettings.psf</File>
+    <File Build="0" Shared="True" ReferenceFunction="Invoke-ReplacementTools_ps1">ReplacementTools.ps1</File>
+    <File Build="0" ReferenceFunction="Show-DisplayLogs_psf">DisplayLogs.psf</File>
   </Files>
 </Project>
