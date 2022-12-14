@@ -22,7 +22,9 @@ class CfgMods
 		versionPath = "TEMPLATEMOD/Scripts/Data/Version.hpp";
 		type = "mod";
 		
-		//TM_INPUTOFF inputs="TEMPLATEMOD\Scripts\data\inputs.xml";
+		// TM_NOINPUTSTART
+		inputs="TESTSNI\Scripts\data\inputs.xml";
+		// TM_NOINPUTEND
 		
 		dependencies[] =
 		{
@@ -38,7 +40,7 @@ class CfgMods
 				value = "";
 				files[] =
 				{
-					"scripts/1_core"
+					"scripts/1_core",
 					"TEMPLATEMOD/Scripts/common",
 					"TEMPLATEMOD/Scripts/1_core"
 				};
@@ -49,7 +51,7 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"scripts/3_Game"
+					"scripts/3_Game",
 					"TEMPLATEMOD/Scripts/common",
 					"TEMPLATEMOD/Scripts/3_Game"
 				};
@@ -59,7 +61,7 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"scripts/4_World"
+					"scripts/4_World",
 					"TEMPLATEMOD/Scripts/common",
 					"TEMPLATEMOD/Scripts/4_World"
 				};
@@ -70,7 +72,7 @@ class CfgMods
 				value="";
 				files[] = 
 				{
-					"scripts/5_Mission"
+					"scripts/5_Mission",
 					"TEMPLATEMOD/Scripts/common",
 					"TEMPLATEMOD/Scripts/5_Mission"
 				};

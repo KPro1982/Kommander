@@ -6,14 +6,7 @@ GameProjectClass {
 			platformHardware PC
 			skeletonDefinitions "DZ/Anims/cfg/skeletons.anim.xml"
 			FileSystem {
-				FileSystemPathClass {
-				Name "Game Root"
-				Directory "P:"
-				}	
-			FileSystemPathClass {
-				Name "TemplateMod"
-				Directory "P:\TemplateMod"
-				}
+				
 			}
 			imageSets {
 				"gui/imagesets/ccgui_enforce.imageset"

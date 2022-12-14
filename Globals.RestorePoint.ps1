@@ -174,24 +174,64 @@ function Write-GlobalParam
 	
 	Set-Settings -settingname "GlobalSettings.json" -key $key -value $value
 }
-
-function Write-TempParam
+function Read-TemplateParam
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$key
+	)
+	
+	$hashtable = Get-Settings -settingname "TemplateSettings.json"
+	$value = $hashtable[$key]
+	return $value
+}
+function Write-TemplateParam
 {
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $true,
-				   Position = 1)]
-		[ValidateNotNullOrEmpty()]
+		[Parameter(Mandatory = $true)]
+		[AllowNull()]
+		[AllowEmptyString()]
 		[string]$key,
-		[Parameter(Mandatory = $true,
-				   Position = 2)]
+		[Parameter(Mandatory = $true)]
+		[AllowEmptyString()]
+		[AllowNull()]
+		[string]$value
+	)
+	
+	Set-Settings -settingname "TemplateSettings.json" -key $key -value $value
+}
+
+function Get-TemplateHash
+{
+	[CmdletBinding()]
+	[OutputType([hashtable])]
+	param ()
+	
+	$hashtable = Get-Settings -settingname "TemplateSettings.json"
+	return $hashtable
+}
+
+function Write-ScratchParam
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$key,
+		[Parameter(Mandatory = $true)]
+		[AllowEmptyString()]
+		[AllowNull()]
 		[string]$value
 	)
 	
 	Set-Settings -settingname "Temp.json" -key $key -value $value
 }
-function Read-TempParam
+function Read-ScratchParam
 {
 	[CmdletBinding()]
 	[OutputType([string])]
@@ -255,6 +295,7 @@ function Start-kServer
 	{
 		Set-Folder -key "GameFolder"
 		& $command @params
+		
 	}
 	
 	
@@ -281,6 +322,7 @@ function Start-kMPGame
 	{
 		Set-Folder -key "GameFolder"
 		& $command @params
+		
 	}
 	
 }
@@ -298,8 +340,9 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
-    $mods = "`"-mod=" + $modlist + "`""
+    # $mods = "`"-mod=" + $modlist + "`""
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
+	$mods = "`"-mod=" + "P:\@FirstMod" + "`""
 	$params = $mods
 	
 	
@@ -314,7 +357,7 @@ function Start-kWorkbench
 		$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
 		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Workbench"
 		Set-Location $modworkbenchfolder
-		& $command @params
+		& $command @params 
 
 	}
 	
@@ -323,15 +366,17 @@ function Start-kWorkbench
 function Start-Build
 {
 	[CmdletBinding()]
+	[OutputType([string])]
 	param
 	(
 		[switch]$Commandline = $false,
 		[string]$BuildMethod
 	)
 	
-	Link-All
+	$trash = Link-Scripts
+	$trash = Link-Source
 	
-	if($BuildMethod -eq "Mikero")
+	if ($BuildMethod -eq "Mikero")
 	{
 		# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
 		$command = "pboProject.exe"
@@ -350,7 +395,7 @@ function Start-Build
 		else
 		{
 			Set-Location "P:"
-			Start-Process "pboProject.exe" -ArgumentList $params
+			Start-Process "pboProject.exe" -ArgumentList $params -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
 		}
 		
 		
@@ -368,7 +413,7 @@ function Start-Build
 		$packedmodf = Read-GlobalParam -key "PackedModFolder"
 		$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
 		$paramsetting = "P:\" + $modname
-		$paramsetting = $paramsetting + ","  + $packedmodf
+		$paramsetting = $paramsetting + "," + $packedmodf
 		$paramsetting = $paramsetting + ", -project=P:"
 		
 		$additionalsettings = Read-GlobalParam -key "AddonBuilderParams"
@@ -378,14 +423,15 @@ function Start-Build
 		
 		if ($commandline)
 		{
-			return $command + "`n" + $params
+			$output = $command + "`n" + $params
+			return $output
 			
 		}
 		
-		Start-Process $command -ArgumentList $params
+		Start-Process $command -ArgumentList $params -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+		Link-Packed
 		
 	}
-	
 }
 function Get-PackedMod
 {
@@ -573,6 +619,37 @@ function Assert-WorkbenchFolder
 		return $false
 	}
 }
+
+function Assert-ModScriptsFolder
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	$curmodfolder = Read-GlobalParam "CurrentModFolder"
+	if (-not $curmodfolder)
+	{
+		return $false
+	}
+	$testpath = Add-Folder -Source $curmodfolder -Folder "Scripts"
+	if (Test-Path -Path $testpath)
+	{
+		if ($outpath)
+		{
+			$outpath.Value = $testpath
+		}
+		return $true
+	}
+	else
+	{
+		return $false
+	}
+}
+
 function Assert-ProjectDrive
 {
 	[CmdletBinding()]
@@ -600,27 +677,50 @@ function Assert-ProjectDrive
 }
 
 
-function Link-Scripts
+
+
+
+
+<#
+	.SYNOPSIS
+		Link directories delete if already exists
+	
+	.DESCRIPTION
+		A detailed description of the Link-Directory function.
+	
+	.PARAMETER Link
+		A description of the Link parameter.
+	
+	.PARAMETER Target
+		A description of the Target parameter.
+	
+	.EXAMPLE
+				PS C:\> Link-Directory
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Link-DayzFolders
 {
 	[CmdletBinding()]
-	param ()
+	param
+	(
+		[string]$Link,
+		[string]$Target
+	)
 	
-	#TODO: Place script here
-	# Link mklink /J  "S:\Steam\steamapps\common\DayZ\scripts\" "P:\scripts\"
-	
-
-	
-	$link = Read-GlobalParam -key "GameFolder"
-	$link  = Add-Folder -Source $link  -Folder "Scripts"
-	
-	$target= Read-GlobalParam -key "ProjectDrive"
-	$target = Add-Folder -Source $target -Folder "Scripts"
-	
-	New-Item -ItemType SymbolicLink -Path $link -Target $target
-	
-	
+	while (Test-Path -Path $Link)
+	{
+		if ((Get-Item -Path $Link -Force).LinkType) 
+		{
+			Remove-Item -Path $Link -Recurse 
+		}
+		
+	}
+	New-Item -ItemType SymbolicLink -Path $Link -Target $Target
+	$output = $link  + "  ---->>  " + $target + "`n`n"
+	Add-Content -Path "links.txt" -Value $output
 }
-
 function Link-All
 {
 	[CmdletBinding()]
@@ -631,6 +731,35 @@ function Link-All
 	Link-Source
 	Link-Workbench
 	Link-Addons
+	
+	if (Test-Path -Path "links.txt")
+	{
+		Remove-Item -Path "links.txt"
+		
+	}
+	
+}
+function Link-Scripts
+{
+	[CmdletBinding()]
+	param ()
+	
+	#TODO: Place script here
+	# Link mklink /J  "S:\Steam\steamapps\common\DayZ\scripts\" "P:\scripts\"
+	
+	
+	
+	$link = Read-GlobalParam -key "GameFolder"
+	$link = Add-Folder -Source $link -Folder "Scripts"
+	
+	$target = Read-GlobalParam -key "ProjectDrive"
+	$target = Add-Folder -Source $target -Folder "Scripts"
+	
+	Link-DayzFolders -Link $link -Target $target
+	
+	
+	
+	
 }
 
 function Link-Source
@@ -640,6 +769,7 @@ function Link-Source
 	
 	#TODO: Place script here
 	# mklink /J "P:\FirstMod\" "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\" 
+	
 		
 	$link = Read-GlobalParam -key "ProjectDrive"
 	$modname = Read-ModParam -key "ModName"
@@ -648,9 +778,13 @@ function Link-Source
 	$target = Read-GlobalParam -key "ModSourceFolder"
 	$target = Add-Folder -Source $target -Folder $modname
 	
-	New-Item -ItemType SymbolicLink -Path $link -Target $target
-	
 
+	Link-DayzFolders -Link $link -Target $target
+	
+	$link = Read-GlobalParam -key "GameFolder"
+	$link = Add-Folder -Source $link -Folder $Modname
+	
+	Link-DayzFolders -Link $link -Target $target
 }
 function Link-Packed
 {
@@ -659,20 +793,23 @@ function Link-Packed
 	
 	#TODO: Place script here
 	# mklink /J "S:\Steam\steamapps\common\DayZ\@FirstMod\"  "P:\PackedMods\@FirstMod\" 
-	
+	# mklink /J "P:\@FirstMod\"  "P:\PackedMods\@FirstMod\" 
 	
 	$modname = Read-ModParam -key "ModName"
 	$packedfolder = '@' + $modname
 	
-	$link = Read-GlobalParam -key "GameFolder"
+	$link = Read-GlobalParam -key "ProjectDrive"
 	$link = Add-Folder -Source $link -Folder $packedfolder
 	
-	$target = Read-GlobalParam -key "ProjectDrive"
-	$target = Add-Folder -Source $target -Folder "PackedMods"
+	$target = Read-GlobalParam -key "PackedModFolder"
 	$target = Add-Folder -Source $target -Folder $packedfolder
 	
-	New-Item -ItemType SymbolicLink -Path $link -Target $target
+	Link-DayzFolders -Link $link -Target $target
 	
+	$target = Read-GlobalParam -key "PackedModFolder"
+	$target = Add-Folder -Source $target -Folder $packedfolder
+	
+	Link-DayzFolders -Link $link -Target $target
 	
 }
 
@@ -681,7 +818,7 @@ function Link-Workbench
 	[CmdletBinding()]
 	param ()
 	
-	#TODO: Place script here
+
 	
 	#mklink /J "S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\addons" "S:\Steam\steamapps\common\DayZ\addons"
 	$workbenchf = ""
@@ -690,7 +827,7 @@ function Link-Workbench
 	$dayzf = Read-GlobalParam -key "GameFolder"
 	$target = Add-Folder -Source $dayzf -Folder "Addons"
 	
-	New-Item -ItemType SymbolicLink -Path $link -Target $target
+	Link-DayzFolders -Link $link -Target $target
 }
 
 
@@ -758,21 +895,21 @@ function Set-PopupMessage
 		[switch]$ClearMessage
 	)
 	
-	#TODO: Place script here
-	if (-not $ClearMessage)
-	{
-		Write-TempParam -key "Message" -value $Message
-	}
-	else
+	
+	if ($ClearMessage)
 	{
 		$Message = ""
-		Write-TempParam -key "Message" -value $Message
+		Write-ScratchParam -key "Message" -value ""
 		
 	}
 	
+	Write-ScratchParam -key "Message" -value $Message
+
+
+	
 	if ($Title)
 	{
-		Write-TempParam -key "Title" -value $Title
+		Write-ScratchParam -key "Title" -value $Title
 		
 	}
 }
@@ -783,7 +920,7 @@ function Get-PopupMessage
 	param ()
 	
 	#TODO: Place script here
-	return Read-TempParam -key "Message"
+	return Read-ScratchParam -key "Message"
 }
 function Get-PopupTitle
 {
@@ -792,7 +929,7 @@ function Get-PopupTitle
 	param ()
 	
 	#TODO: Place script here
-	return Read-TempParam -key "Title"
+	return Read-ScratchParam -key "Title"
 }
 
 function Confirm-Globals
@@ -911,6 +1048,38 @@ function Mount-Pdrive
 	$command = Add-Folder -Source $testpath -Folder "\WorkDrive\WorkDrive.exe"
 	$params = '/mount'
 	Start-Process $command -ArgumentList $params
+}
+
+<#
+	.SYNOPSIS
+		Read final path/folder name from path
+	
+	.DESCRIPTION
+		A detailed description of the Read-FinalPathName function.
+	
+	.PARAMETER Source
+		A description of the Source parameter.
+	
+	.EXAMPLE
+		PS C:\> Read-FinalPathName
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Read-FinalPathName
+{
+	[CmdletBinding()]
+	param
+	(
+		[string]
+		$Source
+	)
+	
+$Source -replace '/', '\'
+	$SourceArr = $Source.Split('\')
+	$lasttoken = ""
+	$lasttoken = $SourceArr.get($SourceArr.Length - 1)
+	return $lasttoken
 }
 
 

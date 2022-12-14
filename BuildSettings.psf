@@ -438,6 +438,7 @@ v2q6c8o07hzd/PMWVh5l+w86X1xVroy4fAM8I8b5P8CmNt3Mpp/aNLPvpDvv4+G/vIbtvToeAAA=</Fo
   <Code><![CDATA[
 $frmBuildSettings_Load={
 	#TODO: Initialize Form Controls here
+	$radiobuttonbuildmikero.Enabled = $false
 	$txtDePboFolder.Text = Read-GlobalParam -key "DepboFolder"
 	$txtPboProjectParams.Text = Read-GlobalParam -key "PboProjectParams"
 	$textaddonbuilderparams.Text = Read-GlobalParam -key "AddonBuilderParams"

@@ -22,7 +22,9 @@ class CfgMods
 		versionPath = "TEMPLATEMOD/Scripts/Data/Version.hpp";
 		type = "mod";
 		
-		//TM_INPUTOFF inputs="TEMPLATEMOD\Scripts\data\inputs.xml";
+		// TM_NOINPUTSTART
+		inputs="TEMPLATEMOD\Scripts\data\inputs.xml";
+		// TM_NOINPUTEND
 		
 		dependencies[] =
 		{

@@ -81,6 +81,8 @@ function Edit-TemplateTokens
 		[Parameter(Mandatory = $true)]
 		[string]$Source,
 		[Parameter(Mandatory = $true)]
+		[AllowEmptyString()]
+		[AllowNull()]
 		[string]$Replace,
 		[Parameter(Mandatory = $true)]
 		[string]$Folder,
@@ -105,78 +107,104 @@ function Edit-TemplateTokens
 		}
 		
 	}
-	else  # just the one file
+	else # just the one file
 	{
 		
-			(Get-Content -Path "$Folder\$File") |
-			Foreach-Object { $_ -replace $Source, $Replace } |
-			Set-Content -Path "$Folder\$File"
+		(Get-Content -Path "$Folder\$File") |
+		Foreach-Object { $_ -replace $Source, $Replace } |
+		Set-Content -Path "$Folder\$File"
 		
 	}
-	
-	
 }
 
-function Edit-TemplateRegions
+function Edit-TemplateByRegion
 {
 	[CmdletBinding()]
 	param
 	(
 		[string]$RegionStart,
-		[string]$RegionEnd
+		[string]$RegionEnd,
+		[string]$Folder,
+		[string]$File,
+		[string]$ExcludeFolders,
+		[switch]$Recurse
 	)
 	
-	$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
 	
-	$targetfiles = Get-ChildItem $curmodfolder *.* -File -rec
 	
-	foreach ($file in $targetfiles)
+
+	if ($Recurse)
 	{
-		$i = 0;
-		$ii = 0;
-		$starti = 0;
-		$endi = 0;
 		
-		if ($file.FullName -NotLike $ExcludeFolders)
+		$targetfiles = Get-ChildItem $Folder *.* -File -rec
+		
+		foreach ($file in $targetfiles)
 		{
-			$arraylist = [System.Collections.ArrayList](Get-Content -Path $file.FullName)
-			
-			foreach ($line in $arraylist)
+			if ($file.FullName -NotLike $ExcludeFolders)
 			{
-				if ($line.Contains($RegionStart))
-				{
-					$starti = $i
-				}
-				if ($line.Contains($RegionEnd))
-				{
-					$endi = $i
-					if (-not $starti)
-					{
-						
-						return  # no start so its a parsing error
-					}
-					if ($starti -gt $endi)
-					{
-						return # start after end is a parsing error
-						
-					}
-					
-					# remove all lines between start and end
-					for ($ii= $endi; $ii -ge $starti; $ii--) {
-						$arraylist.RemoveAt($ii)
-					}
-				}
-				$i += 1
 				
+				Edit-TemplateFileByRegion -File $file -RegionStart $RegionStart -RegionEnd $RegionEnd
 			}
-			
-			
-			
-			$arraylist | Set-Content $file.PSPath
 		}
+	}
+	else # just the one file
+	{
+		$filepath = Add-Folder -Source $Folder -Folder $File
+		Edit-TemplateFileByRegion -File $filepath -RegionStart $RegionStart -RegionEnd $RegionEnd		
 	}
 	
 	
 }
+
+function Edit-TemplateFileByRegion
+{
+	[CmdletBinding()]
+	param
+	(
+		[string]$RegionStart,
+		[string]$RegionEnd,
+		[string]$FilePath
+	)
+	
+	$i = 0;
+	$ii = 0;
+	$starti = 0;
+	$endi = 0;
+	
+
+	$arraylist = [System.Collections.ArrayList](Get-Content -Path $FilePath)
+	
+	foreach ($codeline in $arraylist) 
+	{
+		if ($codeline.Contains($RegionStart))
+		{
+			$starti = $i
+		}
+		if ($codeline.Contains($RegionEnd))
+		{
+			$endi = $i
+			if (-not $starti)
+			{
+				
+				return # no start so its a parsing error
+			}
+			if ($starti -gt $endi)
+			{
+				return # start after end is a parsing error
+				
+			}
+			
+			# remove all lines between start and end
+			for ($ii = $endi; $ii -ge $starti; $ii--)
+			{
+				$arraylist.RemoveAt($ii)
+			}
+		}
+		$i += 1
+		
+	}
+	$arraylist | Set-Content -Path $FilePath
+}
+
 
 

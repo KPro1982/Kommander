@@ -193,13 +193,13 @@ function Write-TemplateParam
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $true,
-				   Position = 1)]
-		[ValidateNotNullOrEmpty()]
-		[string]$key,
-		[Parameter(Mandatory = $true,
-				   Position = 2)]
+		[Parameter(Mandatory = $true)]
+		[AllowNull()]
 		[AllowEmptyString()]
+		[string]$key,
+		[Parameter(Mandatory = $true)]
+		[AllowEmptyString()]
+		[AllowNull()]
 		[string]$value
 	)
 	
@@ -221,12 +221,11 @@ function Write-ScratchParam
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $true,
-				   Position = 1)]
-		[ValidateNotNullOrEmpty()]
+		[Parameter(Mandatory = $true)]
 		[string]$key,
-		[Parameter(Mandatory = $true,
-				   Position = 2)]
+		[Parameter(Mandatory = $true)]
+		[AllowEmptyString()]
+		[AllowNull()]
 		[string]$value
 	)
 	
@@ -295,7 +294,8 @@ function Start-kServer
 	else
 	{
 		Set-Folder -key "GameFolder"
-		Start-Process $command -ArgumentList $params -RedirectStandardOutput Serveroutput.txt -RedirectStandardError Servererror.txt
+		& $command @params
+		
 	}
 	
 	
@@ -321,7 +321,8 @@ function Start-kMPGame
 	else
 	{
 		Set-Folder -key "GameFolder"
-		Start-Process $command -ArgumentList $params -RedirectStandardOutput Gameoutput.txt -RedirectStandardError Gameerror.txt
+		& $command @params
+		
 	}
 	
 }
@@ -340,7 +341,7 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
     $mods = "`"-mod=" + $modlist + "`""
-	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
+	# $mods = "`"-mod=" + "P:\@FirstMod" + "`""
 	$params = $mods
 	
 	
@@ -355,7 +356,7 @@ function Start-kWorkbench
 		$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
 		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Workbench"
 		Set-Location $modworkbenchfolder
-		Start-Process $command -ArgumentList $params -RedirectStandardOutput Workbenchoutput.txt -RedirectStandardError Workbencherror.txt
+		& $command @params
 
 	}
 	
@@ -364,16 +365,17 @@ function Start-kWorkbench
 function Start-Build
 {
 	[CmdletBinding()]
+	[OutputType([string])]
 	param
 	(
 		[switch]$Commandline = $false,
 		[string]$BuildMethod
 	)
 	
-	Link-Scripts
-	Link-Source
+	$trash = Link-Scripts
+	$trash = Link-Source
 	
-	if($BuildMethod -eq "Mikero")
+	if ($BuildMethod -eq "Mikero")
 	{
 		# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
 		$command = "pboProject.exe"
@@ -392,7 +394,7 @@ function Start-Build
 		else
 		{
 			Set-Location "P:"
-			Start-Process "pboProject.exe" -ArgumentList $params  -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+			Start-Process "pboProject.exe" -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
 		}
 		
 		
@@ -410,7 +412,7 @@ function Start-Build
 		$packedmodf = Read-GlobalParam -key "PackedModFolder"
 		$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
 		$paramsetting = "P:\" + $modname
-		$paramsetting = $paramsetting + ","  + $packedmodf
+		$paramsetting = $paramsetting + "," + $packedmodf
 		$paramsetting = $paramsetting + ", -project=P:"
 		
 		$additionalsettings = Read-GlobalParam -key "AddonBuilderParams"
@@ -420,15 +422,30 @@ function Start-Build
 		
 		if ($commandline)
 		{
-			return $command + "`n" + $params
+			$output = $command + "`n" + $params
+			return $output
 			
 		}
 		
-		Start-Process $command -ArgumentList $params  -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
-		Link-Packed
+		Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+		$lastbuild = Get-ScriptDirectory
+		$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
+		
+		$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
+		$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
+		if ($success)
+		{
+			$buttonOpenBuildLog.BackColor = 'Green'
+		}
+		elseif ($failure )
+		{
+			$buttonOpenBuildLog.BackColor = 'Red'
+			
+		}
+		
+		Link-All
 		
 	}
-	
 }
 function Get-PackedMod
 {
@@ -539,6 +556,48 @@ function Assert-DayzFolder
 		return $false
 	}
 }
+
+
+<#
+	.SYNOPSIS
+		Determine whether a profile folder exists in server folder
+	
+	.DESCRIPTION
+		Determine whether a profile folder exists in server folder. 
+	
+	.EXAMPLE
+				PS C:\> Assert-ProfilesFolder
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Assert-ProfilesFolder
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	
+	$testpath = Read-GlobalParam -key "ServerFolder"
+	$testpath = Add-Folder -Source $testpath -Folder "Profiles"
+	if (Test-Path -Path $testpath)
+	{
+		if ($outpath)
+		{
+			$outpath.Value = $testpath
+		}
+		
+		return $true
+	}
+	else
+	{
+		return $false
+	}
+}
+
 function Assert-ToolsFolder
 {
 	[CmdletBinding()]
@@ -718,6 +777,69 @@ function Link-DayzFolders
 	$output = $link  + "  ---->>  " + $target + "`n`n"
 	Add-Content -Path "links.txt" -Value $output
 }
+
+
+<#
+	.SYNOPSIS
+		Remove all symbolic links
+	
+	.DESCRIPTION
+		Remove all symbolic links in P: and Dayz folders.
+	
+	.EXAMPLE
+				PS C:\> Remove-AllLinks
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Remove-AllLinks
+{
+	[CmdletBinding()]
+	param ()
+	
+	Remove-FolderLinks -Folder "P:\"
+	$dayzf = Read-GlobalParam -key "GameFolder"
+	Remove-FolderLinks -Folder $dayzf
+	
+}
+
+<#
+	.SYNOPSIS
+		Remove symbolic links in  a single folder
+	
+	.DESCRIPTION
+		A detailed description of the Remove-FolderLinks function.
+	
+	.PARAMETER Folder
+		A description of the Folder parameter.
+	
+	.EXAMPLE
+		PS C:\> Remove-FolderLinks
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Remove-FolderLinks
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$Folder
+	)
+	
+	$targetfiles = Get-ChildItem $Folder *.* -Directory
+	
+	foreach ($link in $targetfiles)
+	{
+		if ((Get-Item -Path $link.PSPath -Force).LinkType)
+		{
+			Remove-Item -Path $link.PSPath -Recurse
+		}
+	}
+}
+
+
 function Link-All
 {
 	[CmdletBinding()]
@@ -892,17 +1014,17 @@ function Set-PopupMessage
 		[switch]$ClearMessage
 	)
 	
-	#TODO: Place script here
-	if (-not $ClearMessage)
-	{
-		Write-ScratchParam -key "Message" -value $Message
-	}
-	else
+	
+	if ($ClearMessage)
 	{
 		$Message = ""
-		Write-ScratchParam -key "Message" -value $Message
+		Write-ScratchParam -key "Message" -value ""
 		
 	}
+	
+	Write-ScratchParam -key "Message" -value $Message
+
+
 	
 	if ($Title)
 	{

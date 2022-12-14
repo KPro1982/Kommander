@@ -6,7 +6,10 @@ GameProjectClass {
 			platformHardware PC
 			skeletonDefinitions "DZ/Anims/cfg/skeletons.anim.xml"
 			FileSystem {
-				
+			FileSystemPathClass {
+				Name "Game Root"
+				Directory "P:"
+				}	
 			}
 			imageSets {
 				"gui/imagesets/ccgui_enforce.imageset"
@@ -27,6 +30,7 @@ GameProjectClass {
 			widgetStyles {
 				"gui/looknfeel/dayzwidgets.styles" 
 				"gui/looknfeel/widgets.styles"
+				"FirstMod/gui/looknfeel/prefabs.styles"
 			}
 			ScriptModules {
 				ScriptModulePathClass {
@@ -38,6 +42,7 @@ GameProjectClass {
 						  "JM/CF/Permissions/1_Core"
 						  "JM/CF/ModStorage/1_Core"
 						  "JM/CF/Scripts/1_Core"
+						  "FirstMod/scripts/1_Core"
 										}
 					EntryPoint ""
 				}
@@ -47,6 +52,7 @@ GameProjectClass {
 					  "scripts/2_GameLib"
 					  "JM/CF/Defines"
 					  "JM/CF/Scripts/2_GameLib"
+					  "FirstMod/Scripts/2_GameLib"
 					}
 					EntryPoint ""
 				}
@@ -59,7 +65,7 @@ GameProjectClass {
 					  "JM/CF/Permissions/3_Game"
 					  "JM/CF/ModStorage/3_Game"
 					  "JM/CF/Scripts/3_Game"
-
+					  "FirstMod/Scripts/3_Game"
 
 					}
 					EntryPoint "CreateGame"
@@ -73,6 +79,7 @@ GameProjectClass {
 						  "JM/CF/Permissions/4_World"
 						  "JM/CF/ModStorage/4_World"
 						  "JM/CF/Scripts/4_World"
+						  "TemplateMod/scripts/4_World"
 
 
 					}
@@ -87,6 +94,7 @@ GameProjectClass {
 					  "JM/CF/Permissions/5_Mission"
 					  "JM/CF/ModStorage/5_Mission"
 					  "JM/CF/Scripts/5_Mission"
+					  "TemplateMod/scripts/5_Mission"
 
 
 					}
