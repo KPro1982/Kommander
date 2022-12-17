@@ -3,7 +3,7 @@ Kommander
  A gui companion to workbench for mod creation, building, and launching
 
 THIS TOOL HAS NOT BEEN RELEASED AS IS STILL UNDER ACTIVE DEVELOPMENT CLONE AND USE AT YOUR OWN RISK. 
-ALTHOUGH THE BASIC FUNCTIONS HAVE BEEN IMPLEMENTED, THERE ARE STILL FEATURES THAT HAVE NOT BEEN FULLY  IMPLEMENTED SO SOME STUFF WON'T WORK. 
+ALTHOUGH THE BASIC FUNCTIONS HAVE BEEN IMPLEMENTED, THERE ARE STILL FEATURES THAT HAVE NOT BEEN FULLY IMPLEMENTED SO SOME STUFF WON'T WORK. ALSO SOME STUFF THAT USED TO WORK WILL UNEXPECTEDLY BREAK AS I REFACTOR. HOWEVER, I WILL MAKE AN EFFORT TO KEEP THE MAIN BRANCH FUNCTIONAL.
 
 NOTE that as of 12/16 Kommander no longer uses the workbench folder. It expects dayz.gproj to exist in the Kommander folder. The Convert button will create an appropriate day.gproj.  If you cloned it before 12/16 you will need to convert your mods even if they were created using Kommander.
 
