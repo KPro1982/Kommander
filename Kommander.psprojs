@@ -4,5 +4,7 @@
   <OpenFolders>
     <Folder>UIHelper</Folder>
   </OpenFolders>
-  <OpenFiles />
+  <OpenFiles>
+    <File>Wizard.psf</File>
+  </OpenFiles>
 </ProjectState>
