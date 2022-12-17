@@ -4,7 +4,7 @@
 		<actions>
 			<input name="TMSHORTActionName" loc="ActionDescription"/>
 		</actions>
-		<sorting name="TemplateMod" loc="TemplateMod">
+		<sorting name="TEMPLATEMOD" loc="TEMPLATEMOD">
 			<input name="TMSHORTActionName"/>
 		</sorting>	
 	</inputs>

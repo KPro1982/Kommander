@@ -2,14 +2,14 @@
 <modded_inputs>
 	<inputs>
 		<actions>
-			<input name="SSActionName" loc="ActionDescription"/>
+			<input name="TMSHORTActionName" loc="ActionDescription"/>
 		</actions>
 		<sorting name="TemplateMod" loc="TemplateMod">
-			<input name="SSActionName"/>
+			<input name="TMSHORTActionName"/>
 		</sorting>	
 	</inputs>
 	<preset>
-		<input name="SSActionName">
+		<input name="TMSHORTActionName">
 			<!-- The the default keybind ... here N -->
 			<btn name="TM_BUTTONCODE"/>
 		</input>

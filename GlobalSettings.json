@@ -1,9 +1,10 @@
 {
+    "TemplateFolder":  "S:\\Kommander\\TemplateMod",
     "ProfilesFolder":  "S:\\Steam\\steamapps\\common\\DayZ\\!Workshop",
     "WorkbenchFolder":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Workbench",
-    "PboProjectParams":  "",
-    "AddonBuilderParams":  "",
+    "AddonBuilderParams":  "-Clear",
     "PackedModFolder":  "S:\\Mod-Packed",
+    "PboProjectParams":  "",
     "CurrentModFolder":  "S:\\Mod-Source\\FirstMod",
     "ProjectDrive":  "P:\\",
     "BuildMethod":  "Tools",

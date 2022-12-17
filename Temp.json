@@ -1,3 +1,5 @@
 {
-    "DefaultLogFile":  "Buildoutput.txt"
+    "Message":  "",
+    "DefaultLogFile":  "ServerLog",
+    "Title":  "Help"
 }

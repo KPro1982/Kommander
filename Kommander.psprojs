@@ -1,17 +1,8 @@
 ﻿<ProjectState>
   <Version>1.0</Version>
   <FileID>2df6ecdd-5a63-4ea4-903f-324274d3673a</FileID>
-  <OpenFolders />
-  <OpenFiles>
-    <File>Startup.pss</File>
-    <File>Wizard.psf</File>
-    <File>GlobalSettings.psf</File>
-    <File>messageform.psf</File>
-    <File>Buildsettings.psf</File>
-    <File>Globals.ps1</File>
-    <File>TemplateSettings.psf</File>
-    <File>ReplacementTools.ps1</File>
-    <File>DisplayLogs.psf</File>
-    <File>CreateMod.psf</File>
-  </OpenFiles>
+  <OpenFolders>
+    <Folder>UIHelper</Folder>
+  </OpenFolders>
+  <OpenFiles />
 </ProjectState>

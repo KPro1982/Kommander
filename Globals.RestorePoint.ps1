@@ -340,9 +340,8 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$workbenchf = Read-GlobalParam -key WorkbenchFolder
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
-    # $mods = "`"-mod=" + $modlist + "`""
-	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
-	$mods = "`"-mod=" + "P:\@FirstMod" + "`""
+    $mods = "`"-mod=" + $modlist + "`""
+	# $mods = "`"-mod=" + "P:\@FirstMod" + "`""
 	$params = $mods
 	
 	
@@ -357,13 +356,89 @@ function Start-kWorkbench
 		$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
 		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Workbench"
 		Set-Location $modworkbenchfolder
-		& $command @params 
+		& $command @params
 
 	}
 	
 }
-
 function Start-Build
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param
+	(
+		[switch]$Commandline = $false,
+		[string]$BuildMethod
+	)
+	
+	
+	
+	# start /D "S:\Steam\steamapps\common\DayZ Tools\Bin\AddonBuilder" addonbuilder.exe "P:\RationalGPS" S:\Mod-Packed\@RationalGPS\addons -clear -project=P:  
+	
+	$addonbuilder = Read-SteamCommon
+	$addonbuilder = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder\addonbuilder.exe"
+	$command = $addonbuilder
+	
+	$modname = Read-ModParam -key "ModName"
+	
+	$packedmodf = Read-GlobalParam -key "PackedModFolder"
+	$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
+	$paramsetting = "P:\" + $modname
+	$paramsetting = $paramsetting + "," + $packedmodf
+	$paramsetting = $paramsetting + ", -project=P:"
+	
+	
+	$params = $paramsetting.Split(',')
+	
+	if ($commandline)
+	{
+		$output = $command + "`n" + $params
+		return $output
+		
+	}
+	
+	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+	
+	Set-BuildSuccess
+	
+}
+
+<#
+	.SYNOPSIS
+		Turns build log button green or red to indicate build success or failure
+	
+	.DESCRIPTION
+		A detailed description of the Set-BuildSuccess function.
+	
+	.EXAMPLE
+				PS C:\> Set-BuildSuccess
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Set-BuildSuccess
+{
+	[CmdletBinding()]
+	param ()
+	
+	$lastbuild = Get-ScriptDirectory
+	$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
+	
+	$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
+	$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
+	if ($success)
+	{
+		$buttonOpenBuildLog.BackColor = 'Green'
+	}
+	elseif ($failure)
+	{
+		$buttonOpenBuildLog.BackColor = 'Red'
+		
+	}
+}
+
+
+function Start-BuildBroken
 {
 	[CmdletBinding()]
 	[OutputType([string])]
@@ -395,7 +470,7 @@ function Start-Build
 		else
 		{
 			Set-Location "P:"
-			Start-Process "pboProject.exe" -ArgumentList $params -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+			Start-Process "pboProject.exe" -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
 		}
 		
 		
@@ -428,8 +503,23 @@ function Start-Build
 			
 		}
 		
-		Start-Process $command -ArgumentList $params -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
-		Link-Packed
+		Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+		$lastbuild = Get-ScriptDirectory
+		$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
+		
+		$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
+		$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
+		if ($success)
+		{
+			$buttonOpenBuildLog.BackColor = 'Green'
+		}
+		elseif ($failure )
+		{
+			$buttonOpenBuildLog.BackColor = 'Red'
+			
+		}
+		
+		Link-All
 		
 	}
 }
@@ -542,6 +632,48 @@ function Assert-DayzFolder
 		return $false
 	}
 }
+
+
+<#
+	.SYNOPSIS
+		Determine whether a profile folder exists in server folder
+	
+	.DESCRIPTION
+		Determine whether a profile folder exists in server folder. 
+	
+	.EXAMPLE
+				PS C:\> Assert-ProfilesFolder
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Assert-ProfilesFolder
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	
+	$testpath = Read-GlobalParam -key "ServerFolder"
+	$testpath = Add-Folder -Source $testpath -Folder "Profiles"
+	if (Test-Path -Path $testpath)
+	{
+		if ($outpath)
+		{
+			$outpath.Value = $testpath
+		}
+		
+		return $true
+	}
+	else
+	{
+		return $false
+	}
+}
+
 function Assert-ToolsFolder
 {
 	[CmdletBinding()]
@@ -721,6 +853,69 @@ function Link-DayzFolders
 	$output = $link  + "  ---->>  " + $target + "`n`n"
 	Add-Content -Path "links.txt" -Value $output
 }
+
+
+<#
+	.SYNOPSIS
+		Remove all symbolic links
+	
+	.DESCRIPTION
+		Remove all symbolic links in P: and Dayz folders.
+	
+	.EXAMPLE
+				PS C:\> Remove-AllLinks
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Remove-AllLinks
+{
+	[CmdletBinding()]
+	param ()
+	
+	Remove-FolderLinks -Folder "P:\"
+	$dayzf = Read-GlobalParam -key "GameFolder"
+	Remove-FolderLinks -Folder $dayzf
+	
+}
+
+<#
+	.SYNOPSIS
+		Remove symbolic links in  a single folder
+	
+	.DESCRIPTION
+		A detailed description of the Remove-FolderLinks function.
+	
+	.PARAMETER Folder
+		A description of the Folder parameter.
+	
+	.EXAMPLE
+		PS C:\> Remove-FolderLinks
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Remove-FolderLinks
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$Folder
+	)
+	
+	$targetfiles = Get-ChildItem $Folder *.* -Directory
+	
+	foreach ($link in $targetfiles)
+	{
+		if ((Get-Item -Path $link.PSPath -Force).LinkType)
+		{
+			Remove-Item -Path $link.PSPath -Recurse
+		}
+	}
+}
+
+
 function Link-All
 {
 	[CmdletBinding()]

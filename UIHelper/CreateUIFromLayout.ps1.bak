@@ -1,0 +1,152 @@
+# Read Config File
+(Get-Content -Path '.\UIHelper.cfg') | foreach { 
+    $token = $_ -split ' +'
+    for ($i=0;$i -le 8;$i++){
+
+		if($token[$i] -like "*LayoutFolder*")
+		{
+			$layoutfolder = $token[$i + 2]
+		}
+		if($token[$i] -like "*ScriptsFolder*")
+		{
+			$scriptsfolder = $token[$i + 2]			
+		}
+		if($token[$i] -like "*InputsFolder*")
+		{
+			$inputsfolder = $token[$i + 2]			
+		}
+    }
+
+}
+
+
+# Look for layout in folder defined in config
+$rootfolder = Get-Location
+$templatefolder = "UIHelperTemplate"
+$layout = ".layout"
+
+# Create File Open Dialog to grab layout file
+Add-Type -AssemblyName System.Windows.Forms
+
+
+$FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{
+    InitialDirectory = $layoutfolder
+    Filter           = 'Layout (*.layout)|*.layout'
+}
+
+$null = $FileBrowser.ShowDialog()
+
+$layoutpath = $FileBrowser.FileName
+
+$Name = (Get-Item $FileBrowser.FileName).Basename
+
+
+#Copy UI folder
+Write-Host "- Copying UI folder to new folder $Name ...."
+
+If (Test-Path -Path $Name) { 
+	Write-Host "*** Error: a $Name folder already exists in this location. Please delete $Name folder and rerun this script."
+	Read-Host "*** Any key to exit on error"
+	Exit 0
+	
+}
+Copy-Item .\$templatefolder -Destination ".\$Name" -Recurse 
+
+# Remove git folder if it exists
+If (Test-Path -Path ".\$Name\.git") { 
+	Remove-Item ".\$Name\.git" -Recurse -Force
+}
+
+# Rename UI.c
+$NewUIName = "UI" + $Name + ".c"
+$SourePath = ".\" + "$Name\5_Mission\UIHelper\UI\UI.c"
+Rename-Item $SourePath -NewName $NewUIName
+	
+# Rename internal reference to UI_ID
+
+
+$replacementID = "UI_" + $Name + "ID"
+$targetfiles = Get-ChildItem $Name *.* -File -rec
+foreach ($file in $targetfiles)
+{
+	(Get-Content $file.PSPath) |
+	Foreach-Object { $_ -replace "UI_ID", $replacementID  } |
+	Set-Content $file.PSPath	
+}
+
+foreach ($file in $targetfiles)
+{
+	(Get-Content $file.PSPath) |
+	Foreach-Object { $_ -replace "UI", "UI$Name"  } |
+	Set-Content $file.PSPath	
+}
+
+$utilname = $Name + "Utils"
+foreach ($file in $targetfiles)
+{
+	(Get-Content $file.PSPath) |
+	Foreach-Object { $_ -replace "Utils", $utilname  } |
+	Set-Content $file.PSPath	
+}
+Read-Host "After UIMenu Replacement"
+
+# change back to forward slashes because dayz needs that
+$forwardslashlayoutpath = $layoutpath -replace "\\", "/"
+
+foreach ($file in $targetfiles)
+{
+	(Get-Content $file.PSPath) |
+	Foreach-Object { $_ -replace "S:/Mod-Source/SecondMod/Scripts/GUI/Layouts/PushMeButton.layout", $forwardslashlayoutpath  } |
+	Set-Content $file.PSPath	
+}
+
+# Call powershell to create code for later substitution into the scripts created above
+& ".\CallCreateUICode.ps1" -layoutname $Name -layoutpath $layoutpath
+Read-Host "Any key before code insertion"
+# Call powershell to insert code into scripts
+& ".\CallInsertUICode.ps1" -layoutname $Name
+
+
+# copying inputs.xml
+$inputsfile = 'inputs.xml'
+$inputsfileui = 'uiinputs.xml'
+If (Test-Path -Path $inputsfolder$inputsfile ) {
+	Copy-Item ".\$Name\inputs.xml" $inputsfolder$inputsfileui
+	Write-Host "Creating $inputsfileui....."  
+	Write-Host "IMPORTANT!!! You must integrate $inputsfileui into the existing inputs.xml before the keybinds will work." 
+} else {
+	# as no inputs.xml exists, create a new one
+	Copy-Item ".\$Name\inputs.xml" $inputsfolder 
+
+	
+	
+}
+
+# copying 3_Game
+$gamepath = "$scriptsfolder" + "3_Game"
+If (Test-Path -Path $gamepath\UIHelper) {
+	Write-Host	"Error: $gamepath \UIHelper folder already exists!!!"
+} else {
+	# copy folder
+	Copy-Item ".\$Name\3_Game\UIHelper\" -Destination $gamepath  -Recurse 	
+}
+
+# copying 5_Mission
+$missionpath = "$scriptsfolder" + "5_Mission"
+If (Test-Path -Path $missionpath\UIHelper) {
+	Write-Host	"Error: $missionpath\UIHelper folder already exists!!!"
+} else {
+	# copy folder
+	Copy-Item ".\$Name\5_Mission\UIHelper\" -Destination $missionpath -Recurse 	
+
+}
+
+#Remove temporary files
+Remove-Item ".\Switch.txt" 
+Remove-Item ".\Definitions.txt" 
+Remove-Item ".\Casts.txt" 
+Remove-Item ".\Temp.txt" 
+
+Write-Host ""
+Write-Host ""
+Exit 0

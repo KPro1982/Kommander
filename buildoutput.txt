@@ -1,28 +1,38 @@
-[2022-12-14 15:03:02,827] [INFO ]: ==========================================================================
-[2022-12-14 15:03:02,829] [INFO ]: WELCOME TO ADDON BUILDER
-[2022-12-14 15:03:02,831] [INFO ]: Version: 1.0.240639
-[2022-12-14 15:03:02,831] [INFO ]: ==========================================================================
-[2022-12-14 15:03:02,832] [INFO ]: 
-[2022-12-14 15:03:02,832] [INFO ]: DayZ Tools path retrived from the last use with steam 'S:\Steam\steamapps\common\DayZ Tools'.
-[2022-12-14 15:03:02,836] [INFO ]: --------------------
-[2022-12-14 15:03:02,837] [INFO ]:        Binarize -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\Binarize\binarize.exe'.
-[2022-12-14 15:03:02,837] [INFO ]:      CfgConvert -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\CfgConvert\CfgConvert.exe'.
-[2022-12-14 15:03:02,837] [INFO ]:      DsSignFile -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\DsUtils\DSSignFile.exe'.
-[2022-12-14 15:03:02,837] [INFO ]:        FileBank -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\PboUtils\FileBank.exe'.
-[2022-12-14 15:03:02,838] [INFO ]: --------------------
-[2022-12-14 15:03:02,861] [INFO ]: Builder starting...
-[2022-12-14 15:03:02,862] [INFO ]: Clearing temp folder. [temp=]=C:\Users\Daniel\AppData\Local\Temp\firstmod
-[2022-12-14 15:03:03,209] [INFO ]: Done.
-[2022-12-14 15:03:03,210] [INFO ]: 
-[2022-12-14 15:03:03,211] [INFO ]: Syncing folders... [source]=P:\FirstMod, [sync]=C:\Users\Daniel\AppData\Local\Temp\firstmod
-[2022-12-14 15:03:03,212] [INFO ]: Done.
-[2022-12-14 15:03:03,212] [INFO ]: 
-[2022-12-14 15:03:03,212] [INFO ]: Converting configs ...
-[2022-12-14 15:03:03,215] [INFO ]:  - Converting cfg "P:\FirstMod\Scripts\config.cpp"
-[2022-12-14 15:03:03,238] [ERROR]: CfgConvert returned error. Canceling... [result]=1
-[2022-12-14 15:03:03,238] [ERROR]: Process ended with non-zero code. Exit code: 1
-[2022-12-14 15:03:03,238] [ERROR]: !> File P:\FirstMod\Scripts\config.cpp, line 40: Config: '"' encountered instead of ','
-[2022-12-14 15:03:03,238] [ERROR]: !> Config : some input after EndOfFile.
-[2022-12-14 15:03:03,238] [ERROR]: !> Error reading config file 'P:\FirstMod\Scripts\config.cpp'
-[2022-12-14 15:03:03,238] [ERROR]: !> 
-[2022-12-14 15:03:03,239] [ERROR]: Build failed
+[2022-12-16 17:57:28,195] [INFO ]: ==========================================================================
+[2022-12-16 17:57:28,198] [INFO ]: WELCOME TO ADDON BUILDER
+[2022-12-16 17:57:28,199] [INFO ]: Version: 1.0.240639
+[2022-12-16 17:57:28,199] [INFO ]: ==========================================================================
+[2022-12-16 17:57:28,199] [INFO ]: 
+[2022-12-16 17:57:28,200] [INFO ]: DayZ Tools path retrived from the last use with steam 'S:\Steam\steamapps\common\DayZ Tools'.
+[2022-12-16 17:57:28,205] [INFO ]: --------------------
+[2022-12-16 17:57:28,205] [INFO ]:        Binarize -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\Binarize\binarize.exe'.
+[2022-12-16 17:57:28,205] [INFO ]:      CfgConvert -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\CfgConvert\CfgConvert.exe'.
+[2022-12-16 17:57:28,205] [INFO ]:      DsSignFile -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\DsUtils\DSSignFile.exe'.
+[2022-12-16 17:57:28,205] [INFO ]:        FileBank -      found: 'S:\Steam\steamapps\common\DayZ Tools\bin\PboUtils\FileBank.exe'.
+[2022-12-16 17:57:28,205] [INFO ]: --------------------
+[2022-12-16 17:57:28,208] [INFO ]: Builder starting...
+[2022-12-16 17:57:28,208] [INFO ]: Syncing folders... [source]=P:\NPCPro, [sync]=C:\Users\Daniel\AppData\Local\Temp\npcpro
+[2022-12-16 17:57:28,213] [INFO ]: Done.
+[2022-12-16 17:57:28,214] [INFO ]: 
+[2022-12-16 17:57:28,214] [INFO ]: Converting configs ...
+[2022-12-16 17:57:28,219] [INFO ]:  - Converting cfg "P:\NPCPro\Scripts\config.cpp"
+[2022-12-16 17:57:28,245] [INFO ]:  - Converting cfg "C:\Users\Daniel\AppData\Local\Temp\npcpro\Scripts\config.txt"
+[2022-12-16 17:57:28,264] [INFO ]: Converting done.
+[2022-12-16 17:57:28,265] [INFO ]: Done.
+[2022-12-16 17:57:28,265] [INFO ]: 
+[2022-12-16 17:57:28,266] [INFO ]: Binarizing ...
+[2022-12-16 17:57:30,596] [INFO ]: Done.
+[2022-12-16 17:57:30,597] [INFO ]: 
+[2022-12-16 17:57:30,598] [INFO ]: Deleting empty folders in "C:\Users\Daniel\AppData\Local\Temp\npcpro"
+[2022-12-16 17:57:30,598] [INFO ]: Done.
+[2022-12-16 17:57:30,598] [INFO ]: 
+[2022-12-16 17:57:30,599] [INFO ]: Binarizing texture headers...
+[2022-12-16 17:57:30,625] [INFO ]: Done.
+[2022-12-16 17:57:30,625] [INFO ]: 
+[2022-12-16 17:57:30,626] [INFO ]: Packing "C:\Users\Daniel\AppData\Local\Temp\npcpro"...
+[2022-12-16 17:57:30,710] [INFO ]: Done.
+[2022-12-16 17:57:30,712] [INFO ]: 
+[2022-12-16 17:57:30,712] [INFO ]: Copying PBO. [source]=C:\Users\Daniel\AppData\Local\Temp\NPCPro.pbo, [dest]=S:\Mod-Packed\@NPCPro\addons\NPCPro.pbo
+[2022-12-16 17:57:30,713] [INFO ]: Done.
+[2022-12-16 17:57:30,713] [INFO ]: 
+[2022-12-16 17:57:30,713] [INFO ]: Build Successful

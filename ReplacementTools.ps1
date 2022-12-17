@@ -1,4 +1,4 @@
-﻿<#	
+<#	
 	.NOTES
 	===========================================================================
 	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2022 v5.8.213
@@ -207,4 +207,72 @@ function Edit-TemplateFileByRegion
 }
 
 
-
+function Edit-BatchFiles
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$Modfolder,
+		[Parameter(Mandatory = $true)]
+		[string]$Modname
+	)
+	
+	$targetfiles = Get-ChildItem $ModFolder  *.* -File -rec
+	
+	foreach ($file in $targetfiles)
+	{
+		if ($file.Extension -eq ".bat")
+		{
+			# WB_WORKBENCHFOLDER
+			$workbenchf = ""
+			Assert-WorkbenchFolder -outpath ([ref]$workbenchf)
+			Edit-TemplateTokens -Source "WB_WORKBENCHFOLDER" -Replace $workbenchf -File $file -Folder $ModFolder
+			
+			#WB_PROJECTDRIVE
+			$projectdrive = ""
+			Assert-ProjectDrive -outpath ([ref]$projectdrive)
+			$projectdrive = $projectdrive.TrimEnd('\')
+			Edit-TemplateTokens -Source "WB_PROJECTDRIVE" -Replace $projectdrive -File $file -Folder $ModFolder
+			
+			# WB_PDRIVEPACKEDMOD
+			$ppacked = ""
+			Assert-ProjectDrive -outpath ([ref]$ppacked)
+			$ppacked = Add-Folder -Source $ppacked -Folder "@$ModName"
+			Edit-TemplateTokens -Source "WB_PDRIVEPACKEDMOD" -Replace $ppacked -File $file -Folder $ModFolder
+			
+			
+			# WB_ADDONBUILDER
+			$addonbuilder = Read-SteamCommon
+			$addonbuilder = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder"
+			Edit-TemplateTokens -Source "WB_ADDONBUILDERFOLDER" -Replace $addonbuilder -File $file -Folder $ModFolder
+			
+			
+			# WB_PACKEDMOD
+			$packmod = Read-GlobalParam -key "PackedModFolder"
+			$packmod = Add-Folder -Source $packmod -Folder "@$ModName"
+			Edit-TemplateTokens -Source "WB_PACKEDMOD" -Replace $packmod -File $file -Folder $ModFolder
+			
+			
+			# WB_DAYZFOLDER
+			$dayzf = ""
+			Assert-DayzFolder -outpath ([ref]$dayzf)
+			Edit-TemplateTokens -Source "WB_DAYZFOLDER" -Replace $dayzf -File $file -Folder $ModFolder
+			
+			
+			# WB_PROFILES
+			$dzprofies = ""
+			Assert-DayzFolder -outpath ([ref]$dzprofies)
+			$dzprofies = Add-Folder -Source $dzprofies -Folder "Profiles"
+			Edit-TemplateTokens -Source "WB_PROFILES" -Replace $dzprofies -File $file -Folder $ModFolder
+			
+			# WB_MODNAME
+			Edit-TemplateTokens -Source "WB_MODNAME" -Replace $Modname -File $file -Folder $ModFolder
+			
+			# WB_SOURCEFOLDER
+			$sourcefolder = Read-GlobalParam -key "ModSourceFolder"
+			Edit-TemplateTokens -Source "WB_SOURCEFOLDER" -Replace $sourcefolder -File $file -Folder $ModFolder
+		}
+		
+	}
+}
