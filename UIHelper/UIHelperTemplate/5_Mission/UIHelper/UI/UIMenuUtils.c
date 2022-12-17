@@ -1,4 +1,4 @@
-class Utils
+class UIMenuUtils
 {
 
 	static void LockControls()

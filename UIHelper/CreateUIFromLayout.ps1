@@ -8,7 +8,7 @@ function Edit-UICodeFromLayout
 	
 	$layoutfolder = Read-ModParam -key "LayoutFolder"
 	$scriptsfolder = Read-ModParam -key "ScriptsFolder"
-	$inputsfolder = Read-ModParam -key "InputsFolder"
+
 	
 	
 	
@@ -17,8 +17,12 @@ function Edit-UICodeFromLayout
 	
 	
 	$rootfolder = Get-Location
+	$rootfolder = Add-Folder -Source $rootfolder -Folder "UIHelper"
 	$templatefolder = "UIHelperTemplate"
 	$layout = ".layout"
+	$modkommanderf = Read-GlobalParam -key "CurrentModFolder"
+	$modkommanderf = Add-Folder -Source $modkommanderf -Folder "Kommander"
+	Set-Location -Path $rootfolder
 	
 	# forms asset not automatically loaded, so load it now
 	Add-Type -AssemblyName System.Windows.Forms
@@ -28,7 +32,7 @@ function Edit-UICodeFromLayout
 	# strip away the full path.
 	# UI variables will be renamed to include the layout name so that we can have multiple UI's in the same mod
 	
-	$Name = (Get-Item $FileBrowser.FileName).Basename
+	$Name = (Get-Item $layoutpath).Basename
 	
 	##############################################################################
 	#Copy and Rename UIHelperTemplate
@@ -45,23 +49,18 @@ function Edit-UICodeFromLayout
 	}
 	
 	# This is the actual copy instruction. Recurse flag is needed to copy subfolders
-	Copy-Item .\$templatefolder -Destination ".\$Name" -Recurse
+	Copy-Item .\$templatefolder -Destination "$modkommanderf\$Name" -Recurse
 	
-	# Remove git folder if it exists
-	If (Test-Path -Path ".\$Name\.git")
-	{
-		Remove-Item ".\$Name\.git" -Recurse -Force
-	}
 	
 	##############################################################################
 	# Rename files inside the new copy of the UITemplate Folder using the $Name value we captured above
 	
 	# Rename UITemplate.c This is our main menu class. This changes the filename NOT internal references to the class
 	$NewUIName = "UI" + $Name + ".c"
-	$SourePath = ".\" + "$Name\5_Mission\UIHelper\UI\UITemplate.c"
-	Rename-Item $SourePath -NewName $NewUIName
+	$SourcePath = Add-Folder -Source $modkommanderf -Folder "$Name\5_Mission\UIHelper\UI\UITemplate.c"
+	Rename-Item $SourcePath -NewName $NewUIName
 	
-	
+	Set-Location -Path $modkommanderf
 	
 	##############################################################################
 	# Rename internal reference from the generic template name to a specific name based on the $Name value
@@ -69,49 +68,26 @@ function Edit-UICodeFromLayout
 	
 	# Rename internal reference to UI_TEMPLATEID which is the constant contained in constants.c
 	$replacementID = "UI_" + $Name + "ID"
-	$targetfiles = Get-ChildItem $Name *.* -File -rec
+	# $targetfiles = Get-ChildItem $Name *.* -File -rec
 	
-	# This loop will check all of the files. Its a more general solution than targeting specific files
-	# Its more flexible if we expand the number of files
-	# But we have to be careful that the values targeted for replacement are unique otherwise ooof
-	
-	foreach ($file in $targetfiles)
-	{
-		(Get-Content $file.PSPath) |
-		Foreach-Object { $_ -replace "UI_TEMPLATEID", $replacementID } |
-		Set-Content $file.PSPath
-	}
-	
-	
+	Edit-TemplateTokens -Source "UI_TEMPLATEID" -Replace $replacementID -Folder $Name -Recurse
+
+
 	# Rename the main class INSIDE files. The filename was changed above
 	$uitempname = "UI" + $Name
-	foreach ($file in $targetfiles)
-	{
-		(Get-Content $file.PSPath) |
-		Foreach-Object { $_ -replace "UITemplate", $uitempname } |
-		Set-Content $file.PSPath
-	}
+	Edit-TemplateTokens -Source "UITemplate" -Replace $uitempname -Folder $Name -Recurse
 	
 	# Rename the helper class inside UIMenuUtils to a unique name for each new layout processed.
 	# Otherwise we will get a duplicate definition error if two of our mods run at the same time.
 	$utilname = $Name + "Utils"
-	foreach ($file in $targetfiles)
-	{
-		(Get-Content $file.PSPath) |
-		Foreach-Object { $_ -replace "UIMenuUtils", $utilname } |
-		Set-Content $file.PSPath
-	}
+	Edit-TemplateTokens -Source "UIMenuUtils" -Replace $utilname  -Folder $Name -Recurse
 	
 	# change back to forward slashes because dayz needs that
 	$forwardslashlayoutpath = $layoutpath -replace "\\", "/"
 	
 	# Insert the correct layout path into the Init() method of our main class
-	foreach ($file in $targetfiles)
-	{
-		(Get-Content $file.PSPath) |
-		Foreach-Object { $_ -replace "FULLLAYOUTPATH", $forwardslashlayoutpath } |
-		Set-Content $file.PSPath
-	}
+	Edit-TemplateTokens -Source "FULLLAYOUTPATH" -Replace $forwardslashlayoutpath -Folder $Name -Recurse
+
 	
 	##############################################################################
 	# Call additional scripts
@@ -121,35 +97,36 @@ function Edit-UICodeFromLayout
 	
 	
 	# Code creation script
-	& ".\CallCreateUICode.ps1" -layoutname $Name -layoutpath $layoutpath
+	Edit-CreateCode -layoutname $Name -layoutpath $layoutpath
 	
 	
 	#  insert generated code into template scripts
-	& ".\CallInsertUICode.ps1" -layoutname $Name
+	Edit-InsertCode -layoutname $Name
+
 	
 	##############################################################################
 	# Copying files from the UIHelper folder into their proper location
 	# copying inputs.xml
-	
-	$inputsfile = 'inputs.xml'
-	$inputsfileui = 'uiinputs.xml'
-	If (Test-Path -Path $inputsfolder$inputsfile)
+	$inputsfolder = Read-ModParam -key "InputsFolder"
+	$inputsxml = Add-Folder -Source $inputsfolder -Folder "inputs.xml"
+	$inputsfileui = Add-Folder -Source $inputsfolder -Folder "uiinputs.xml"
+	If (Test-Path -Path $inputsxml )
 	{
 		# User already has an inputs.xml
 		# So call it uiinputs.xml and inform the user that they have to integrate manually
-		Copy-Item ".\$Name\inputs.xml" $inputsfolder$inputsfileui
+		Copy-Item ".\$Name\inputs.xml" $inputsfileui
 		Write-Host "Creating $inputsfileui....."
 		Write-Host "IMPORTANT!!! You must integrate $inputsfileui into the existing inputs.xml before the keybinds will work."
 	}
 	else
 	{
 		# as no inputs.xml exists, create a new one
-		Copy-Item ".\$Name\inputs.xml" $inputsfolder
+		Copy-Item ".\$Name\inputs.xml" $inputsxml
 		
 	}
 	
 	# copying 3_Game
-	$gamepath = "$scriptsfolder" + "3_Game"
+	$gamepath = Add-Folder -Source $scriptsfolder -Folder "3_Game"
 	If (Test-Path -Path $gamepath\UIHelper)
 	{
 		Write-Host	"Error: $gamepath \UIHelper folder already exists!!!"
@@ -162,7 +139,7 @@ function Edit-UICodeFromLayout
 	}
 	
 	# copying 5_Mission
-	$missionpath = "$scriptsfolder" + "5_Mission"
+	$missionpath = Add-Folder -Source $scriptsfolder -Folder "5_Mission"
 	If (Test-Path -Path $missionpath\UIHelper)
 	{
 		Write-Host	"Error: $missionpath\UIHelper folder already exists!!!"
@@ -183,5 +160,5 @@ function Edit-UICodeFromLayout
 	
 	Write-Host ""
 	Write-Host ""
-	Exit 0
+
 }

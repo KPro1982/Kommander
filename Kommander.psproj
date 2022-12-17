@@ -18,8 +18,8 @@
     <File Build="0" ReferenceFunction="Show-TemplateSettings_psf">TemplateSettings.psf</File>
     <File Build="0" Shared="True" ReferenceFunction="Invoke-ReplacementTools_ps1">ReplacementTools.ps1</File>
     <File Build="0" ReferenceFunction="Show-DisplayLogs_psf">DisplayLogs.psf</File>
-    <File Build="0" Shared="False" ReferenceFunction="Invoke-CallCreateUICode_ps1">UIHelper\CallCreateUICode.ps1</File>
-    <File Build="0" Shared="False" ReferenceFunction="Invoke-CallInsertUICode_ps1">UIHelper\CallInsertUICode.ps1</File>
+    <File Build="0" Shared="True" ReferenceFunction="Invoke-CallCreateUICode_ps1">UIHelper\CallCreateUICode.ps1</File>
+    <File Build="0" Shared="True" ReferenceFunction="Invoke-CallInsertUICode_ps1">UIHelper\CallInsertUICode.ps1</File>
     <File Build="0" Shared="True" ReferenceFunction="Invoke-CreateUIFromLayout_ps1">UIHelper\CreateUIFromLayout.ps1</File>
     <File Build="0" ReferenceFunction="Show-CreateUI_psf">CreateUI.psf</File>
   </Files>

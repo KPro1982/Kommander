@@ -1,4 +1,4 @@
-class UI extends UIScriptedMenu
+class UITemplate extends UIScriptedMenu
 {
 	
     private bool                 m_Initialized;
@@ -7,7 +7,7 @@ class UI extends UIScriptedMenu
 
 	// [INSERTDEFINITIONS]
 
-    void UI()
+    void UITemplate()
     {
 		/*
 			This is the constructor, called when this class is instantiated
@@ -15,7 +15,7 @@ class UI extends UIScriptedMenu
     }
 
 
-    void ~UI() 
+    void ~UITemplate() 
     {		
 		/*
 			This is the destructor, called when this class is deleted / destroyed
@@ -38,7 +38,7 @@ class UI extends UIScriptedMenu
     override void OnShow()
     {
         super.OnShow();
-		Utils.LockControls();
+		UIMenuUtils.LockControls();
         PPEffects.SetBlurMenu( UI_BLUR ); //Add blurr effect
 				
 	/*
@@ -54,7 +54,7 @@ class UI extends UIScriptedMenu
         super.OnHide();
         PPEffects.SetBlurMenu( UI_NOBLUR ); //Remove blurr effect
 
-		Utils.UnlockControls();
+		UIMenuUtils.UnlockControls();
 
         /*
 			Unlock controls, this also happens in missionGameplay.c however including it here will assure control is gained back incase that method is not invoked. 
@@ -71,7 +71,7 @@ class UI extends UIScriptedMenu
         if (!m_Initialized) 
 			
         {
-			layoutroot = GetGame().GetWorkspace().CreateWidgets( "S:/Mod-Source/SecondMod/Scripts/GUI/Layouts/PushMeButton.layout");
+			layoutroot = GetGame().GetWorkspace().CreateWidgets( "FULLLAYOUTPATH");
 
 			//Define elements from .layout ( you must cast each element to its according script class if you wish to use its functions see scripts\1_Core\proto\EnWidgets.c )
 
