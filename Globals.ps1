@@ -899,7 +899,32 @@ function Assert-ProjectDrive
 	}
 }
 
+function Assert-TemplateFolder
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[ref]$outpath
+	)
+	
+	$kommanderf = Get-ScriptDirectory
+	$testpath = Add-Folder -Source $kommanderf -Folder "TemplateMod"
 
+	if (Test-Path -Path $testpath)
+	{
+		if ($outpath)
+		{
+			$outpath.Value = $testpath
+		}
+		return $true
+	}
+	else
+	{
+		return $false
+	}
+}
 
 
 

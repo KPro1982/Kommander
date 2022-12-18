@@ -517,6 +517,12 @@ Nkvm1jao8fg/JBKmRX8xAAA=</Form>
 $formTemplateSettings_Load={
 	#TODO: Initialize Form Controls here
 	$templatef = Read-GlobalParam -key "TemplateFolder"
+	if (-not $templatef)
+	{
+		$templatef = ""
+		Assert-TemplateFolder -outpath ([ref]$templatef)								
+	}
+	
 	$texttemplatefolder.Text = $templatef
 	$textreplace1.Text = Read-TemplateParam -key "TEMPLATEMOD"
 	$textreplace2.Text = Read-TemplateParam -key "TMSHORT"
@@ -577,6 +583,6 @@ $buttonhelpshortcode_Click={
 	Show-messageform_psf
 }
 ]]></Code>
-  <Mode>0</Mode>
+  <Mode>1</Mode>
   <Assemblies />
 </File>

@@ -1,4 +1,4 @@
-<File version="3.2">
+﻿<File version="3.2">
   <FileID>de300ddc-d27d-4a2e-a61f-2854c8b4b7f3</FileID>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAKPhSURBVHhe7J0FfBXXuvZ7z7333HO+4+05p3qq
@@ -738,47 +738,48 @@ zJlzh/mfr3HjxgdjYnoGYmJiA2YxAACAG1dMbM9A06ZN888d5omIiIiIiIiIiIiIiIiIiIiIiIiI
 iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI
 iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI
 iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI6Ibsppv+D4ES1fWFS/WfAAAAAElFTkSuQmCC</Preview>
-  <Form>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</Form>
+  <Form>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</Form>
   <Code><![CDATA[
 $formCreateMod_Load={
 	#TODO: Initialize Form Controls here
 	$checkboxServersideSettings.Enabled = $true
 	$checkboxSyncedServerClientSe.Enabled = $false
-	$checkboxExampleUI.Enabled = $false
+	$checkboxExampleUI.Enabled = $true
 }
 
 $buttonBuildSettings_Click={
@@ -794,7 +795,7 @@ $buttonCreate_Click = {
 	New-ModFromTemplate
 
 	
-	if ($checkboxKeybind.Checked -eq $true) # INCLUDE KEYBIND
+	if (($checkboxKeybind.Checked -eq $true) -and ($checkboxExampleUI.Checked -eq $false)) # INCLUDE KEYBIND
 	{
 		# add the input key code into inputs.xml
 		$dataf = Add-Folder -Source $curmodfolder -Folder "Scripts\Data"
@@ -810,7 +811,22 @@ $buttonCreate_Click = {
 		
 		
 	}
-	else # EXCLUDE KEYBIND
+	elseif ($checkboxExampleUI.Checked -eq $true) # SETUP for UI Demo
+	{
+		# leave inputs.xml definition in config.cpp
+		$scriptsf = Add-Folder -Source $curmodfolder -Folder "Scripts"
+		Edit-TemplateTokens -Source "`/`/ TM_NOINPUTSTART" -Replace "" -Folder $scriptsf -File "config.cpp"
+		Edit-TemplateTokens -Source "`/`/ TM_NOINPUTEND" -Replace "" -Folder $scriptsf -File "config.cpp"
+		
+		# delete the inputs.xml because the createUIfromTemplate tool creates itsown
+		$dataf = Add-Folder -Source $curmodfolder -Folder "Scripts\Data"
+		$inputsxml = Add-Folder -Source $dataf -Folder "inputs.xml"
+		Remove-Item -Path $inputsxml
+
+		
+	}
+	
+	elseif ($checkboxKeybind.Checked -eq $false) # No keybind requested
 	{
 		# delete inputs.xml defintion from config.cpp
 		$scriptsf = Add-Folder -Source $curmodfolder -Folder "Scripts"
@@ -820,10 +836,12 @@ $buttonCreate_Click = {
 		Edit-TemplateByRegion -Folder $missionfolder -File "modded_MissionGameplay.c"   -RegionStart "`/`/ TM_REMOVEINPUTSTART" -RegionEnd "`/`/ TM_REMOVEINPUTEND"
 	}
 	
+	# Serverside Settings
+	$missionfolder = Add-Folder -Source $curmodfolder -Folder "Scripts\5_Mission\$modName"
 	if ($checkboxServersideSettings.Checked -eq $true)  # INCLUDE Serverside Settings
 	{
 		# Cleanup unused tokens
-		$missionfolder = Add-Folder -Source $curmodfolder -Folder "Scripts\5_Mission\$modName"
+
 		Edit-TemplateTokens -Source "`/`/ TM_REMOVEKONFIGSTART" -Replace "" -Folder $missionfolder -File "modded_MissionServer.c"
 		Edit-TemplateTokens -Source "`/`/ TM_REMOVEKONFIGEND" -Replace "" -Folder $missionfolder -File "modded_MissionServer.c"
 	}
@@ -959,11 +977,23 @@ $button2_Click={
 		Show-messageform_psf
 	}
 }
+
+$buttonUIHelp_Click={
+	#TODO: Place custom script here
+	
+	Set-PopupMessage -Message "This option will include the pushme.layout example. It is incompatible with the input key option because the tool creates its own inputs.xml. `n`nSTEPS`n1. Create mod`n2. In tools, run create UI from layout.`n3. Build and launch as normal. `n4. The T key should open the dialog."
+	Show-messageform_psf
+}
+
+
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
+    <Line Disabled="True">24</Line>
     <Line Disabled="True">32</Line>
-    <Line Disabled="False">44</Line>
+    <Line Disabled="True">40</Line>
+    <Line Disabled="True">55</Line>
+    <Line Disabled="False">59</Line>
   </BreakPoints>
   <TracePoints />
   <Mode>1</Mode>

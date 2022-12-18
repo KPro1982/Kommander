@@ -298,9 +298,12 @@ function Start-kServer
 	$modlist = Get-kAddons
 	$gamef = Read-GlobalParam -key "GameFolder"
 	$serverDZ = $gamef + "\serverDZ.cfg"
+	$profilesf = Read-GlobalParam -key "ProfilesFolder" 
+	$profilesparam = "`"-profiles=" + $profilesf + "`""
 	$mods = "`"-mod=" + $modlist + "`""
 	$command = $gamef + "\DayZDiag_x64.exe"
-	$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', '-profiles=S:\Steam\steamapps\common\DayZ\profiles'
+	#$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', '-profiles=S:\Steam\steamapps\common\DayZ\profiles'
+	$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', $profilesparam
 	
 	if ($commandline)
 	{
@@ -310,7 +313,7 @@ function Start-kServer
 	{
 		Set-Folder -key "GameFolder"
 		#& $command @params
-		Start-Process $command -ArgumentList $params  -RedirectStandardOutput serveroutput.txt -RedirectStandardError servererror.txt
+		Start-Process $command -ArgumentList $params  
 		
 	}
 	
@@ -339,7 +342,7 @@ function Start-kMPGame
 	{
 		Set-Folder -key "GameFolder"
 		#& $command @params
-		Start-Process $command -ArgumentList $gameparams -RedirectStandardOutput gameoutput.txt -RedirectStandardError gameerror.txt
+		Start-Process $command -ArgumentList $gameparams 
 	}
 	
 }
