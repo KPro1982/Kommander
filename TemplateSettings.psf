@@ -524,6 +524,7 @@ $formTemplateSettings_Load={
 	}
 	
 	$texttemplatefolder.Text = $templatef
+	Write-GlobalParam -key "TemplateFolder" -value $templatef
 	$textreplace1.Text = Read-TemplateParam -key "TEMPLATEMOD"
 	$textreplace2.Text = Read-TemplateParam -key "TMSHORT"
 }
@@ -555,6 +556,7 @@ function Save-TemplateSettings
 	Write-TemplateParam -key $textsource2.Text -value $textreplace2.Text
 	Write-TemplateParam -key $textsource3.Text -value $textreplace3.Text
 	Write-TemplateParam -key $textsource4.Text -value $textreplace4.Text
+	Write-GlobalParam -key "TemplateFolder" -value $texttemplatefolder.Text
 	
 }
 
@@ -583,6 +585,13 @@ $buttonhelpshortcode_Click={
 	Show-messageform_psf
 }
 ]]></Code>
+  <Bookmarks />
+  <BreakPoints>
+    <Line Disabled="False">11</Line>
+    <Line Disabled="False">20</Line>
+    <Line Disabled="False">43</Line>
+  </BreakPoints>
+  <TracePoints />
   <Mode>1</Mode>
   <Assemblies />
 </File>
