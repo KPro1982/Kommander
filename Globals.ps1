@@ -629,22 +629,7 @@ function Assert-Mikero
 	}
 }
 
-<#
-	.SYNOPSIS
-		Test whether DayzFolder Exists
-	
-	.DESCRIPTION
-		A detailed description of the Assert-DayzFolder function.
-	
-	.PARAMETER dayzfolderpath
-		A description of the dayzfolderpath parameter.
-	
-	.EXAMPLE
-		PS C:\> Assert-DayzFolder
-	
-	.NOTES
-		Additional information about the function.
-#>
+
 function Assert-DayzFolder
 {
 	[CmdletBinding()]
@@ -659,11 +644,11 @@ function Assert-DayzFolder
 	$testpath = $common + "\DayZ"
 	if (Test-Path -Path $testpath)
 	{
-		if($outpath)
+		if ($outpath)
 		{
 			$outpath.Value = $testpath
 		}
-
+		
 		return $true
 	}
 	else
@@ -678,10 +663,16 @@ function Assert-DayzFolder
 		Determine whether a profile folder exists in server folder
 	
 	.DESCRIPTION
-		Determine whether a profile folder exists in server folder. 
+		Determine whether a profile folder exists in server folder.
+	
+	.PARAMETER outpath
+		A description of the outpath parameter.
+	
+	.PARAMETER Path
+		Path to Server Folder
 	
 	.EXAMPLE
-				PS C:\> Assert-ProfilesFolder
+		PS C:\> Assert-ProfilesFolder
 	
 	.NOTES
 		Additional information about the function.
@@ -692,11 +683,20 @@ function Assert-ProfilesFolder
 	param
 	(
 		[Parameter(Mandatory = $false)]
-		[ref]$outpath
+		[ref]$outpath,
+		$Path
 	)
 	
+	if ($Path)
+	{
+		$testpath = $Path
+	}
+	else
+	{
+		$testpath = Read-GlobalParam -key "ServerFolder"
+	}
 	
-	$testpath = Read-GlobalParam -key "ServerFolder"
+
 	$testpath = Add-Folder -Source $testpath -Folder "Profiles"
 	if (Test-Path -Path $testpath)
 	{

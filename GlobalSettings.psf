@@ -1,4 +1,4 @@
-<File version="3.2">
+﻿<File version="3.2">
   <FileID>d8caaa3b-e9fe-48b8-ad96-deed17835a41</FileID>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAFUESURBVHhe7b3ndxxXnqY5Z/vDfN75G/b0zpfd
@@ -429,6 +429,7 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
+		$testpath = ""
 		Assert-DayzFolder -outpath ([ref]$testpath)
 		$txtGameFolder.Text = $testpath
 		
@@ -439,6 +440,7 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
+		$testpath = ""
 		Assert-DayzFolder -outpath ([ref]$testpath)
 		$txtServerFolder.Text = $testpath
 	}
@@ -448,6 +450,7 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
+		$testpath = ""
 		Assert-WorkbenchFolder -outpath ([ref]$testpath)
 		$txtWorkbenchFolder.Text = $testpath
 	}
@@ -457,6 +460,7 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
+		$testpath = ""
 		Assert-ProjectDrive -outpath ([ref]$testpath)
 		$txtProjectDrive.Text = $testpath
 	}
@@ -466,6 +470,7 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
+		$testpath = ""
 		Assert-DayzFolder -outpath ([ref]$testpath)
 		$testpath = Add-Folder -Source $testpath -Folder "!Workshop"
 		$txtAddonsFolder.Text = $testpath
@@ -476,13 +481,15 @@ $frmGlobalSettings_Load= {
 	}
 	else
 	{
-		Assert-ProfilesFolder -outpath ([ref]$testpath)
+		$testpath = ""
+		Assert-ProfilesFolder -outpath ([ref]$testpath) -Path $txtServerFolder.Text
 		$textboxProfilesFolder.Text = $testpath
 	}
 	
 	
 	$txtPackedModFolder.Text = Read-GlobalParam("PackedModFolder")
 	$txtModSourceFolder.Text = Read-GlobalParam("ModSourceFolder")
+	Save-Globals
 	Update-SaveButton
 }
 
@@ -686,6 +693,11 @@ $buttonLayoutFolder_Click={
 	}
 }
 ]]></Code>
-  <Mode>0</Mode>
+  <Bookmarks />
+  <BreakPoints>
+    <Line Disabled="False">70</Line>
+  </BreakPoints>
+  <TracePoints />
+  <Mode>1</Mode>
   <Assemblies />
 </File>

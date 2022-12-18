@@ -6,13 +6,7 @@
   </OpenFolders>
   <OpenFiles>
     <File>Wizard.psf</File>
-    <File>UIHelper\CreateUIFromLayout.ps1</File>
+    <File>GlobalSettings.psf</File>
     <File>Globals.ps1</File>
-    <File>UIHelper\CallCreateUICode.ps1</File>
-    <File>CreateUI.psf</File>
-    <File>UIHelper\CallInsertUICode.ps1</File>
-    <File>CreateMod.psf</File>
-    <File>TemplateSettings.psf</File>
-    <File>DisplayLogs.psf</File>
   </OpenFiles>
 </ProjectState>
