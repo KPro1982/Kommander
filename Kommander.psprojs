@@ -11,5 +11,6 @@
     <File>UIHelper\CallCreateUICode.ps1</File>
     <File>CreateUI.psf</File>
     <File>UIHelper\CallInsertUICode.ps1</File>
+    <File>CreateMod.psf</File>
   </OpenFiles>
 </ProjectState>

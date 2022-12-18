@@ -65,9 +65,7 @@ function Edit-CreateCode
 	
 	((Get-Content -path $TempFile -Raw) -replace 'Class', '') | Set-Content -Path $TempFile
 	
-	((Get-Content -path $TempFile -Raw) -replace 'FrameWidget', 'Widget') | Set-Content -Path $TempFile
-	
-	((Get-Content -path $TempFile -Raw) -replace 'PanelWidget', 'Widget') | Set-Content -Path $TempFile
+
 	
 	
 	#Remove excluded widgets from temp file
@@ -80,6 +78,12 @@ function Edit-CreateCode
 	{
 		$lines = $lines | Where-Object { -not $_.Contains($ExcludeTerm) }
 	}
+	
+	$lines = $lines -replace 'FrameWidget', 'Widget'
+	$lines = $lines -replace 'PanelWidget', 'Widget'
+	
+
+	
 	
 	# remove empty lines from array
 	$lines = $lines | Where-Object { $_ }

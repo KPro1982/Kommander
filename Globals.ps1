@@ -269,7 +269,8 @@ function Get-KAddons
 	$addonsfolder = Read-GlobalParam -key "AddonsFolder"
 	$modname = Read-ModParam -key "ModName"
 	$packedmodname = '@' + $modname
-	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	#	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	$packedmodpath = Read-GlobalParam -key "ProjectDrive"
 	$packedmodpath = Add-Folder -Source $packedmodpath -Folder $packedmodname
 
 	$modlist = $modlist + $packedmodpath + ';'
@@ -297,9 +298,12 @@ function Start-kServer
 	$modlist = Get-kAddons
 	$gamef = Read-GlobalParam -key "GameFolder"
 	$serverDZ = $gamef + "\serverDZ.cfg"
+	$profilesf = Read-GlobalParam -key "ProfilesFolder" 
+	$profilesparam = "`"-profiles=" + $profilesf + "`""
 	$mods = "`"-mod=" + $modlist + "`""
 	$command = $gamef + "\DayZDiag_x64.exe"
-	$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', '-profiles=S:\Steam\steamapps\common\DayZ\profiles'
+	#$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', '-profiles=S:\Steam\steamapps\common\DayZ\profiles'
+	$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', $profilesparam
 	
 	if ($commandline)
 	{
@@ -308,7 +312,8 @@ function Start-kServer
 	else
 	{
 		Set-Folder -key "GameFolder"
-		& $command @params
+		#& $command @params
+		Start-Process $command -ArgumentList $params  
 		
 	}
 	
@@ -323,20 +328,21 @@ function Start-kMPGame
 	)
 	
 	$modlist = Get-KAddons
-	$gamef = Read-GlobalParam ("GameFolder")
+	$gamef = Read-GlobalParam -key "GameFolder"
+
 	$command = $gamef + "\DayZDiag_x64.exe"
 	$mods = "`"-mod=" + $modlist + "`""
-	$params = $mods, '-filePatching', '-connect=127.0.0.1', '-port=2302'
+	$gameparams = $mods, '-filePatching', '-connect=127.0.0.1', '-port=2302'
 	
 	if ($commandline)
 	{
-		return $command + "`n" + $params
+		return $command + "`n" + $gameparams
 	}
 	else
 	{
 		Set-Folder -key "GameFolder"
-		& $command @params
-		
+		#& $command @params
+		Start-Process $command -ArgumentList $gameparams 
 	}
 	
 }
@@ -351,11 +357,11 @@ function Start-kWorkbench
 	)
 	
 	$modlist = Get-KAddons
-	$workbenchf = Read-GlobalParam -key WorkbenchFolder
-	$workbenchf = Read-GlobalParam -key WorkbenchFolder
+	$workbenchf = Read-GlobalParam -key "WorkbenchFolder"
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
     $mods = "`"-mod=" + $modlist + "`""
 	$params = $mods
+	# $params = "-mod=S:\Mod-Packed\@NPCPro; S:\Mod-Packed\@CF"
 	
 	
 	if ($commandline)
@@ -368,9 +374,13 @@ function Start-kWorkbench
 		
 		$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
 		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Kommander"
-		Set-Location $modworkbenchfolder
-		& $command @params
-
+		#Set-Location $modworkbenchfolder
+		Set-Folder -key "WorkbenchFolder"
+		#Set-Folder -key "CurrentModFolder"
+		# & $command @params
+		
+		
+		Start-Process $command -ArgumentList $params 
 	}
 	
 }
@@ -389,7 +399,8 @@ function Start-Build
 	# start /D "S:\Steam\steamapps\common\DayZ Tools\Bin\AddonBuilder" addonbuilder.exe "P:\RationalGPS" S:\Mod-Packed\@RationalGPS\addons -clear -project=P:  
 	
 	$addonbuilder = Read-SteamCommon
-	$addonbuilder = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder\addonbuilder.exe"
+	$addonbuilderf = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder"
+	$addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Addonbuilder.exe"
 	$command = $addonbuilder
 	
 	$modname = Read-ModParam -key "ModName"
@@ -410,7 +421,9 @@ function Start-Build
 		
 	}
 	
-	$trash = Link-All 
+	$trash = Link-All
+	
+	Set-Location -Path $addonbuilderf
 	
 	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
 	Reset-BuildSuccess

@@ -197,12 +197,19 @@ function Edit-TemplateFileByRegion
 			# remove all lines between start and end
 			for ($ii = $endi; $ii -ge $starti; $ii--)
 			{
-				$arraylist.RemoveAt($ii)
+				$todelete += @($ii)
 			}
 		}
 		$i += 1
 		
 	}
+	
+	foreach ($di in $todelete)
+	{
+		$arraylist.RemoveAt($di)
+	}
+	
+	
 	$arraylist | Set-Content -Path $FilePath
 }
 
