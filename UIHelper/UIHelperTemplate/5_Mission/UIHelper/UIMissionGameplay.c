@@ -1,6 +1,6 @@
 modded class MissionGameplay
 {   
-	ref UI UIMenu;
+	ref UITemplate UITemplateMenu;
 	
 	
 	override void OnUpdate(float timeslice)
@@ -11,23 +11,23 @@ modded class MissionGameplay
 		{				
 			
 			// Menu logic
-			if ( UIMenu ) {
-                if (UIMenu.IsMenuOpen()) {
+			if ( UITemplateMenu ) {
+                if (UITemplateMenu.IsMenuOpen()) {
                     //Hide Menu
-                    UIMenu.SetMenuOpen(false);
-                    GetGame().GetUIManager().HideScriptedMenu(UIMenu);
-                    Utils.UnlockControls();
+                    UITemplateMenu.SetMenuOpen(false);
+                    GetGame().GetUIManager().HideScriptedMenu(UITemplateMenu);
+                    UIMenuUtils.UnlockControls();
                 } else if (GetGame().GetUIManager().GetMenu() == NULL) {
                     //Show Menu
-                    GetGame().GetUIManager().ShowScriptedMenu(UIMenu, NULL);
-                    UIMenu.SetMenuOpen(true);
-                   Utils.LockControls();
+                    GetGame().GetUIManager().ShowScriptedMenu(UITemplateMenu, NULL);
+                    UITemplateMenu.SetMenuOpen(true);
+                   UIMenuUtils.LockControls();
                 }
-            } else if (GetGame().GetUIManager().GetMenu() == NULL && UIMenu == null) {
+            } else if (GetGame().GetUIManager().GetMenu() == NULL && UITemplateMenu == null) {
                 //Create Menu
-                Utils.LockControls();
-                UIMenu = UI.Cast(GetUIManager().EnterScriptedMenu(UI_ID, null));
-				UIMenu.SetMenuOpen(true);
+                UIMenuUtils.LockControls();
+                UITemplateMenu = UITemplate.Cast(GetUIManager().EnterScriptedMenu(UI_TEMPLATEID, null));
+				UITemplateMenu.SetMenuOpen(true);
             }													
 		}
 		

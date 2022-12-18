@@ -1,4 +1,4 @@
-﻿#--------------------------------------------
+#--------------------------------------------
 # Declare Global Variables and Functions here
 #--------------------------------------------
 $CommandlineMessage = ""
@@ -48,15 +48,22 @@ function Get-Settings
 	$fullsettingpath = Add-Folder -Source $settingpath -Folder "$settingname"
 
 	$hashtable = @{ }
-	try
+	
+	if (-not (Test-Path -Path $fullsettingpath))
 	{
-		$json = Get-Content $fullsettingpath | Out-String
+		
+		New-Item -Path $fullsettingpath -ItemType File
 	}
-	catch
+	
+	
+	$json = Get-Content $fullsettingpath | Out-String
+	
+	if ($json)
 	{
-		Return $hashtable
+		(ConvertFrom-Json $json).psobject.properties | Foreach { $hashtable[$_.Name] = $_.Value }
 	}
-	(ConvertFrom-Json $json).psobject.properties | Foreach { $hashtable[$_.Name] = $_.Value }
+	
+	
 	
 	
 	Return $hashtable
@@ -92,10 +99,19 @@ function Set-Settings
 		$settingpath = Get-ScriptDirectory
 
 	}
-	
-	
-	$hashtable = Get-Settings -settingpath $settingpath -settingname $settingname
 	$fullsettingpath = Add-Folder -Source $settingpath -Folder $settingname
+	if (Test-Path -Path $fullsettingpath)
+	{
+		$hashtable = Get-Settings -settingpath $settingpath -settingname $settingname
+	}
+	else
+	{
+		$hashtable = @{ }
+	}
+	
+	
+	
+	
 	$hashtable[$key] = $value	
 	$hashtable | ConvertTo-Json | Set-Content $fullsettingpath
 }
@@ -162,12 +178,10 @@ function Write-GlobalParam
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory = $true,
-				   Position = 1)]
+		[Parameter(Mandatory = $true)]
 		[ValidateNotNullOrEmpty()]
 		[string]$key,
-		[Parameter(Mandatory = $true,
-				   Position = 2)]
+		[Parameter(Mandatory = $true)]
 		[AllowEmptyString()]
 		[string]$value
 	)
@@ -255,7 +269,8 @@ function Get-KAddons
 	$addonsfolder = Read-GlobalParam -key "AddonsFolder"
 	$modname = Read-ModParam -key "ModName"
 	$packedmodname = '@' + $modname
-	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	#	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	$packedmodpath = Read-GlobalParam -key "ProjectDrive"
 	$packedmodpath = Add-Folder -Source $packedmodpath -Folder $packedmodname
 
 	$modlist = $modlist + $packedmodpath + ';'
@@ -294,7 +309,8 @@ function Start-kServer
 	else
 	{
 		Set-Folder -key "GameFolder"
-		& $command @params
+		#& $command @params
+		Start-Process $command -ArgumentList $params  -RedirectStandardOutput serveroutput.txt -RedirectStandardError servererror.txt
 		
 	}
 	
@@ -309,20 +325,21 @@ function Start-kMPGame
 	)
 	
 	$modlist = Get-KAddons
-	$gamef = Read-GlobalParam ("GameFolder")
+	$gamef = Read-GlobalParam -key "GameFolder"
+
 	$command = $gamef + "\DayZDiag_x64.exe"
 	$mods = "`"-mod=" + $modlist + "`""
-	$params = $mods, '-filePatching', '-connect=127.0.0.1', '-port=2302'
+	$gameparams = $mods, '-filePatching', '-connect=127.0.0.1', '-port=2302'
 	
 	if ($commandline)
 	{
-		return $command + "`n" + $params
+		return $command + "`n" + $gameparams
 	}
 	else
 	{
 		Set-Folder -key "GameFolder"
-		& $command @params
-		
+		#& $command @params
+		Start-Process $command -ArgumentList $gameparams -RedirectStandardOutput gameoutput.txt -RedirectStandardError gameerror.txt
 	}
 	
 }
@@ -337,12 +354,11 @@ function Start-kWorkbench
 	)
 	
 	$modlist = Get-KAddons
-	$workbenchf = Read-GlobalParam -key WorkbenchFolder
-	$workbenchf = Read-GlobalParam -key WorkbenchFolder
+	$workbenchf = Read-GlobalParam -key "WorkbenchFolder"
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
     $mods = "`"-mod=" + $modlist + "`""
-	# $mods = "`"-mod=" + "P:\@FirstMod" + "`""
 	$params = $mods
+	# $params = "-mod=S:\Mod-Packed\@NPCPro; S:\Mod-Packed\@CF"
 	
 	
 	if ($commandline)
@@ -354,15 +370,140 @@ function Start-kWorkbench
 	{
 		
 		$curmodfolder = Read-GlobalParam -key "CurrentModFolder"
-		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Workbench"
-		Set-Location $modworkbenchfolder
-		& $command @params
-
+		$modworkbenchfolder = Add-Folder -Source $curmodfolder -Folder "Kommander"
+		#Set-Location $modworkbenchfolder
+		Set-Folder -key "WorkbenchFolder"
+		#Set-Folder -key "CurrentModFolder"
+		# & $command @params
+		
+		
+		Start-Process $command -ArgumentList $params 
 	}
 	
 }
-
 function Start-Build
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param
+	(
+		[switch]$Commandline = $false,
+		[string]$BuildMethod
+	)
+	
+	
+	
+	# start /D "S:\Steam\steamapps\common\DayZ Tools\Bin\AddonBuilder" addonbuilder.exe "P:\RationalGPS" S:\Mod-Packed\@RationalGPS\addons -clear -project=P:  
+	
+	$addonbuilder = Read-SteamCommon
+	$addonbuilderf = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder"
+	$addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Addonbuilder.exe"
+	$command = $addonbuilder
+	
+	$modname = Read-ModParam -key "ModName"
+	Create-BuildFolder -ModName $modname
+	$packedmodf = Read-GlobalParam -key "PackedModFolder"
+	$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
+	$paramsetting = "P:\" + $modname
+	$paramsetting = $paramsetting + "," + $packedmodf
+	$paramsetting = $paramsetting + ", -project=P:"
+	
+	
+	$params = $paramsetting.Split(',')
+	
+	if ($commandline)
+	{
+		$output = $command + "`n" + $params
+		return $output
+		
+	}
+	
+	$trash = Link-All
+	
+	Set-Location -Path $addonbuilderf
+	
+	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
+	Reset-BuildSuccess
+	Set-BuildSuccess
+	
+}
+function Create-BuildFolder
+{
+	[CmdletBinding()]
+	param
+	(
+		[string]$ModName
+
+	)
+	$packedmodf = Read-GlobalParam -key "PackedModFolder"
+	if (-not (Test-Path -Path $packedmodf))
+	{
+		New-Item -Path $packedmodf -ItemType Directory
+	}
+	
+	$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname"
+	if (-not (Test-Path -Path $packedmodf))
+	{
+		New-Item -Path $packedmodf -ItemType Directory
+	}
+	
+	$packedmodf = Add-Folder -Source $packedmodf -Folder "addons"
+	if (-not (Test-Path -Path $packedmodf))
+	{
+		New-Item -Path $packedmodf -ItemType Directory
+	}
+}
+
+<#
+	.SYNOPSIS
+		Turns build log button green or red to indicate build success or failure
+	
+	.DESCRIPTION
+		A detailed description of the Set-BuildSuccess function.
+	
+	.EXAMPLE
+				PS C:\> Set-BuildSuccess
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Set-BuildSuccess
+{
+	[CmdletBinding()]
+	param ()
+	
+
+	
+	$lastbuild = Get-ScriptDirectory
+	$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
+	
+	$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
+	$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
+	if ($success)
+	{
+		$buttonOpenBuildLog.BackColor = 'Green'
+
+	}
+	elseif ($failure)
+	{
+		
+		$buttonOpenBuildLog.BackColor = 'Red'
+
+		
+	}
+}
+
+function Reset-BuildSuccess
+{
+	[CmdletBinding()]
+	param ()
+	$buttonOpenBuildLog.BackColor = 'Transparent'
+
+	
+}
+
+
+function Start-BuildMikero
 {
 	[CmdletBinding()]
 	[OutputType([string])]
@@ -399,53 +540,7 @@ function Start-Build
 		
 		
 	}
-	elseif ($BuildMethod -eq "Tools")
-	{
-		# start /D "S:\Steam\steamapps\common\DayZ Tools\Bin\AddonBuilder" addonbuilder.exe "P:\RationalGPS" S:\Mod-Packed\@RationalGPS\addons -clear -project=P:  
-		
-		$addonbuilder = Read-SteamCommon
-		$addonbuilder = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder\addonbuilder.exe"
-		$command = $addonbuilder
-		
-		$modname = Read-ModParam -key "ModName"
-		
-		$packedmodf = Read-GlobalParam -key "PackedModFolder"
-		$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
-		$paramsetting = "P:\" + $modname
-		$paramsetting = $paramsetting + "," + $packedmodf
-		$paramsetting = $paramsetting + ", -project=P:"
-		
-		$additionalsettings = Read-GlobalParam -key "AddonBuilderParams"
-		$paramsetting = $paramsetting + ',' + $additionalsettings
-		
-		$params = $paramsetting.Split(',')
-		
-		if ($commandline)
-		{
-			$output = $command + "`n" + $params
-			return $output
-			
-		}
-		
-		Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
-		$lastbuild = Get-ScriptDirectory
-		$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
-		
-		$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
-		$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
-		if ($success)
-		{
-			$buttonOpenBuildLog.BackColor = 'Green'
-		}
-		elseif ($failure )
-		{
-			$buttonOpenBuildLog.BackColor = 'Red'
-			
-		}
-		
-		Link-All
-		
-	}
+	
 }
 function Get-PackedMod
 {
@@ -597,6 +692,75 @@ function Assert-ProfilesFolder
 		return $false
 	}
 }
+
+function Assert-ModLayoutFolder
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	$modscriptsf = ""
+	Assert-ModScriptsFolder ([ref]$modscriptsf)
+	if ($modscriptsf)
+	{
+		$layoutf = Add-Folder -Source $modscriptsf -Folder "Gui\Layouts"
+		if (Test-Path -Path $layoutf)
+		{
+			
+			if ($outpath)
+			{
+				$outpath.Value = $layoutf
+			}
+			return $true
+			
+		}
+		else
+		{
+			return $false
+		}
+		
+	}
+	
+}
+
+function Assert-ModInputsFolder
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	$modscriptsf = ""
+	Assert-ModScriptsFolder ([ref]$modscriptsf)
+	if ($modscriptsf)
+	{
+		$inputsxml = Add-Folder -Source $modscriptsf -Folder "Data\inputs.xml"
+		if (Test-Path -Path $inputsxml)
+		{
+			
+			if ($outpath)
+			{
+				$outpath.Value = "$modscriptsf\data"
+			}
+			return $true
+			
+		}
+		else
+		{
+			return $false
+		}
+		
+	}
+	
+}
+
 
 function Assert-ToolsFolder
 {
@@ -1135,7 +1299,11 @@ function Link-Addons
 	$dzaddonsf = Add-Folder -Source $dayzf -Folder "Addons"
 	$addonsf = Read-GlobalParam -key "AddonsFolder"
 	$addons = Read-ModParam -key "AdditionalMPMods"
-	$addonlist = $addons.Split(';')
+	if ($addons)
+	{
+		$addonlist = $addons.Split(';')
+	}
+	
 	
 	foreach ($mod in $addonlist)
 	{
@@ -1146,7 +1314,8 @@ function Link-Addons
 		foreach ($file in $files) {
 			$link = Add-Folder -Source $dzaddonsf -Folder $file.Name
 			$target = $file.FullName
-			New-Item -ItemType SymbolicLink -Path $link -Target $target
+			Link-DayzFolders -Link $link -Target $target
+
 		}
 		
 		

@@ -1,4 +1,4 @@
-﻿<File version="3.2">
+<File version="3.2">
   <FileID>1b7c9a33-9eae-4f78-bb53-5c50908b76c4</FileID>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABlbSURBVHhe7d3Zc5X3nefxVKqmL3v+ga7uu7nq
@@ -177,7 +177,7 @@ $buttonOpenLogFile_Click={
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="False">5</Line>
+    <Line Disabled="True">5</Line>
   </BreakPoints>
   <TracePoints />
   <Mode>1</Mode>

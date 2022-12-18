@@ -4,8 +4,8 @@ modded class MissionBase {
         menu = super.CreateScriptedMenu(id);
         if (!menu) {
             switch (id) {
-            case UI_ID:
-                menu = new UI;
+            case UI_TEMPLATEID:
+                menu = new UITemplate;
                 break;               	
             }			
 									

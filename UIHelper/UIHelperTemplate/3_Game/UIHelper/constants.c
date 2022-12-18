@@ -2,7 +2,7 @@
 // There must be a constant with a different int value for each menu implemented. 
 // It is referenced in UIMissionBase and UIMissionGameplay for menu creation and entry
 
-static const int UI_ID  = 3214001;
+static const int UI_TEMPLATEID  = 3214001;
 
 
 // OTHER CONSTANTS

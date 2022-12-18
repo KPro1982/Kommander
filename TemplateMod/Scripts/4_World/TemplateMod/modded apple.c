@@ -2,7 +2,7 @@ modded class Apple
 {
     override bool NameOverride(out string output)
     {
-        string changeMe = "Thanks Nikerage!!!!";
+        string changeMe = "The Big Apple";
 
         if (changeMe != string.Empty)
         {
@@ -15,7 +15,7 @@ modded class Apple
 
     override bool DescriptionOverride(out string output)
     {
-        string changeMe = "Thanks Nikerage";
+        string changeMe = "Thanks to Wardog for his help with hot loading <3";
 
         if (changeMe != string.Empty)
         {
