@@ -425,11 +425,24 @@ function Start-Build
 	
 	Set-Location -Path $addonbuilderf
 	
-	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
 	Reset-BuildSuccess
-	Set-BuildSuccess
+	$buildlogpath = Get-BuildLogPath
+	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput $buildlogpath
+	
+	Set-BuildSuccess -Path $buildlogpath
 	
 }
+function Get-BuildLogPath
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param ()
+	
+	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
+	$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
+	return $buildlogpath
+}
+
 function Create-BuildFolder
 {
 	[CmdletBinding()]
@@ -464,8 +477,11 @@ function Create-BuildFolder
 	.DESCRIPTION
 		A detailed description of the Set-BuildSuccess function.
 	
+	.PARAMETER Path
+		A description of the Path parameter.
+	
 	.EXAMPLE
-				PS C:\> Set-BuildSuccess
+		PS C:\> Set-BuildSuccess
 	
 	.NOTES
 		Additional information about the function.
@@ -473,25 +489,26 @@ function Create-BuildFolder
 function Set-BuildSuccess
 {
 	[CmdletBinding()]
-	param ()
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$Path
+	)
 	
 
 	
-	$lastbuild = Get-ScriptDirectory
-	$lastbuild = Add-Folder -Source $lastbuild -Folder "Buildoutput.txt"
-	
-	$success = Get-Content -Path $lastbuild | Select-String -Pattern "build successful"
-	$failure = Get-Content -Path $lastbuild | Select-String -Pattern "build fail"
+	$success = Get-Content -Path $Path | Select-String -Pattern "build successful"
+	$failure = Get-Content -Path $Path | Select-String -Pattern "build fail"
 	if ($success)
 	{
 		$buttonOpenBuildLog.BackColor = 'Green'
-
+		
 	}
 	elseif ($failure)
 	{
 		
 		$buttonOpenBuildLog.BackColor = 'Red'
-
+		
 		
 	}
 }
@@ -501,7 +518,7 @@ function Reset-BuildSuccess
 	[CmdletBinding()]
 	param ()
 	$buttonOpenBuildLog.BackColor = 'Transparent'
-
+	
 	
 }
 

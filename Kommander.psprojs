@@ -13,5 +13,6 @@
     <File>UIHelper\CallInsertUICode.ps1</File>
     <File>CreateMod.psf</File>
     <File>TemplateSettings.psf</File>
+    <File>DisplayLogs.psf</File>
   </OpenFiles>
 </ProjectState>
