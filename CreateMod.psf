@@ -780,11 +780,34 @@ $formCreateMod_Load={
 	$checkboxServersideSettings.Enabled = $true
 	$checkboxSyncedServerClientSe.Enabled = $false
 	$checkboxExampleUI.Enabled = $true
+	
+	$templatef = Read-GlobalParam -key "TemplateFolder"
+	if (-not $templatef)
+	{
+		$buttonCreate.Enabled = $false
+		$buttonBuildSettings.BackColor = 'Red'
+	}
+	else
+	{
+		$buttonCreate.Enabled = $true
+		$buttonBuildSettings.BackColor = 'Transparent'
+	}
 }
 
 $buttonBuildSettings_Click={
 	#TODO: Place custom script here
 	Show-TemplateSettings_psf
+	$templatef = Read-GlobalParam -key "TemplateFolder"
+	if (-not $templatef)
+	{
+		$buttonCreate.Enabled = $false
+		$buttonBuildSettings.BackColor = 'Red'
+	}
+	else
+	{
+		$buttonCreate.Enabled = $true
+		$buttonBuildSettings.BackColor = 'Transparent'
+	}
 }
 
 $buttonCreate_Click = {
@@ -989,12 +1012,12 @@ $buttonUIHelp_Click={
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="True">24</Line>
-    <Line Disabled="True">32</Line>
-    <Line Disabled="True">40</Line>
+    <Line Disabled="True">47</Line>
     <Line Disabled="True">55</Line>
-    <Line Disabled="False">59</Line>
-    <Line Disabled="False">92</Line>
+    <Line Disabled="True">63</Line>
+    <Line Disabled="True">78</Line>
+    <Line Disabled="False">82</Line>
+    <Line Disabled="False">115</Line>
   </BreakPoints>
   <TracePoints />
   <Mode>1</Mode>

@@ -384,14 +384,14 @@ function Start-kWorkbench
 	}
 	
 }
-function Start-Build
+function Start-BuildAddonBuilder
 {
 	[CmdletBinding()]
 	[OutputType([string])]
 	param
 	(
-		[switch]$Commandline = $false,
-		[string]$BuildMethod
+		[switch]$Commandline = $false
+
 	)
 	
 	
@@ -432,6 +432,120 @@ function Start-Build
 	Set-BuildSuccess -Path $buildlogpath
 	
 }
+
+function Start-BuildMikero
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param
+	(
+		[switch]$Commandline = $false
+		
+	)
+	
+	$modname = Read-ModParam -key "ModName"
+	Create-BuildFolder -ModName $modname
+	
+	$trash = Link-Scripts
+	$trash = Link-Source
+	
+	
+	# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
+	$command = "pboProject.exe"
+	$scriptname = Read-ModParam -key "ModName"
+	$paramsetting = Read-GlobalParam -key "PboProjectParams"
+	$packedmod = Get-PackedMod
+	$paramsetting += ",`"+M=$packedmod`""
+	$scriptsf = Read-ModParam -key "ScriptsFolder"
+	$paramsetting += ",`"$scriptsf`""
+	$paramsetting += ",+L=" + $scriptname
+	
+	$params = $paramsetting.Split(',')
+	
+	$trash = Link-All
+	
+	
+	if ($commandline)
+	{
+		return $command + "`n" + $params
+	}
+	else
+	{
+		Set-Location "P:"
+		Start-Process "pboProject.exe" -ArgumentList $params -Wait
+	}
+	
+	
+	
+	
+}
+
+<#
+	.SYNOPSIS
+		Request a log file or log folder
+	
+	.DESCRIPTION
+		A detailed description of the Request-Log function.
+	
+	.PARAMETER Folder
+		A description of the Folder parameter.
+	
+	.PARAMETER FilePath
+		A description of the FilePath parameter.
+	
+	.PARAMETER InitialDirectory
+		A description of the InitialDirectory parameter.
+	
+	.PARAMETER Filter
+		A description of the Filter parameter.
+	
+	.PARAMETER MostRecent
+		A description of the MostRecent parameter.
+	
+	.EXAMPLE
+		PS C:\> Request-Log
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Request-Log
+{
+	[CmdletBinding()]
+	param
+	(
+		[string]$Folder,
+		[string]$FilePath,
+		[string]$InitialDirectory,
+		[string]$Filter,
+		[switch]$MostRecent
+	)
+	
+	# reset old values if any
+	Write-ScratchParam -key "RequestedLogFolder" -value ""
+	Write-ScratchParam -key "RequestedLogPath" -value ""
+	Write-ScratchParam -key "RequestedInitialDirectory" -value ""
+	Write-ScratchParam -key "RequestedFilter" -value ""
+	Write-ScratchParam -key "RequestedMostRecent" -value ""
+	
+	# set new values
+	Write-ScratchParam -key "RequestedLogFolder" -value $Folder
+	Write-ScratchParam -key "RequestedLogPath" -value $FilePath
+	Write-ScratchParam -key "RequestedInitialDirectory" -value $InitialDirectory
+	Write-ScratchParam -key "RequestedFilter" -value $Filter
+	if ($MostRecent)
+	{
+		Write-ScratchParam -key "RequestedMostRecent" -value $true
+	}
+	else
+	{
+		Write-ScratchParam -key "RequestedMostRecent" -value $false
+	}
+	
+	Show-DisplayLogs_psf
+}
+
+
+
 function Get-BuildLogPath
 {
 	[CmdletBinding()]
@@ -489,26 +603,27 @@ function Create-BuildFolder
 function Set-BuildSuccess
 {
 	[CmdletBinding()]
+	[OutputType([bool])]
 	param
 	(
 		[Parameter(Mandatory = $true)]
 		[string]$Path
 	)
 	
-
-	
 	$success = Get-Content -Path $Path | Select-String -Pattern "build successful"
 	$failure = Get-Content -Path $Path | Select-String -Pattern "build fail"
 	if ($success)
 	{
 		$buttonOpenBuildLog.BackColor = 'Green'
-		
+		$buttonB.BackColor = 'Green'
+		return $true
 	}
 	elseif ($failure)
 	{
 		
 		$buttonOpenBuildLog.BackColor = 'Red'
-		
+		$buttonB.BackColor = 'Red'
+		return $false
 		
 	}
 }
@@ -518,50 +633,13 @@ function Reset-BuildSuccess
 	[CmdletBinding()]
 	param ()
 	$buttonOpenBuildLog.BackColor = 'Transparent'
+	$buttonB.BackColor = 'Transparent'
 	
 	
 }
 
 
-function Start-BuildMikero
-{
-	[CmdletBinding()]
-	[OutputType([string])]
-	param
-	(
-		[switch]$Commandline = $false,
-		[string]$BuildMethod
-	)
-	
-	$trash = Link-Scripts
-	$trash = Link-Source
-	
-	if ($BuildMethod -eq "Mikero")
-	{
-		# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
-		$command = "pboProject.exe"
-		$scriptname = Read-ModParam -key "PboName"
-		$paramsetting = Read-GlobalParam -key "PboProjectParams"
-		$paramsetting += ", +M=S:\PackedMods\@RationalGPS"
-		$paramsetting += ", S:\Mod-Source\RationalGPS\Scripts"
-		$paramsetting += ", -L " + $scriptname
-		
-		$params = $paramsetting.Split(',')
-		
-		if ($commandline)
-		{
-			return $command + "`n" + $params
-		}
-		else
-		{
-			Set-Location "P:"
-			Start-Process "pboProject.exe" -ArgumentList $params -Wait -RedirectStandardOutput buildoutput.txt -RedirectStandardError builderror.txt
-		}
-		
-		
-	}
-	
-}
+
 function Get-PackedMod
 {
 	[OutputType([string])]
@@ -656,7 +734,34 @@ function Assert-DayzFolder
 		return $false
 	}
 }
+function Use-Launch
+{
+	[CmdletBinding()]
+	param ()
+	
+	Stop-kDayz
+	Start-kServer
+	Start-Sleep -Seconds 10
+	Start-kMPGame
+}
 
+function Use-Build
+{
+	[CmdletBinding()]
+	param ()
+	
+	$buildmethod = Read-GlobalParam -key "BuildMethod"
+	Reset-BuildSuccess
+	if ($buildmethod -eq "Tools")
+	{
+		Start-BuildAddonBuilder
+	}
+	elseif ($buildmethod -eq "Mikero")
+	{
+		Start-BuildMikero
+	}
+	
+}
 
 <#
 	.SYNOPSIS
@@ -781,6 +886,41 @@ function Assert-ModInputsFolder
 	
 }
 
+function Assert-MikeroLogFolder
+{
+	[CmdletBinding()]
+	[OutputType([bool])]
+	param
+	(
+		[Parameter(Mandatory = $false)]
+		[ref]$outpath
+	)
+	
+	$modscriptsf = ""
+	$steamcommon = Read-SteamCommon
+	$steamcommon = $steamcommon.Split("\")
+	$steamdrive = $steamcommon[0]
+	
+	
+	$testpath = Add-Folder -Source $steamdrive -Folder "Temp"
+	if (Test-Path -Path $testpath)
+	{
+		
+		if ($outpath)
+		{
+			$outpath.Value = $testpath
+		}
+		return $true
+		
+	}
+	else
+	{
+		return $false
+	}
+	
+	
+	
+}
 
 function Assert-ToolsFolder
 {

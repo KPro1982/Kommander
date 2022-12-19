@@ -23,7 +23,7 @@ class CfgMods
 		type = "mod";
 		
 		// TM_NOINPUTSTART
-		inputs="TESTSNI\Scripts\data\inputs.xml";
+		inputs="TEMPLATEMOD\Scripts\data\inputs.xml";
 		// TM_NOINPUTEND
 		
 		dependencies[] =
