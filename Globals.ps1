@@ -405,6 +405,10 @@ function Start-BuildAddonBuilder
 	
 	$modname = Read-ModParam -key "ModName"
 	Create-BuildFolder -ModName $modname
+	
+	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
+	$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
+	
 	$packedmodf = Read-GlobalParam -key "PackedModFolder"
 	$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
 	$paramsetting = "P:\" + $modname
@@ -426,10 +430,10 @@ function Start-BuildAddonBuilder
 	Set-Location -Path $addonbuilderf
 	
 	Reset-BuildSuccess
-	$buildlogpath = Get-BuildLogPath
-	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput $buildlogpath
 	
-	Set-BuildSuccess -Path $buildlogpath
+	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput "$buildlogpath"
+	
+	Set-BuildSuccess 
 	
 }
 
@@ -445,6 +449,8 @@ function Start-BuildMikero
 	
 	$modname = Read-ModParam -key "ModName"
 	Create-BuildFolder -ModName $modname
+	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
+	$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
 	
 	$trash = Link-Scripts
 	$trash = Link-Source
@@ -465,6 +471,7 @@ function Start-BuildMikero
 	$trash = Link-All
 	
 	
+	
 	if ($commandline)
 	{
 		return $command + "`n" + $params
@@ -472,11 +479,11 @@ function Start-BuildMikero
 	else
 	{
 		Set-Location "P:"
-		Start-Process "pboProject.exe" -ArgumentList $params -Wait
+		Start-Process "pboProject.exe" -ArgumentList $params -Wait -RedirectStandardOutput "$buildlogpath"
 	}
 	
 	
-	
+	Set-BuildSuccess
 	
 }
 
@@ -552,8 +559,19 @@ function Get-BuildLogPath
 	[OutputType([string])]
 	param ()
 	
-	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
-	$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
+	$buildmethod = Read-GlobalParam -key "BuildMethod"
+	if ($buildmethod -eq "Tools")
+	{
+		$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
+		$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
+	}
+	elseif ($buildmethod -eq "Mikero")
+	{
+		$buildlogpath = ""
+		Assert-MikeroLogFolder -outpath ([ref]$buildlogpath)
+		$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Scripts.packing.log"
+	}
+	
 	return $buildlogpath
 }
 
@@ -604,21 +622,32 @@ function Set-BuildSuccess
 {
 	[CmdletBinding()]
 	[OutputType([bool])]
-	param
-	(
-		[Parameter(Mandatory = $true)]
-		[string]$Path
-	)
+	param()
 	
-	$success = Get-Content -Path $Path | Select-String -Pattern "build successful"
-	$failure = Get-Content -Path $Path | Select-String -Pattern "build fail"
+	$buildlogpath = Get-BuildLogPath
+	$buildmethod = Read-GlobalParam -key "BuildMethod"
+	if($buildmethod -eq "Tools")
+	{
+
+		$success = Get-Content -Path $buildlogpath | Select-String -Pattern "build successful"
+		$failure = Get-Content -Path $buildlogpath | Select-String -Pattern "build fail"
+	}
+	elseif ($buildmethod -eq "Mikero")
+	{
+	
+		$ModName = Read-ModParam -key "ModName"
+		$success = Get-Content -Path $buildlogpath | Select-String -Pattern "renaming Scripts"
+
+		
+	}
+	
 	if ($success)
 	{
 		$buttonOpenBuildLog.BackColor = 'Green'
 		$buttonB.BackColor = 'Green'
 		return $true
 	}
-	elseif ($failure)
+	else
 	{
 		
 		$buttonOpenBuildLog.BackColor = 'Red'
@@ -675,6 +704,16 @@ function Read-SteamCommon
 		$finalpath += '\' + $commonpath[$i]
 	}
 	return $finalpath
+}
+
+function Read-MikeroInstallFolder
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param ()
+	
+	$regpath = (Get-ItemProperty -Path 'Registry::HKCU\SOFTWARE\Mikero\depbo').path
+	return $regpath
 }
 
 
@@ -897,12 +936,12 @@ function Assert-MikeroLogFolder
 	)
 	
 	$modscriptsf = ""
-	$steamcommon = Read-SteamCommon
-	$steamcommon = $steamcommon.Split("\")
-	$steamdrive = $steamcommon[0]
+	$curmoddrive = Read-GlobalParam -key "CurrentModFolder"
+	$curmoddrive = $curmoddrive.Split("\")
+	$curmoddrive = $curmoddrive[0]
 	
 	
-	$testpath = Add-Folder -Source $steamdrive -Folder "Temp"
+	$testpath = Add-Folder -Source $curmoddrive -Folder "Temp"
 	if (Test-Path -Path $testpath)
 	{
 		
