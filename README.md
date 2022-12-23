@@ -22,9 +22,9 @@ The first time that you run Kommander it will pop up in the global settings form
 
 Usuage Notes
 
-I've recently updated the log buttons.  The build log button now turns green if the build was success or red if it was a failure. Note that you cannot rebuild successfully while Workbench is open because workbench maintains a lock on the pbo. This does not prevent you from compiling with F7 from within Workbench. You must build once to use workbench. After that you only need to rebuild to publish the mod.
+Building your Mod: You must build once to use workbench. But you do not need to rebuild your mod everytime you make a change in the script. After the first time, you only need to rebuild your mod at the end of the process when you are ready to publish it. The build log button now turns green if the build was success or red if it was a failure. However, please note that you cannot rebuild while Workbench is open because workbench maintains a lock on the pbo. This does not prevent you from compiling with F7 from within Workbench.  
 
-All logs are searchable with Grep for specific information i.e. your modname, 'warning', 'error', etc.
+I've recently updated the log display.  All logs are now searchable with Grep for specific information i.e. your modname, 'warning', 'error', etc.  I have also added access to the so-called bin-logs produced by dayz tools addonbuilder.
 
 Kommander ModTemplate
 
