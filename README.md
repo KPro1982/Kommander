@@ -20,6 +20,8 @@ Kommander is intended to run from a central folder so that there is a single cop
 
 The first time that you run Kommander it will pop up in the global settings form.  Kommander will attempt to locate the game folder, workbench folder, etc.  However, if it can't find it or if its wrong you need to choose the correct folder. The standard setup is for the game folder to be the server folder also as typically we use dayzdiag_64.exe for both server and game.  You must choose where to put your source code and packed mods.  You can put them where ever you want. Kommander will make the appropriate links if you run it as administrator.  If not, you must run the included linkall.bat file after you complete the first three steps in the process.
 
+Usuage Notes
+
 I've recently updated the log buttons.  The build log button now turns green if the build was success or red if it was a failure. Note that you cannot rebuild successfully while Workbench is open because workbench maintains a lock on the pbo. This does not prevent you from compiling with F7 from within Workbench. You must build once to use workbench. After that you only need to rebuild to publish the mod.
 
 All logs are searchable with Grep for specific information i.e. your modname, 'warning', 'error', etc.
