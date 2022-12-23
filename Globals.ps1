@@ -380,7 +380,7 @@ function Start-kWorkbench
 		# & $command @params
 		
 		
-		Start-Process $command -ArgumentList $params -Wait
+		Start-Process $command -ArgumentList $params 
 	}
 	
 }
