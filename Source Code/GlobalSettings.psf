@@ -526,6 +526,11 @@ $frmGlobalSettings_Load= {
 		Assert-ProfilesFolder -outpath ([ref]$testpath) -Path $txtServerFolder.Text
 		$textboxProfilesFolder.Text = $testpath
 	}
+	if (Read-GlobalParam("ArchiveFolder"))
+	{
+		$textboxArchiveFolder.Text = Read-GlobalParam("ArchiveFolder")
+	}
+	
 	
 	
 	$txtPackedModFolder.Text = Read-GlobalParam("PackedModFolder")
@@ -753,6 +758,6 @@ $buttonHelpArchive_Click={
     <Line Disabled="False">70</Line>
   </BreakPoints>
   <TracePoints />
-  <Mode>0</Mode>
+  <Mode>1</Mode>
   <Assemblies />
 </File>

@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20221222221010
+Start time: 20221223100146
 Username: Office\Daniel
 RunAs User: Office\Daniel
 Configuration Name: 
 Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
-Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 51329 -d S:\Kommander -e PoshHostSTA -s S:\Kommander\Kommander.Run.ps1
-Process ID: 18040
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 33484
 PSVersion: 5.1.22000.1335
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
@@ -16,15 +16,16 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is S:\Kommander\kommander-2022-10-22-10-10.txt
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2022-12-23-10-01.txt
 The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
-At S:\Kommander\Kommander.Run.ps1:765 char:3
+At line:803 char:3
 +         $buttonB.BackColor = 'Transparent'
 +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
     + FullyQualifiedErrorId : PropertyNotFound
-The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
-At S:\Kommander\Kommander.Run.ps1:765 char:3
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:803 char:3
 +         $buttonB.BackColor = 'Transparent'
 +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidOperation: (:) [], RuntimeException

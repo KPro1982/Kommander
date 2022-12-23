@@ -21,9 +21,11 @@ function Main {
 		
 	#--------------------------------------------------------------------------
 	#TODO: Add initialization script here (Load modules and check requirements)
-	$logpath = Get-ScriptDirectory
-	$datetime = $datetime = Get-Date -Format "yyyy-mm-dd-hh-mm"
-	$logpath = Add-Folder -Source $logpath -Folder "kommander log-$datetime.txt"
+
+	$logpath = Get-KommanderFolder
+	$logpath = Add-Folder -Source $logpath -Folder "Logs"
+	$datetime = Get-Date -Format "yyyy-MM-dd-HH-mm"
+	$logpath = Add-Folder -Source $logpath -Folder "kommander_log-$datetime.txt"
 	Start-Transcript -path $logpath -append -NoClobber -IncludeInvocationHeader
 	
 	#--------------------------------------------------------------------------
@@ -48,7 +50,8 @@ function Main {
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
-    <Line Disabled="True">28</Line>
+    <Line Disabled="False">27</Line>
+    <Line Disabled="True">30</Line>
   </BreakPoints>
   <TracePoints />
 </File>

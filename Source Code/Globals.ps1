@@ -1,6 +1,20 @@
-#--------------------------------------------
-# Declare Global Variables and Functions here
-#--------------------------------------------
+function Get-KommanderFolder
+{
+	[CmdletBinding()]
+	[OutputType([string])]
+	param ()
+	
+	$logpath = Get-ScriptDirectory
+	$curfolder = Read-FinalPathName -Source $logpath
+	if ($curfolder -eq "Source Code")
+	{
+		$logpath = $logpath.TrimEnd('Source Code')
+		$logpath = $logpath.TrimEnd('\')
+	}
+
+	return $logpath
+}
+
 $CommandlineMessage = ""
 
 
@@ -42,7 +56,7 @@ function Get-Settings
 	
 	if (-not $settingpath)
 	{
-		$settingpath = Get-ScriptDirectory
+		$settingpath = Get-KommanderFolder
 	}
 	
 	$fullsettingpath = Add-Folder -Source $settingpath -Folder "$settingname"
@@ -96,7 +110,7 @@ function Set-Settings
 	}
 	else
 	{
-		$settingpath = Get-ScriptDirectory
+		$settingpath = Get-KommanderFolder
 
 	}
 	$fullsettingpath = Add-Folder -Source $settingpath -Folder $settingname
@@ -1154,8 +1168,8 @@ function Assert-TemplateFolder
 		[ref]$outpath
 	)
 	
-	$kommanderf = Get-ScriptDirectory
-	$testpath = Add-Folder -Source $kommanderf -Folder "TemplateMod"
+	$kommanderf = Get-KommanderFolder
+	$testpath = Add-Folder -Source $kommanderf -Folder "Source Code\TemplateMod"
 
 	if (Test-Path -Path $testpath)
 	{
@@ -1636,7 +1650,7 @@ function Read-FinalPathName
 		$Source
 	)
 	
-$Source -replace '/', '\'
+	$Source = $Source -replace '/', '\'
 	$SourceArr = $Source.Split('\')
 	$lasttoken = ""
 	$lasttoken = $SourceArr.get($SourceArr.Length - 1)
@@ -1651,7 +1665,7 @@ function Start-Archive
 	$sourcepath = Read-GlobalParam -key "CurrentModFolder"
 	$targetpath = Read-GlobalParam -key "ArchiveFolder"
 	$modname = Read-ModParam -key "ModName"
-	$datetime = Get-Date -Format "yyyy-mm-dd-hh-mm"
+	$datetime = Get-Date -Format "yyyy-MM-dd-HH-mm"
 	$targetpath = Add-Folder -source $targetpath -Folder "$modname"
 	if (-not (Test-Path -Path $targetpath))
 	{
