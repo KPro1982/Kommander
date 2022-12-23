@@ -5,11 +5,12 @@
     <Folder>UIHelper</Folder>
   </OpenFolders>
   <OpenFiles>
-    <File>GlobalSettings.psf</File>
     <File>Globals.ps1</File>
+    <File>GlobalSettings.psf</File>
     <File>KommandStrip.psf</File>
     <File>DisplayLogs.psf</File>
     <File>BuildSettings.psf</File>
     <File>Wizard.psf</File>
+    <File>CreateNewFIle.psf</File>
   </OpenFiles>
 </ProjectState>

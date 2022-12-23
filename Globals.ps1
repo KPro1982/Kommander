@@ -360,7 +360,7 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key "WorkbenchFolder"
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
     $mods = "`"-mod=" + $modlist + "`""
-	$params = $mods
+	$params = $mods + ",-dologs,-adminlog,-freezecheck,`"scriptDebug=true`""
 	# $params = "-mod=S:\Mod-Packed\@NPCPro; S:\Mod-Packed\@CF"
 	
 	
@@ -380,10 +380,36 @@ function Start-kWorkbench
 		# & $command @params
 		
 		
-		Start-Process $command -ArgumentList $params 
+		Start-Process $command -ArgumentList $params -Wait
 	}
 	
 }
+
+<#
+	.SYNOPSIS
+		Remove existing pbo from packed folder
+	
+	.DESCRIPTION
+		Force delete option 
+	
+	.EXAMPLE
+				PS C:\> Remove-ExistingPackedPbo
+	
+	.NOTES
+		Additional information about the function.
+#>
+function Remove-ExistingPackedPbo
+{
+	[CmdletBinding()]
+	param ()
+	
+	$curpackedmodf = Read-GlobalParam -key "PackedModFolder"
+	$modname = Read-ModParam -key "ModName"
+	$curpackedmodf = Add-Folder -Source $curpackedmodf -Folder "@$modname\addons\*"
+	
+	Remove-Item -Path $curpackedmodf -Filter '*.pbo' -Force 
+}
+
 function Start-BuildAddonBuilder
 {
 	[CmdletBinding()]
@@ -431,7 +457,7 @@ function Start-BuildAddonBuilder
 	
 	Reset-BuildSuccess
 	
-	Start-Process $command -ArgumentList $params -Wait -RedirectStandardOutput "$buildlogpath"
+	Start-Process $command -ArgumentList $params  -Wait -RedirectStandardOutput "$buildlogpath"
 	
 	Set-BuildSuccess 
 	
@@ -446,7 +472,7 @@ function Start-BuildMikero
 		[switch]$Commandline = $false
 		
 	)
-	
+	Remove-ExistingPackedPbo
 	$modname = Read-ModParam -key "ModName"
 	Create-BuildFolder -ModName $modname
 	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
@@ -479,7 +505,7 @@ function Start-BuildMikero
 	else
 	{
 		Set-Location "P:"
-		Start-Process "pboProject.exe" -ArgumentList $params -Wait -RedirectStandardOutput "$buildlogpath"
+		Start-Process "pboProject.exe" -ArgumentList $params -RedirectStandardOutput "$buildlogpath"
 	}
 	
 	
@@ -689,6 +715,29 @@ function Stop-kDayz
 {
 	taskkill /im DayZDiag_x64.exe /F /FI "STATUS eq RUNNING"
 }
+
+
+
+function Stop-DayzOnly
+{
+	[CmdletBinding()]
+	param ()
+	
+	$processes = Get-Process dayz* | Where-Object { $_.mainWindowTitle -notlike "*port*" }
+
+	Stop-Process $processes -Force
+}
+
+function Use-ReloadDayz
+{
+	[CmdletBinding()]
+	param ()
+	
+	Stop-DayzOnly
+	Start-Sleep -Seconds 1
+	Start-kMPGame
+}
+
 
 function Read-SteamCommon
 {

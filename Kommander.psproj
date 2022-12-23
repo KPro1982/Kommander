@@ -23,5 +23,6 @@
     <File Build="0" Shared="True" ReferenceFunction="Invoke-CreateUIFromLayout_ps1">UIHelper\CreateUIFromLayout.ps1</File>
     <File Build="0" ReferenceFunction="Show-CreateUI_psf">CreateUI.psf</File>
     <File Build="0" ReferenceFunction="Show-KommandStrip_psf">KommandStrip.psf</File>
+    <File Build="0" ReferenceFunction="Show-CreateNewFIle_psf">CreateNewFIle.psf</File>
   </Files>
 </Project>
