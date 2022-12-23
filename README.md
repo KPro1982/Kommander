@@ -11,8 +11,9 @@
 Note: That you can use either the .exe to run or the ps1. 
 
 ## New Feature Update
-- added auto-archive 12/12/22
-- added floating toolbar 12/11/22
+*Kommander is currently in active development. I am squashing bugs as I find them and adding new features. Expect things to break from time to time and check back here frequently for updates.*
+- **12/12/22** added auto-archive 
+- **12/11/22** added floating toolbar 
 
 ## Setup
 
