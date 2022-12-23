@@ -1643,5 +1643,23 @@ $Source -replace '/', '\'
 	return $lasttoken
 }
 
+function Start-Archive
+{
+	[CmdletBinding()]
+	param ()
+	
+	$sourcepath = Read-GlobalParam -key "CurrentModFolder"
+	$targetpath = Read-GlobalParam -key "ArchiveFolder"
+	$modname = Read-ModParam -key "ModName"
+	$datetime = Get-Date -Format "yyyy-mm-dd-hh-mm"
+	$targetpath = Add-Folder -source $targetpath -Folder "$modname"
+	if (-not (Test-Path -Path $targetpath))
+	{
+		New-Item -Path $targetpath -ItemType "Directory"
+		
+	}
+	$targetpath = Add-Folder -Source $targetpath -Folder "$modname.$datetime.zip"
+	Compress-Archive -Path $sourcepath -DestinationPath $targetpath
+}
 
 
