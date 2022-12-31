@@ -1,0 +1,201 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221230103505
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 50173 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 12164
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2022-12-30-10-35.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2686 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2686 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2687 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2687 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:781 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:781 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20221230103505
+**********************
+PS>TerminatingError(Read-GlobalParam): "A parameter cannot be found that matches parameter name 'ne'."
+Read-GlobalParam : A parameter cannot be found that matches parameter name 'ne'.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2112 char:38
++         if (Read-GlobalParam -key "dngrep" -ne "")
++                                            ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Read-GlobalParam], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Read-GlobalParam
+Read-GlobalParam : A parameter cannot be found that matches parameter name 'ne'.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2112 char:38
++         if (Read-GlobalParam -key "dngrep" -ne "")
++                                            ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Read-GlobalParam], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Read-GlobalParam
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2057 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path
+was included, verify that the path is correct and try again.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2057 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Windows PowerShell transcript start
+Start time: 20221230103534
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 50179 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 28796
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2022-12-30-10-35.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2686 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2686 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2687 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2687 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:781 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:781 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20221230103535
+**********************
+PS>TerminatingError(Read-GlobalParam): "A parameter cannot be found that matches parameter name 'ne'."
+Read-GlobalParam : A parameter cannot be found that matches parameter name 'ne'.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2112 char:38
++         if (Read-GlobalParam -key "dngrep" -ne "")
++                                            ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Read-GlobalParam], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Read-GlobalParam
+Read-GlobalParam : A parameter cannot be found that matches parameter name 'ne'.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2112 char:38
++         if (Read-GlobalParam -key "dngrep" -ne "")
++                                            ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Read-GlobalParam], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Read-GlobalParam
+
+**********************
+Command start time: 20221230103536
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\NPCPro\NPCPro.2022-12-30-10-35.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2022-12-30-10-35.zip already exists. Use the -Update 
+parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1752 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...12-30-10-35.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2022-12-30-10-35.zip already exists. Use the -Update parameter to update the existing archive
+file or use the -Force parameter to overwrite the existing archive file.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1752 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...12-30-10-35.zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2057 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path
+was included, verify that the path is correct and try again.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2057 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+

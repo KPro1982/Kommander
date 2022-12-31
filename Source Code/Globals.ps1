@@ -727,7 +727,7 @@ function Get-PackedMod
 
 function Stop-kDayz
 {
-	taskkill /im DayZDiag_x64.exe /F /FI "STATUS eq RUNNING"
+	taskkill /im DayZDiag_x64.exe /F /T /FI "STATUS eq RUNNING"
 }
 
 
@@ -1676,4 +1676,21 @@ function Start-Archive
 	Compress-Archive -Path $sourcepath -DestinationPath $targetpath
 }
 
+function Start-dngrep
+{
+	[CmdletBinding()]
+	param
+	(
+		[string]$path,
+		[string]$searchFor
+	)
+	
+	if (-not $path)
+	{
+		$path = Read-GlobalParam -key "dngreppath"
+	}
+	$params = "-searchFor " + $searchFor
+	$params = "-folder P:\scripts\", $searchFor
+	Start-Process $path 
+}
 

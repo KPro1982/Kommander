@@ -1,0 +1,26 @@
+var class_error_module_handler =
+[
+    [ "AddModule", "class_error_module_handler.html#a869ee220bda5c45f3649ce63927bc664", null ],
+    [ "CreateError", "class_error_module_handler.html#a2e13465cd61d3d7a452fbe7d4dbfcd53", null ],
+    [ "GetCategoryFromError", "class_error_module_handler.html#a8255e1ab154c23b5e7c58f922fc25856", null ],
+    [ "GetClientMessage", "class_error_module_handler.html#a440e9ab4e85106d48b8e34e519aeba06", null ],
+    [ "GetClientMessageByCode", "class_error_module_handler.html#a80f0a503f6164c2741682c9a3dfa9732", null ],
+    [ "GetCodeFromError", "class_error_module_handler.html#a58b162d636b08d31ce86e2ede3bee387", null ],
+    [ "GetErrorHex", "class_error_module_handler.html#ac9d453621ec29ec98463c58b0fd8ba45", null ],
+    [ "GetErrorModules", "class_error_module_handler.html#a60e9aab8eff8310bb7d3675a5994334c", null ],
+    [ "GetInstance", "class_error_module_handler.html#a91269470d3b51a9b0bb803e13e56174c", null ],
+    [ "GetLastClientMessage", "class_error_module_handler.html#a7bbc5bc4692fe15e893c8ab17204e412", null ],
+    [ "GetLastClientMessageByCode", "class_error_module_handler.html#a3fb9bff2ed943331f913c8e7e424935c", null ],
+    [ "GetLastServerMessage", "class_error_module_handler.html#ac0e2c0bc356695829dff4922d3334241", null ],
+    [ "GetLastServerMessageByCode", "class_error_module_handler.html#adeec3b4e15af697df37989236b960511", null ],
+    [ "GetServerMessage", "class_error_module_handler.html#a6564be66aef02448de3fec534d4d213f", null ],
+    [ "GetServerMessageByCode", "class_error_module_handler.html#ac48be238664f3e98d400233a1ce3feea", null ],
+    [ "Init", "class_error_module_handler.html#a1fc58451e5b54ce4eaf19ad9c288a78d", null ],
+    [ "OnEvent", "class_error_module_handler.html#a9c836fff2f9cfea9a0950dfb0897602e", null ],
+    [ "RemoveModule", "class_error_module_handler.html#adf6c1905db38fe2b65071200770db8fc", null ],
+    [ "SafeAddModule", "class_error_module_handler.html#aeaaf72dccb900c9732f746f3dcfd28d0", null ],
+    [ "SafeRemoveModule", "class_error_module_handler.html#ab195559d64107c015565835821876eb6", null ],
+    [ "SafeRemoveModule", "class_error_module_handler.html#a1530f72796058d9ee5676474028141e9", null ],
+    [ "ThrowError", "class_error_module_handler.html#aa99dfe677063c4a2aaeb55b743a06082", null ],
+    [ "ThrowErrorCode", "class_error_module_handler.html#a0347b2450e954120e90e12065e5951de", null ]
+];

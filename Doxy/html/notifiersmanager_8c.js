@@ -1,0 +1,38 @@
+var notifiersmanager_8c =
+[
+    [ "eNotifiers", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78", [
+      [ "NTF_HEALTHY", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a29f8c8524735c9359667ed15231cd9d1", null ],
+      [ "NTF_BLEEDISH", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78af9d4c34f8da6597de5f343a55a56ef4a", null ],
+      [ "NTF_HUNGRY", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78afbd10aa60cbd34f6061614824dc9620a", null ],
+      [ "NTF_THIRSTY", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a41e2013d32d5c8b4effbb9d5c18f58a6", null ],
+      [ "NTF_STUFFED", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a7a91b67844cfbd707407342201ffa420", null ],
+      [ "NTF_SICK", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78ae4594a0989496e6ec9a26ee51ae46f71", null ],
+      [ "NTF_WETNESS", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78aa51dd08304b476d87a6d887cee2e75a8", null ],
+      [ "NTF_WARMTH", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78ae9a702f29c916c3b06710c40a2174389", null ],
+      [ "NTF_FEVERISH", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78af3fcc8206f83d47beadcf80a75b717f2", null ],
+      [ "NTF_BLOOD", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a3d7e1d4007b690b6757da737c4732180", null ],
+      [ "NTF_LIVES", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78af754de6775de99786fd8d0581ca62c08", null ],
+      [ "NTF_STAMINA", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a48389e6468a758762fb2da36c89b3ef4", null ],
+      [ "NTF_PILLS", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78ad42dfd8998c0a16598563b021fc16de5", null ],
+      [ "NTF_HEARTBEAT", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a331d62551cb9280002c98e9ff5784509", null ],
+      [ "NTF_FRACTURE", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78a66b796e7ce255e037c5e03b360627c2b", null ],
+      [ "NTF_COUNT", "notifiersmanager_8c.html#a3687963b70e03873b68004412de2fe78ab27038dc359bd476d838f6b9256bf0b4", null ]
+    ] ],
+    [ "ActivateByType", "notifiersmanager_8c.html#aff0170c3509bc83d12c8928b4d32ace7", null ],
+    [ "DeactivateByType", "notifiersmanager_8c.html#ab94d65efbea47565e0ae346956d57bec", null ],
+    [ "FindNotifier", "notifiersmanager_8c.html#a8868982cd61fb47007ff2ba25448e7aa", null ],
+    [ "GetPlayer", "notifiersmanager_8c.html#aaf6ee4d1f067be1038b7a662af6af1bf", null ],
+    [ "GetVirtualHud", "notifiersmanager_8c.html#a592310391c347091292f8ec2affcc2cb", null ],
+    [ "Init", "notifiersmanager_8c.html#a1e3b6d38df0786ccf7f938d60e386aae", null ],
+    [ "NotifiersManager", "notifiersmanager_8c.html#a131baa5cbe699be20bd8ced9ed147f00", null ],
+    [ "OnScheduledTick", "notifiersmanager_8c.html#a46c3c8f3ace386a738439fd82902d04c", null ],
+    [ "RegisterItself", "notifiersmanager_8c.html#ae15eac941c829c8cc67d7b81efb6fa0d", null ],
+    [ "TickNotifiers", "notifiersmanager_8c.html#a828362ace145981b4acf64a3e6dfcfc5", null ],
+    [ "m_MinTickTime", "notifiersmanager_8c.html#a84fa5250c897b3c7701df7d75f0befe6", null ],
+    [ "m_Notifiers", "notifiersmanager_8c.html#ac75f7d00c32013052bbba687fe608d38", null ],
+    [ "m_NotifiersStatic", "notifiersmanager_8c.html#abcaa96ee7e1b7bbd0822d89bcc509a7b", null ],
+    [ "m_Player", "notifiersmanager_8c.html#a4db3d46d75d2864daed52041fe1f0973", null ],
+    [ "m_System", "notifiersmanager_8c.html#ac5f68bcb6c9223635590cb69f9c9dd73", null ],
+    [ "m_VirtualHud", "notifiersmanager_8c.html#a2d2820816559c61b4530f767dad5e93a", null ],
+    [ "MAX_COUNT", "notifiersmanager_8c.html#a936408466e1be53b73777d7aba7ae8f4", null ]
+];

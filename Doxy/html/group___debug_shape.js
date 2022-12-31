@@ -1,0 +1,48 @@
+var group___debug_shape =
+[
+    [ "Diag menu API definition", "group___diag_menu.html", "group___diag_menu" ],
+    [ "CollisionFlags", "group___debug_shape.html#ga51f3cfd13ef7752ddd89ea32bcccd7d5", null ],
+    [ "ShapeFlags", "group___debug_shape.html#gae99018d13c3c8a3cc164600046082d04", [
+      [ "NOZBUFFER", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ade2ac237f2c9012d3005d6ef68726a0b", null ],
+      [ "NOZWRITE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04a0e0b76898a3bf92a45180420d21629a2", null ],
+      [ "WIREFRAME", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ab2c0b77d8e0e4b72d36e6aab661eb5e3", null ],
+      [ "TRANSP", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ac46987c21490fbe8dac52e266e215217", null ],
+      [ "DOUBLESIDE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04a77fe6c495237f04eaa9a8586d41e3851", null ],
+      [ "ONCE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04af1110c378b0b40a4b5bd04fdd92220c4", null ],
+      [ "NOOUTLINE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04a39e08af9406332d46ef309acb059a0ed", null ],
+      [ "BACKFACE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ab31536596c407261e5a0b5b4f1f69586", null ],
+      [ "NOCULL", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ab9e1fedc81c9bbf8773008f0ec990eb6", null ],
+      [ "VISIBLE", "group___entity_attributes.html#ggae99018d13c3c8a3cc164600046082d04aca67be9ef3cada74f46fdb57fdb3e7f3", null ],
+      [ "ADDITIVE", "group___debug_shape.html#ggae99018d13c3c8a3cc164600046082d04ac0c02294c1fb924d8ee2ae11f9426c0e", null ]
+    ] ],
+    [ "ShapeType", "group___debug_shape.html#ga5a4538eeab397888d88a4eefcc5a1345", [
+      [ "BBOX", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345ab8f3e2bf90a8b9b9bacedf4df58a6fde", null ],
+      [ "LINE", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345ab023460c84f774a219d46ccf4665994c", null ],
+      [ "SPHERE", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345a1748edc4234d3c494e228da3c0156b7a", null ],
+      [ "CYLINDER", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345acf0ef7e103c398e454109aa1a65962aa", null ],
+      [ "DIAMOND", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345a714f2cc5c292a305e2da3c03bd63916a", null ],
+      [ "PYRAMID", "group___debug_shape.html#gga5a4538eeab397888d88a4eefcc5a1345a3fcd053f6577a9c10a59c3d3595658eb", null ]
+    ] ],
+    [ "Create", "group___debug_shape.html#ga01f744a0b9ed95fc93c015ca4e1d03f4", null ],
+    [ "CreateArrow", "group___debug_shape.html#ga33e4c2f905ea7caef5970ea0273106f4", null ],
+    [ "CreateBridgeArrow", "group___debug_shape.html#gae79884ecde9c16704b3859d48b9fb2bd", null ],
+    [ "CreateCylinder", "group___debug_shape.html#ga03c2aca770f851754d6c8da6f3e329fe", null ],
+    [ "CreateFrustum", "group___debug_shape.html#ga5a835f7dcca2cdb56acc00d6b9d585e1", null ],
+    [ "CreateLines", "group___debug_shape.html#gaa95f67bf7e8856e12efb906c9b23573b", null ],
+    [ "CreateMatrix", "group___debug_shape.html#gaee43d58d6f6ad8f59f60e221d03de3b1", null ],
+    [ "CreateSphere", "group___debug_shape.html#gaa64b35f24f6656fa7b4c5228771874c5", null ],
+    [ "CreateTris", "group___debug_shape.html#gacea01f58b661985dfd3441930ddee13f", null ],
+    [ "Destroy", "group___debug_shape.html#ga638a3fcdb049ad795590a910ff04648a", null ],
+    [ "GetMatrix", "group___debug_shape.html#gaba709bac9e72284d23f6f25b3102bb8a", null ],
+    [ "IsAutodestroy", "group___debug_shape.html#ga82da1031dd42894eebed60fdb95bb5dd", null ],
+    [ "IsPendingDeletion", "group___debug_shape.html#ga7036ae0efacddb326a1b0cca4c0bea21", null ],
+    [ "SetAutodestroy", "group___debug_shape.html#gad091d505e4dae6967e943e12055bb908", null ],
+    [ "SetColor", "group___debug_shape.html#ga6ccc20249486c51ccf29e6ec155d4f45", null ],
+    [ "SetDirection", "group___debug_shape.html#ga53cd83cbac1700acacfb6f30a77ae2ee", null ],
+    [ "SetEnableEventFrame", "group___debug_shape.html#ga1588d4c03b38a08daf902d5a94f22ef6", null ],
+    [ "SetFlags", "group___debug_shape.html#gaa9ba3114af4e5ecafd82fcdfd3c196b1", null ],
+    [ "SetMatrix", "group___debug_shape.html#ga83f01322c5a58a74d4d1f0923821abbf", null ],
+    [ "SetPosition", "group___debug_shape.html#ga3aa6cafceab9d573982aa9db5a5d6e34", null ],
+    [ "ErrorEx", "group___debug_shape.html#ga30f13400906443efe9fb79540dc674b5", null ],
+    [ "Shape", "group___debug_shape.html#gaf4344f1db5238ced76a52bf38cee2978", null ]
+];

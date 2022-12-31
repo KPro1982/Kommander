@@ -1,0 +1,189 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221230153357
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 11480
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2022-12-30-15-33.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At line:2831 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:2831 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At line:2832 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:2832 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:803 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:803 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2201 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Command start time: 20221230154506
+**********************
+PS>$ExitCode
+0
+**********************
+Windows PowerShell transcript end
+End time: 20221230154506
+**********************

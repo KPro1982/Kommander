@@ -1,0 +1,46 @@
+var modifiersmanager_8c =
+[
+    [ "ModifierDebugObj", "class_modifier_debug_obj.html", "class_modifier_debug_obj" ],
+    [ "EActivationType", "modifiersmanager_8c.html#a91438892389b25e59441949d005ef1a2", [
+      [ "TRIGGER_EVENT_OFF", "modifiersmanager_8c.html#a91438892389b25e59441949d005ef1a2a8c1ab9fdf55f86d6cb4c1209e054ebe2", null ],
+      [ "TRIGGER_EVENT_ON_ACTIVATION", "modifiersmanager_8c.html#a91438892389b25e59441949d005ef1a2a9fd288cf4c8806ee5d69d643ae576430", null ],
+      [ "TRIGGER_EVENT_ON_CONNECT", "modifiersmanager_8c.html#a91438892389b25e59441949d005ef1a2a6121bd9cb33dd766463812f5936c3035", null ]
+    ] ],
+    [ "eModifierSyncIDs", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0", [
+      [ "MODIFIER_SYNC_WOUND_INFECT_1", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0a6bbb69c158b548462efc13f9bd1150eb", null ],
+      [ "MODIFIER_SYNC_WOUND_INFECT_2", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0a9c029365a847a5717403862f5ed3dd75", null ],
+      [ "MODIFIER_SYNC_CONTAMINATION", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0af7d282498d69f6d898c753e23df78482", null ],
+      [ "MODIFIER_SYNC_CONTAMINATION2", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0a41fd66f4372d61238530967c5b08db92", null ],
+      [ "MODIFIER_SYNC_ZONE_EXPOSURE", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0a855b985ef6b5085dc6154b928446209c", null ],
+      [ "MODIFIER_SYNC_DROWNING", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0ab982a5d307d13ef3721f4030e73d4073", null ],
+      [ "LAST_INDEX", "modifiersmanager_8c.html#a5c1716899a303fbac8533337fbc6ceb0a7264227ff44639b8960da234f6ee7135", null ]
+    ] ],
+    [ "ActivateModifier", "modifiersmanager_8c.html#a7fab632c47c8e18366c98a76669f7755", null ],
+    [ "AddModifier", "modifiersmanager_8c.html#ac8e46fec1ff64a9087ab456fe31ad660", null ],
+    [ "DbgGetModifiers", "modifiersmanager_8c.html#a9b86f213498df61b4abc498f56d191fd", null ],
+    [ "DeactivateAllModifiers", "modifiersmanager_8c.html#a460dfb1cbcfb5303676f2be4177d7b0a", null ],
+    [ "DeactivateModifier", "modifiersmanager_8c.html#a3b34513f708181c290fe5d51e7503a55", null ],
+    [ "GetModifier", "modifiersmanager_8c.html#a3bcb07a0b1090f652f92f928e7a221f5", null ],
+    [ "GetModifierLock", "modifiersmanager_8c.html#aa932baff2a2c61f8eff890bf464ea54d", null ],
+    [ "GetPlayer", "modifiersmanager_8c.html#aaf6ee4d1f067be1038b7a662af6af1bf", null ],
+    [ "GetStorageVersion", "modifiersmanager_8c.html#a1bf8b2dd2fbfe7e56a7301c85d3ba301", null ],
+    [ "Init", "modifiersmanager_8c.html#a1e3b6d38df0786ccf7f938d60e386aae", null ],
+    [ "IsModifierActive", "modifiersmanager_8c.html#ad7f4db664df3e9743e221be021501bc3", null ],
+    [ "IsModifiersEnable", "modifiersmanager_8c.html#a5404989687c2d7857ec77e70ddfeb09b", null ],
+    [ "ModifiersManager", "modifiersmanager_8c.html#ac135bf8a3162a3c2d85fa35fdbff1798", null ],
+    [ "OnScheduledTick", "modifiersmanager_8c.html#ab005f76d2b3219a0dc7bb5f84626cb99", null ],
+    [ "OnStoreLoad", "modifiersmanager_8c.html#ab8fb9b4105d97f4c7ba4bdd84d6c7de9", null ],
+    [ "OnStoreSave", "modifiersmanager_8c.html#ad975050d7a080cca462e74c604f404a2", null ],
+    [ "SetModifierLock", "modifiersmanager_8c.html#ace1390f9fbca9fe44c2fdd0ab58441be", null ],
+    [ "SetModifiers", "modifiersmanager_8c.html#a017e6dbd2f574154605cf1225a2346ad", null ],
+    [ "DEFAULT_TICK_TIME_ACTIVE", "modifiersmanager_8c.html#ad7b192f22a83d324fbb2fc7fea14ad09", null ],
+    [ "DEFAULT_TICK_TIME_ACTIVE_SHORT", "modifiersmanager_8c.html#ac5b38c9a7d45b3576a7028958f9abcca", null ],
+    [ "DEFAULT_TICK_TIME_INACTIVE", "modifiersmanager_8c.html#ab41b0cbf9fe485932fbffc19ea426bac", null ],
+    [ "DEFAULT_TICK_TIME_INACTIVE_LONG", "modifiersmanager_8c.html#af38d7a2ebcfdc86567caa51ca9d70458", null ],
+    [ "m_AllowModifierTick", "modifiersmanager_8c.html#a013e775b9f09d11160663fd33384e26d", null ],
+    [ "m_ModifierList", "modifiersmanager_8c.html#ad30167207c5f49bc30d8149cf0bc1835", null ],
+    [ "m_ModifierListArray", "modifiersmanager_8c.html#ae06e8d93b8034c2d3b6139345d76178b", null ],
+    [ "m_ParamList", "modifiersmanager_8c.html#acf3cda73bc6fe5c0eae3e01c470fe3bd", null ],
+    [ "m_Player", "modifiersmanager_8c.html#ac86fff4eb453898da6d2396e65aa0670", null ],
+    [ "STORAGE_VERSION", "modifiersmanager_8c.html#a25a1f5ed25534a65e875f6fde47a1d13", null ]
+];

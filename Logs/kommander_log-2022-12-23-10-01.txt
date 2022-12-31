@@ -31,3 +31,12 @@ At line:803 char:3
     + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
     + FullyQualifiedErrorId : PropertyNotFound
 
+**********************
+Command start time: 20221223100435
+**********************
+PS>$ExitCode
+0
+**********************
+Windows PowerShell transcript end
+End time: 20221223100435
+**********************
