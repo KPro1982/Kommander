@@ -1,4 +1,0 @@
-var dir_c8a075b4edfa2e7086704018f493f6d4 =
-[
-    [ "DayZ", "dir_65c021491e0494e44acd946668156bac.html", "dir_65c021491e0494e44acd946668156bac" ]
-];

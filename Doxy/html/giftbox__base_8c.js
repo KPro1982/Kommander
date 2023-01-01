@@ -1,4 +1,0 @@
-var giftbox__base_8c =
-[
-    [ "Container_Base", "class_container___base.html", "class_container___base" ]
-];

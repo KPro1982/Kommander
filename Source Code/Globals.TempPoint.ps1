@@ -284,7 +284,7 @@ function Get-KAddons
 	$modname = Read-ModParam -key "ModName"
 	$packedmodname = '@' + $modname
 	#	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
-	$packedmodpath = Read-GlobalParam -key "PackedModFolder"
+	$packedmodpath = Read-GlobalParam -key "ProjectDrive"
 	$packedmodpath = Add-Folder -Source $packedmodpath -Folder $packedmodname
 
 	$modlist = $modlist + $packedmodpath + ';'
