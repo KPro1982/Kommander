@@ -2,6 +2,8 @@
 
  A gui companion to workbench for mod creation, building, and launching
 
+## BUG REPORT
+I've just noticed a bug that prevents mods created with the create mod button from loading in to WB correctly using the GUI Launch WB button. When the GUI launch button is used, WB opens but the new mod does not show up in the script editor. However, WB appears to launch and work as expected from the launch WB bat file. I'm working on it but for now, if you have problems using the GUI button please use the bat to launch WB. No one else has mentioned it so I'm not sure if the code is bugged (most likely) or if I've borked something on my end. I apologize for the inconvenience.
 
 ## Installation
 1. Download file
@@ -15,6 +17,7 @@ Note: That you can use either the .exe to run or the ps1.
 - **12/12/22** added auto-archive 
 - **12/11/22** added floating toolbar 
 - **12/30/22** added search capability
+- **12/31/22** removed search capability and moved it to KodeWizard, a standalone tool 
 
 ## Setup
 
