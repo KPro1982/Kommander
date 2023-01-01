@@ -2,9 +2,6 @@
 
  A gui companion to workbench for mod creation, building, and launching
 
-## BUG REPORT
-I've just noticed a bug that prevents mods created with the create mod button from loading in to WB correctly using the GUI Launch WB button. When the GUI launch button is used, WB opens but the new mod does not show up in the script editor. However, WB appears to launch and work as expected from the launch WB bat file. I'm working on it but for now, if you have problems using the GUI button please use the bat to launch WB. No one else has mentioned it so I'm not sure if the code is bugged (most likely) or if I've borked something on my end. I apologize for the inconvenience.
-
 ## Installation
 1. Download file
 2. Unzip anywhere you want
@@ -40,6 +37,9 @@ By default Kommander's create mod from template uses a modtemplate that resides 
 ### Alternative ModTemplates
 
 As an alternative to the Kommander template, you can create your own templates for specific tasks e.g. a template with  server-config logic, a template with UI logic.  You can then just select the template that you want before you create mod.
+
+### BUG REPORT
+Fixed -- bug where WB wouldn't show some mods when it loaded is fixed. Sorry for any inconvenience.
 
 Please give me feedback, bug reports, and feature requests.
 
