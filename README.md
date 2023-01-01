@@ -2,6 +2,8 @@
 
  A gui companion to workbench for mod creation, building, and launching
 
+## BUG REPORT
+I've just noticed a bug that prevents mods created with the create mod button from loading in to WB correctly using the GUI Launch WB button. However, WB appears to launch just fine from the launch WB bat file. I'm working on it but for now, if you have problems using the GUI button please use the bat to launch WB. No one else has mentioned it so I'm not sure if the code is bugged (most likely) or if I've borked something on my end. I apologize for the inconvenience.
 
 ## Installation
 1. Download file
