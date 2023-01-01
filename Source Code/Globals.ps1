@@ -374,8 +374,8 @@ function Start-kWorkbench
 	$workbenchf = Read-GlobalParam -key "WorkbenchFolder"
 	$command = Add-Folder -Source $workbenchf -Folder "workbenchApp.exe"
     $mods = "`"-mod=" + $modlist + "`""
-	$params = $mods + ",-dologs,-adminlog,-freezecheck,`"scriptDebug=true`""
-	# $params = "-mod=S:\Mod-Packed\@NPCPro; S:\Mod-Packed\@CF"
+	# $params = $mods + ",-dologs,-adminlog,-freezecheck,`"scriptDebug=true`""
+	$params = $mods
 	
 	
 	if ($commandline)
