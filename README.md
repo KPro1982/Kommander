@@ -15,6 +15,7 @@ Note: That you can use either the .exe to run or the ps1.
 - **12/12/22** added auto-archive 
 - **12/11/22** added floating toolbar 
 - **12/30/22** added search capability
+- **12/31/22** removed search capability and moved it to KodeWizard, a standalone tool 
 
 ## Setup
 
