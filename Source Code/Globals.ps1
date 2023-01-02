@@ -311,13 +311,14 @@ function Start-kServer
 	
 	$modlist = Get-kAddons
 	$gamef = Read-GlobalParam -key "GameFolder"
-	$serverDZ = $gamef + "\serverDZ.cfg"
+	$serverf = Read-GlobalParam -key "ServerFolder"
+	$serverDZ = '"' + "-config=" + $serverf + "\serverDZ.cfg" + '"'
 	$profilesf = Read-GlobalParam -key "ProfilesFolder" 
 	$profilesparam = "`"-profiles=" + $profilesf + "`""
 	$mods = "`"-mod=" + $modlist + "`""
 	$command = $gamef + "\DayZDiag_x64.exe"
 	#$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', '-profiles=S:\Steam\steamapps\common\DayZ\profiles'
-	$params = $mods, '-filePatching', '-server', '-config=serverDZ.cfg', $profilesparam
+	$params = $mods, '-filePatching', '-server', $serverDZ, $profilesparam
 	
 	if ($commandline)
 	{

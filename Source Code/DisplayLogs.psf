@@ -218,6 +218,11 @@ $buttonResetGrep_Click={
 
 
 ]]></Code>
+  <Bookmarks />
+  <BreakPoints>
+    <Line Disabled="False">5</Line>
+  </BreakPoints>
+  <TracePoints />
   <Mode>1</Mode>
   <Assemblies />
 </File>

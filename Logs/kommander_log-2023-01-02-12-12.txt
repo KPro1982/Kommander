@@ -1,0 +1,58 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230102121207
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 65449 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 26268
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-02-12-12.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2708 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2708 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2709 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2709 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:782 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:782 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+

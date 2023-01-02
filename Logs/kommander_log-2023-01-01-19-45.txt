@@ -1,0 +1,3431 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230101194540
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 28576
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-01-19-45.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At line:2832 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:2832 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At line:2833 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:2833 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:804 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:804 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Kommander\dayz.gproj' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Kommander\dayz.gproj:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Kommander\dayz.gproj'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Kommander\day
+   z.gproj:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeLicensedPBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...LicensedPBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizeObfuscatePBO.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...bfuscatePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBO.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBO.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\BinarizePBOF.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\BinarizePBOF.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ClearLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ClearLogs.bat
+   :String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\CopyProject.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\CopyProject.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Deploy.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Deploy.bat:St
+   ring) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Exit.bat' because it does
+not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Exit.bat:Stri
+   ng) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ExtractData.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ExtractData.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchClient.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchClient.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchLocalMP.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchLocalMP
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchOffline.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchOffline
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchServer.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\LaunchServer.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardLocalMP.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...dardLocalMP.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\LaunchStandardServer.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R...ndardServer.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\OpenLogs.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\OpenLogs.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\SetupMod.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\SetupMod.bat:
+   String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start game.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\Start game.ba
+   t:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\Start server and mpgame.bat'
+because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\R... and mpgame.b
+   at:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\start server.bat' because it
+does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\start server.
+   bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\UpdateVersion.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\UpdateVersion
+   .bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDeploy.bat:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\RB5\ZBinarizeDeploy.bat' because
+it does not exist.
+At line:7418 char:5
++             (Get-Content -Path "$Folder\$File") |
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\RB5\ZBinarizeDepl
+   oy.bat:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+**********************
+Command start time: 20230101194734
+**********************
+PS>$ExitCode
+0
