@@ -4,3 +4,5 @@ Source Code/Prior Releases/Kommander 22-12-17 (release).zip
 Temp.json
 GlobalSettings.json
 Source Code/Logs/*.txt
+Logs\*
+TemplateSettings.json
