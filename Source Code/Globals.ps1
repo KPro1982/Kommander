@@ -1661,7 +1661,10 @@ function Read-FinalPathName
 function Start-Archive
 {
 	[CmdletBinding()]
-	param ()
+	param
+	(
+		[string]$Comment
+	)
 	
 	$sourcepath = Read-GlobalParam -key "CurrentModFolder"
 	$targetpath = Read-GlobalParam -key "ArchiveFolder"
@@ -1673,7 +1676,17 @@ function Start-Archive
 		New-Item -Path $targetpath -ItemType "Directory"
 		
 	}
-	$targetpath = Add-Folder -Source $targetpath -Folder "$modname.$datetime.zip"
+	if ($Comment)
+	{
+		$Comment = $Comment.Replace(' ','_')
+		$targetpath = Add-Folder -Source $targetpath -Folder "$modname.$datetime--$Comment.zip"
+		
+	}
+	else
+	{
+		$targetpath = Add-Folder -Source $targetpath -Folder "$modname.$datetime.zip"
+	}
+
 	Compress-Archive -Path $sourcepath -DestinationPath $targetpath
 }
 

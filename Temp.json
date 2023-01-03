@@ -1,9 +1,9 @@
 {
     "Message":  "",
     "Title":  "Server + Build Commandlines",
-    "RequestedLogPath":  "",
-    "RequestedInitialDirectory":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Logs",
-    "RequestedFilter":  "All Files (*.*)|*.*",
-    "RequestedMostRecent":  "True",
-    "RequestedLogFolder":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Logs"
+    "RequestedLogPath":  "S:\\Temp\\Scripts.packing.log",
+    "RequestedInitialDirectory":  "",
+    "RequestedFilter":  "",
+    "RequestedMostRecent":  "False",
+    "RequestedLogFolder":  ""
 }

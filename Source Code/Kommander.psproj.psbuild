@@ -60,8 +60,7 @@ DisableLogging=0
 DisableTranscript=0
 RestrictedOS=
 AutoIncrementVersion=0
-Icon1=C:\ProgramData\SAPIEN\Stock Icons\ScriptPackage.ico
-Icon2=.\command.ico
+Icon1=.\command.ico
 [Deploy]
 MainFile=
 Destination=
