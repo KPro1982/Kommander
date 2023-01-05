@@ -6,3 +6,4 @@ GlobalSettings.json
 Source Code/Logs/*.txt
 Logs\*
 TemplateSettings.json
+Source Code/CreateShortcut.exe

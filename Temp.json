@@ -1,8 +1,8 @@
 {
     "Message":  "",
-    "Title":  "Server + Build Commandlines",
-    "RequestedLogPath":  "S:\\Temp\\Scripts.packing.log",
-    "RequestedInitialDirectory":  "",
+    "Title":  "Build Help",
+    "RequestedLogPath":  "S:\\Mod-Source\\NPCPro\\Kommander\\Buildoutput.txt",
+    "RequestedInitialDirectory":  "S:\\Mod-Source\\NPCPro",
     "RequestedFilter":  "",
     "RequestedMostRecent":  "False",
     "RequestedLogFolder":  ""
