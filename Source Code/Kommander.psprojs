@@ -11,5 +11,6 @@
     <File>CreateMod.psf</File>
     <File>Wizard.psf</File>
     <File>Globals.ps1</File>
+    <File>BuildSettings.psf</File>
   </OpenFiles>
 </ProjectState>

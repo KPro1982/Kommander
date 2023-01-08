@@ -466,7 +466,7 @@ function Start-BuildAddonBuilder
 		
 	}
 	
-	$trash = Link-All
+
 	
 	Set-Location -Path $addonbuilderf
 	
@@ -492,9 +492,6 @@ function Start-BuildMikero
 	Create-BuildFolder -ModName $modname
 	$buildlogpath = Read-GlobalParam -key "CurrentModFolder"
 	$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Kommander\buildoutput.txt"
-	
-	$trash = Link-Scripts
-	$trash = Link-Source
 	
 	
 	# $params = "-P", "-Z", "-O", "-E=dayz", "-K", "+M=P:\PackedMods\@FirstMod", "S:\Steam\steamapps\common\DayZ\Mod-Source\FirstMod\Scripts"
@@ -852,6 +849,14 @@ function Use-Build
 {
 	[CmdletBinding()]
 	param ()
+	
+	$linkall = Read-GlobalParam -key "AutoLinkOnBuild"
+	if ($linkall -eq $true)
+	{
+		$trash = Link-All
+	}
+
+	
 	
 	$buildmethod = Read-GlobalParam -key "BuildMethod"
 	Reset-BuildSuccess
@@ -1297,17 +1302,33 @@ function Link-All
 	[CmdletBinding()]
 	param ()
 	
-	Link-Packed
-	Link-Scripts
-	Link-Source
-	Link-Workbench
-	Link-Addons
-	
 	if (Test-Path -Path "links.txt")
 	{
 		Remove-Item -Path "links.txt"
 		
 	}
+	
+	$usebatch = Read-GlobalParam -key "UseBatch"
+	if ($usebatch -eq $true)
+	{
+		$curmodf = Read-GlobalParam -key "CurrentModFolder"
+		$linkpath = Add-Folder -Source $curmodf -Folder "linkall.bat"
+		
+		start-process $linkpath
+		
+	}
+	else
+	{
+		Link-Packed
+		Link-Scripts
+		Link-Source
+		Link-Workbench
+		Link-Addons
+		
+	}
+
+	
+
 	
 }
 function Link-Scripts
