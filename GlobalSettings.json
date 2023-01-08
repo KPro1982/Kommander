@@ -1,8 +1,8 @@
 {
-    "GameFolder":  "S:\\Steam\\steamapps\\common\\DayZ",
     "TemplateFolder":  "S:\\Kommander\\Source Code\\TemplateMod",
     "ProfilesFolder":  "S:\\Steam\\steamapps\\common\\DayZ\\Profiles",
     "WorkbenchFolder":  "S:\\Steam\\steamapps\\common\\DayZ Tools\\Bin\\Workbench",
+    "ModSourceFolder":  "S:\\Mod-Source",
     "MikeroLogFolder":  "",
     "AutoLinkOnBuild":  "False",
     "AddonBuilderParams":  "",
@@ -15,7 +15,7 @@
     "BuildMethod":  "Tools",
     "ArchiveFolder":  "S:\\Mod-Archive",
     "DepboFolder":  "C:\\Program Files (x86)\\Mikero\\DePboTools",
-    "ModSourceFolder":  "S:\\Mod-Source",
+    "GameFolder":  "S:\\Steam\\steamapps\\common\\DayZ",
     "AddonsFolder":  "S:\\Steam\\steamapps\\common\\DayZ\\!Workshop",
     "ServerFolder":  "S:\\Steam\\steamapps\\common\\DayZ"
 }
