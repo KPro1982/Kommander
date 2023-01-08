@@ -1,0 +1,42 @@
+P:\@TestMod  ---->>  S:\Mod-Packed\@TestMod
+
+
+P:\@TestMod  ---->>  S:\Mod-Packed\@TestMod
+
+
+S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
+
+
+P:\TestMod  ---->>  S:\Mod-Source\TestMod
+
+
+S:\Steam\steamapps\common\DayZ\TestMod  ---->>  S:\Mod-Source\TestMod
+
+
+S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Defines.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Defines.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Defines.pbo.Jacob_Mango_V3.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Defines.pbo.Jacob_Mango_V3.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\GUI.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\GUI.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\GUI.pbo.Jacob_Mango_V3.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\GUI.pbo.Jacob_Mango_V3.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Legacy.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Legacy.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Legacy.pbo.Jacob_Mango_V3.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Legacy.pbo.Jacob_Mango_V3.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Scripts.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Scripts.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\Scripts.pbo.Jacob_Mango_V3.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Scripts.pbo.Jacob_Mango_V3.bisign
+
+
