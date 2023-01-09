@@ -1222,7 +1222,7 @@ function Link-DayzFolders
 		[string]$Target
 	)
 	
-	while (Test-Path -Path $Link)
+	if (Test-Path -Path $Link)
 	{
 		if ((Get-Item -Path $Link -Force).LinkType) 
 		{
