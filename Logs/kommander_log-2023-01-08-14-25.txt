@@ -1,0 +1,203 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230108142527
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 25280
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-08-14-25.txt
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotF
+   oundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewI
+   temCommand
+
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotF
+   oundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewI
+   temCommand
+
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotF
+   oundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewI
+   temCommand
+
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find drive. A drive with the name 'P' does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:String) [New-Item], DriveNotF
+   oundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewI
+   temCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:790 char:4
++             $buttonB.BackColor = 'Red'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:790 char:4
++             $buttonB.BackColor = 'Red'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2253 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2253 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+**********************
+Command start time: 20230108152154
+**********************
+PS>$ExitCode
+0
+**********************
+Windows PowerShell transcript end
+End time: 20230108152154
+**********************

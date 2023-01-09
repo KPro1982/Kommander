@@ -1,0 +1,204 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230108153011
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 17896
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-08-15-30.txt
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Set-Location : Cannot find path 'S:\Kommander\UIHelper' because it does not exist.
+At line:8423 char:3
++         Set-Location -Path $rootfolder
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Kommander\UIHelper:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'S:\Kommander\UIHelper' because it does not
+exist.
+At line:8423 char:3
++         Set-Location -Path $rootfolder
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Kommander\UIHelper:String) [
+   Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLo
+   cationCommand
+
+Copy-Item : Cannot find path 'S:\Kommander\UIHelperTemplate' because it does not exist.
+At line:8450 char:3
++         Copy-Item .\$templatefolder -Destination "$modkommanderf\$Nam ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Kommander\UIHelperTemplate:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path 'S:\Kommander\UIHelperTemplate' because it does
+not exist.
+At line:8450 char:3
++         Copy-Item .\$templatefolder -Destination "$modkommanderf\$Nam ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Kommander\UIHelperTemplate:S
+   tring) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyI
+   temCommand
+
+Rename-Item : Cannot rename because item at 
+'S:\Mod-Source\TestMod\Kommander\Condition\5_Mission\UIHelper\UI\UITemplate.c' does not exist.
+At line:8459 char:3
++         Rename-Item $SourcePath -NewName $NewUIName
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.RenameItemCommand
+Rename-Item : Cannot rename because item at
+'S:\Mod-Source\TestMod\Kommander\Condition\5_Mission\UIHelper\UI\UITemplate.c'
+does not exist.
+At line:8459 char:3
++         Rename-Item $SourcePath -NewName $NewUIName
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Rename-Item], PSInvalidOp
+   erationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.R
+   enameItemCommand
+
+Get-Content : Cannot find path 'S:\Mod-Source\TestMod\Kommander\Condition\5_Mission\UIHelper\UI\UICondition.c' because 
+it does not exist.
+At line:8365 char:22
++         $SourceContents = (Get-Content $sourcepath)
++                            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...I\UICondition.c:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'S:\Mod-Source\TestMod\Kommander\Condition\5_Mis
+sion\UIHelper\UI\UICondition.c' because it does not exist.
+At line:8365 char:22
++         $SourceContents = (Get-Content $sourcepath)
++                            ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...I\UICondition
+   .c:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+Copy-Item : Cannot find path 'S:\Mod-Source\TestMod\Kommander\Condition\inputs.xml' because it does not exist.
+At line:8515 char:4
++             Copy-Item ".\$Name\inputs.xml" $inputsfileui
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...tion\inputs.xml:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path
+'S:\Mod-Source\TestMod\Kommander\Condition\inputs.xml' because it does not
+exist.
+At line:8515 char:4
++             Copy-Item ".\$Name\inputs.xml" $inputsfileui
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...tion\inputs.x
+   ml:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyI
+   temCommand
+
+Creating S:\Mod-Source\TestMod\Scripts\data\uiinputs.xml.....
+IMPORTANT!!! You must integrate S:\Mod-Source\TestMod\Scripts\data\uiinputs.xml into the existing inputs.xml before the keybinds will work.
+Copy-Item : Cannot find path 'S:\Mod-Source\TestMod\Kommander\Condition\3_Game\UIHelper\' because it does not exist.
+At line:8536 char:4
++             Copy-Item ".\$Name\3_Game\UIHelper\" -Destination $gamepa ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T..._Game\UIHelper\:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path
+'S:\Mod-Source\TestMod\Kommander\Condition\3_Game\UIHelper\' because it does
+not exist.
+At line:8536 char:4
++             Copy-Item ".\$Name\3_Game\UIHelper\" -Destination $gamepa ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T..._Game\UIHelpe
+   r\:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyI
+   temCommand
+
+Copy-Item : Cannot find path 'S:\Mod-Source\TestMod\Kommander\Condition\5_Mission\UIHelper\' because it does not exist.
+At line:8549 char:4
++             Copy-Item ".\$Name\5_Mission\UIHelper\" -Destination $mis ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...ssion\UIHelper\:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path
+'S:\Mod-Source\TestMod\Kommander\Condition\5_Mission\UIHelper\' because it
+does not exist.
+At line:8549 char:4
++             Copy-Item ".\$Name\5_Mission\UIHelper\" -Destination $mis ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Source\T...ssion\UIHelpe
+   r\:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyI
+   temCommand
+
+
+
+**********************
+Command start time: 20230108231713
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+**********************
+Command start time: 20230108232252
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+**********************
+Command start time: 20230108233709
+**********************
+PS>$ExitCode
+0

@@ -1,0 +1,18 @@
+P:\@ServerConfig  ---->>  S:\Mod-Packed\@ServerConfig
+
+
+P:\@ServerConfig  ---->>  S:\Mod-Packed\@ServerConfig
+
+
+S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
+
+
+P:\ServerConfig  ---->>  S:\Mod-Source\ServerConfig
+
+
+S:\Steam\steamapps\common\DayZ\ServerConfig  ---->>  S:\Mod-Source\ServerConfig
+
+
+S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons
+
+
