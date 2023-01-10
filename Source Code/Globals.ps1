@@ -1226,7 +1226,7 @@ function Link-DayzFolders
 	{
 		if ((Get-Item -Path $Link -Force).LinkType) 
 		{
-			Remove-Item -Path $Link -Recurse 
+			Remove-Item -Path $Link -Recurse -Force
 		}
 		
 	}
@@ -1291,7 +1291,7 @@ function Remove-FolderLinks
 	{
 		if ((Get-Item -Path $link.PSPath -Force).LinkType)
 		{
-			Remove-Item -Path $link.PSPath -Recurse
+			Remove-Item -Path $link.PSPath -Recurse -Force
 		}
 	}
 }
