@@ -44,6 +44,11 @@ function Get-ScriptDirectory
 
 
 
+
+
+
+
+
 function Get-Settings
 {
 	[CmdletBinding()]

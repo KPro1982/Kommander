@@ -1,0 +1,457 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230112104951
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 3784
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-12-10-49.txt
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+New-Item : The file 'S:\Mod-Source\ConfigTest\Scripts\3_Game\KPConfig\KPConfigRPC' already exists.
+At line:9055 char:3
++         New-Item -Path $textNewFileFolder.Text -Name $textNewFileName ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (S:\Mod-Source\C...fig\KPConfigRPC:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The file
+'S:\Mod-Source\ConfigTest\Scripts\3_Game\KPConfig\KPConfigRPC' already exists.
+At line:9055 char:3
++         New-Item -Path $textNewFileFolder.Text -Name $textNewFileName ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (S:\Mod-Source\C...fig\KPConfigRPC:S
+   tring) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.New
+   ItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Get-Content : Access to the path 'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\ConfigTest:String) [Get-Content], 
+UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Access to the path
+'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\Config
+   Test:String) [Get-Content], UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsof
+   t.PowerShell.Commands.GetContentCommand
+
+New-Item : The file 'S:\Mod-Source\ConfigTest\Scripts\3_Game\KPConfig\KPConfigManager.c' already exists.
+At line:9055 char:3
++         New-Item -Path $textNewFileFolder.Text -Name $textNewFileName ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (S:\Mod-Source\C...ConfigManager.c:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The file
+'S:\Mod-Source\ConfigTest\Scripts\3_Game\KPConfig\KPConfigManager.c' already
+exists.
+At line:9055 char:3
++         New-Item -Path $textNewFileFolder.Text -Name $textNewFileName ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (S:\Mod-Source\C...ConfigManager.c:S
+   tring) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.New
+   ItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+New-Item : Cannot find path 'S:\Mod-Packed\@ClassUpCast' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@ClassUpCast:String) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find path 'S:\Mod-Packed\@ClassUpCast' because it does not
+exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@ClassUpCast:Stri
+   ng) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewIt
+   emCommand
+
+New-Item : Cannot find path 'S:\Mod-Packed\@ClassUpCast' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@ClassUpCast:String) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find path 'S:\Mod-Packed\@ClassUpCast' because it does not
+exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@ClassUpCast:Stri
+   ng) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewIt
+   emCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230112192332
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+**********************
+Command start time: 20230112192722
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+elseif : The term 'elseif' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:2253 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+elseif : The term 'elseif' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
+At line:2253 char:3
++         elseif ($tabPage -eq $tabkodesearch)
++         ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (elseif:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Get-Content : Access to the path 'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\ConfigTest:String) [Get-Content], 
+UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Access to the path
+'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\Config
+   Test:String) [Get-Content], UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsof
+   t.PowerShell.Commands.GetContentCommand
+
+**********************
+Command start time: 20230112224844
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+**********************
+Command start time: 20230112225620
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+**********************
+Command start time: 20230112232247
+**********************
+PS>TerminatingError(Stop-Process): "Cannot bind argument to parameter 'Id' because it is null."
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : Cannot bind argument to parameter 'Id' because it is null.
+At line:838 char:16
++         Stop-Process $processes -Force
++                      ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindin
+   gValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,M
+   icrosoft.PowerShell.Commands.StopProcessCommand
+
+Get-Content : Access to the path 'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\ConfigTest:String) [Get-Content], 
+UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Access to the path
+'S:\Steam\steamapps\common\DayZ\Profiles\ConfigTest' is denied.
+At line:7963 char:29
++ ...            $textDisplayLog.Lines = Get-Content $script:currentlogpath
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (S:\Steam\steama...iles\Config
+   Test:String) [Get-Content], UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsof
+   t.PowerShell.Commands.GetContentCommand
+
+**********************
+Command start time: 20230113010336
+**********************
+PS>$ExitCode
+0
+**********************
+Windows PowerShell transcript end
+End time: 20230113010336
+**********************

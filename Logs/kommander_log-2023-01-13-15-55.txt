@@ -1,0 +1,130 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230113155555
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 52956
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-13-15-55.txt
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113180155
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already exists. Use 
+the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive 
+file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file
+S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already
+exists. Use the -Update parameter to update the existing archive file or use
+the -Force parameter to overwrite the existing archive file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.
+   zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+
+**********************
+Command start time: 20230113180156
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already exists. Use 
+the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive 
+file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file
+S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-18-01--Auto_Archive.zip already
+exists. Use the -Update parameter to update the existing archive file or use
+the -Force parameter to overwrite the existing archive file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.
+   zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+
+**********************
+Command start time: 20230113180159
+**********************
+PS>$ExitCode
+0

@@ -1,0 +1,138 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230114230302
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 63308 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 12732
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-14-23-03.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2768 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2768 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2769 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2769 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:779 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:779 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Windows PowerShell transcript start
+Start time: 20230114230329
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 63314 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 6180
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-14-23-03.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2768 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2768 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2769 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2769 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:779 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:779 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230114230331
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\TestMod\TestMod.2023-01-14-23-03--Auto_Archive.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\TestMod\TestMod.2023-01-14-23-03--Auto_Archive.zip already exists. 
+Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing 
+archive file.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1787 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file S:\Mod-Archive\TestMod\TestMod.2023-01-14-23-03--Auto_Archive.zip already exists. Use the -Update parameter to update the
+existing archive file or use the -Force parameter to overwrite the existing archive file.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1787 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+

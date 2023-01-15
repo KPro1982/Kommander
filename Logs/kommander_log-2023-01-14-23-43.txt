@@ -1,0 +1,165 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230114234309
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 63953 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 25272
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-14-23-43.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2784 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2784 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2785 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2785 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:784 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:784 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Exception getting "Item": "InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index"
+At S:\Kommander\Source Code\Kommander.Run.ps1:2559 char:3
++         $modname = $listSelectMod.Items.Item($listSelectMod.SelectedI ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], GetValueInvocationException
+    + FullyQualifiedErrorId : ExceptionWhenGetting
+Exception getting "Item": "InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index"
+At S:\Kommander\Source Code\Kommander.Run.ps1:2559 char:3
++         $modname = $listSelectMod.Items.Item($listSelectMod.SelectedI ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], GetValueInvocationException
+    + FullyQualifiedErrorId : ExceptionWhenGetting
+
+**********************
+Command start time: 20230114234310
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Folder' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Folder' because it is an empty string.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2562 char:60
++ ...     $curmodfolder = Add-Folder -Source $curmodfolder -Folder $modname
++                                                                  ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Folder' because it is an empty string.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2562 char:60
++ ...     $curmodfolder = Add-Folder -Source $curmodfolder -Folder $modname
++                                                                  ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+
+**********************
+Command start time: 20230114234310
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Folder' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Folder' because it is an empty string.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1775 char:56
++ ...       $targetpath = Add-Folder -source $targetpath -Folder "$modname"
++                                                                ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Folder' because it is an empty string.
+At S:\Kommander\Source Code\Kommander.Run.ps1:1775 char:56
++ ...       $targetpath = Add-Folder -source $targetpath -Folder "$modname"
++                                                                ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+
+**********************
+Windows PowerShell transcript start
+Start time: 20230114234330
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Program Files\SAPIEN Technologies, Inc\PowerShell Studio 2022\Debugger64\scriptdriver64Elevated.exe -noprofile -V5 -p 63959 -d S:\Kommander\Source Code -e PoshHostSTA -s S:\Kommander\Source Code\Kommander.Run.ps1
+Process ID: 23804
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-14-23-43.txt
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2784 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2784 char:4
++             $labelPboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2785 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'Visible' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:2785 char:4
++             $textpboname.Visible = $true
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:784 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At S:\Kommander\Source Code\Kommander.Run.ps1:784 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+

@@ -1,0 +1,1411 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230113214344
+Username: Office\Daniel
+RunAs User: Office\Daniel
+Configuration Name: 
+Machine: OFFICE (Microsoft Windows NT 10.0.22000.0)
+Host Application: S:\Kommander\Kommander.exe
+Process ID: 22928
+PSVersion: 5.1.22000.1335
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.1335
+BuildVersion: 10.0.22000.1335
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is S:\Kommander\Logs\kommander_log-2023-01-13-21-43.txt
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113214411
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already exists. Use 
+the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive 
+file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file
+S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already
+exists. Use the -Update parameter to update the existing archive file or use
+the -Force parameter to overwrite the existing archive file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.
+   zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+
+**********************
+Command start time: 20230113214411
+**********************
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(Compress-Archive): "The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already exists. Use the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive file."
+Compress-Archive : The archive file S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already exists. Use 
+the -Update parameter to update the existing archive file or use the -Force parameter to overwrite the existing archive 
+file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.zip:String) [Compress-Archive], 
+IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+Compress-Archive : The archive file
+S:\Mod-Archive\NPCPro\NPCPro.2023-01-13-21-44--Auto_Archive.zip already
+exists. Use the -Update parameter to update the existing archive file or use
+the -Force parameter to overwrite the existing archive file.
+At line:1809 char:3
++         Compress-Archive -Path $sourcepath -DestinationPath $targetpa ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (S:\Mod-Archive\...uto_Archive.
+   zip:String) [Compress-Archive], IOException
+    + FullyQualifiedErrorId : ArchiveFileExists,Compress-Archive
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215236
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215236
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215427
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215427
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215429
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215429
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215429
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+>> TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215429
+**********************
+PS>TerminatingError(Set-Location): "Cannot process argument because the value of argument "path" is null. Change the value of argument "path" to a non-null value."
+Set-Location : Cannot process argument because the value of argument "path" is null. Change the value of argument 
+"path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot process argument because the value of argument "path" is
+null. Change the value of argument "path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentN
+   ullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLo
+   cationCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113215429
+**********************
+PS>TerminatingError(Start-Process): "Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument 
+that is not null or empty, and then try the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument
+is null or empty. Provide an argument that is not null or empty, and then try
+the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindi
+   ngValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.Power
+   Shell.Commands.StartProcessCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+New-Item : Cannot find path 'S:\Mod-Packed\@NPCPro' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@NPCPro:String) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find path 'S:\Mod-Packed\@NPCPro' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@NPCPro:String) [
+   New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewIt
+   emCommand
+
+New-Item : Cannot find path 'S:\Mod-Packed\@NPCPro' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@NPCPro:String) [New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot find path 'S:\Mod-Packed\@NPCPro' because it does not exist.
+At line:1331 char:3
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (S:\Mod-Packed\@NPCPro:String) [
+   New-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewIt
+   emCommand
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215705
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215705
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215705
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+>> TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215705
+**********************
+PS>TerminatingError(Set-Location): "Cannot process argument because the value of argument "path" is null. Change the value of argument "path" to a non-null value."
+Set-Location : Cannot process argument because the value of argument "path" is null. Change the value of argument 
+"path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot process argument because the value of argument "path" is
+null. Change the value of argument "path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentN
+   ullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLo
+   cationCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113215705
+**********************
+PS>TerminatingError(Start-Process): "Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument 
+that is not null or empty, and then try the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument
+is null or empty. Provide an argument that is not null or empty, and then try
+the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindi
+   ngValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.Power
+   Shell.Commands.StartProcessCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215714
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215714
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215714
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+>> TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215714
+**********************
+PS>TerminatingError(Set-Location): "Cannot process argument because the value of argument "path" is null. Change the value of argument "path" to a non-null value."
+Set-Location : Cannot process argument because the value of argument "path" is null. Change the value of argument 
+"path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot process argument because the value of argument "path" is
+null. Change the value of argument "path" to a non-null value.
+At line:569 char:3
++         Set-Location -Path $addonbuilderf
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentN
+   ullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.SetLo
+   cationCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113215714
+**********************
+PS>TerminatingError(Start-Process): "Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument is null or empty. Provide an argument 
+that is not null or empty, and then try the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : Cannot validate argument on parameter 'FilePath'. The argument
+is null or empty. Provide an argument that is not null or empty, and then try
+the command again.
+At line:573 char:17
++         Start-Process $command -ArgumentList $params  -Wait -Redirect ...
++                       ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Start-Process], ParameterBindi
+   ngValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.Power
+   Shell.Commands.StartProcessCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215735
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+>> TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215744
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:541 char:39
++         $addonbuilderf = Add-Folder -Source $addonbuilder -Folder "Da ...
++                                             ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+>> TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:542 char:38
++         $addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Ad ...
++                                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215757
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215757
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215801
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215801
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:801 char:3
++         $buttonB.BackColor = 'Transparent'
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At line:859 char:3
++         $commonpath = $regpath.Split('\')
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At line:860 char:3
++         $finalpath = $commonpath[0]
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+**********************
+Command start time: 20230113215801
+**********************
+PS>TerminatingError(Add-Folder): "Cannot bind argument to parameter 'Source' because it is an empty string."
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Add-Folder
+Add-Folder : Cannot bind argument to parameter 'Source' because it is an empty
+string.
+At line:1516 char:30
++         $link = Add-Folder -Source $workbenchf -Folder "Addons"
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Folder], ParameterBindingV
+   alidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Add-Folder
+
+**********************
+Command start time: 20230113215801
+**********************
+PS>TerminatingError(Test-Path): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+Test-Path : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1323 char:23
++         if (Test-Path -Path $Link)
++                             ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingVa
+   lidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.TestPathCommand
+
+>> TerminatingError(New-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Cannot bind argument to parameter 'Path' because it is an empty
+string.
+At line:1331 char:41
++         New-Item -ItemType SymbolicLink -Path $Link -Target $Target
++                                               ~~~~~
+    + CategoryInfo          : InvalidData: (:) [New-Item], ParameterBindingVal
+   idationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl
+   lowed,Microsoft.PowerShell.Commands.NewItemCommand
+
+Get-Content : Cannot find path 'P:\True' because it does not exist.
+At line:775 char:15
++             $success = Get-Content -Path $buildlogpath | Select-Strin ...
++                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:\True:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'P:\True' because it does not exist.
+At line:775 char:15
++             $success = Get-Content -Path $buildlogpath | Select-Strin ...
++                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (P:\True:String) [Get-Content],
+   ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetCo
+   ntentCommand
+
+The property 'BackColor' cannot be found on this object. Verify that the property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+The property 'BackColor' cannot be found on this object. Verify that the
+property exists and can be set.
+At line:783 char:4
++             $buttonB.BackColor = 'Green'
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+**********************
+Command start time: 20230113215810
+**********************
+PS>$ExitCode
+0
