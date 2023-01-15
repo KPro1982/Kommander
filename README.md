@@ -41,5 +41,8 @@ As an alternative to the Kommander template, you can create your own templates f
 ### BUG REPORT
 Fixed -- bug where WB wouldn't show some mods when it loaded is fixed. Sorry for any inconvenience.
 
+Known -- the build log sometimes turns red even when the build was successful.  I think this is only an issue with Mikero as his log does not give a clear indication of success as the addonbuilder log does. Anyway, this is on my todo list to figure out. But for now treat a red log button as a "warning" that you should click on it and review the log for errors. If there are no errors in the log you should be good. Or if you are anal like me, delete the old pbo and rebuild. It should be green then.
+
+
 Please give me feedback, bug reports, and feature requests.
 
