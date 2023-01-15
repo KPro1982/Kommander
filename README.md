@@ -12,7 +12,7 @@ Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'.
 ## New Feature Update
 *Kommander is currently in active development. I am squashing bugs as I find them and adding new features. Expect things to break from time to time and check back here frequently for updates.*
 
-Current experiemental version -- rev. 2023.1.14
+Current experiemental build -- rev. 2023.1.14
 - **1/14/23** added timed archive, added ability to link without admin privileges via batch 
 - **12/31/22** removed search capability and moved it to KodeWizard, a standalone tool 
 - **12/30/22** added search capability
