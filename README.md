@@ -10,9 +10,9 @@
 Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'. 
 
 ## New Feature Update
-*Kommander is currently in active development. I am squashing bugs as I find them and adding new features. Expect things to break from time to time and check back here frequently for updates.*
+*Kommander is currently in active development. I am squashing bugs as I find them and adding new features. The releases page contains links to stable releases. Or download from the main page here for the current experiemental build. Expect things to break from time to time and check back here frequently for updates.*
 
-Current experiemental build -- rev. 2023.1.14
+Current experiemental build -- rev. 2023.1.16
 - **1/14/23** added timed archive
 - **1/10/23** added ability to link without admin privileges via batch 
 - **12/31/22** removed search capability and moved it to KodeWizard, a standalone tool 
@@ -48,6 +48,8 @@ As an alternative to the Kommander template, you can create your own templates f
 Fixed -- bug where WB wouldn't show some mods when it loaded is fixed. Sorry for any inconvenience.
 
 Fixed -- the "mount P" button on the tools menu is bugged if you do not use the standard set up for the "Projects Folder". I mistakenly left that folder location hard coded in. I just removed it as I don't think it is very useful anyway. PM me on discord if this was your favorite feature and I'll put it back in but I doubt anyone wants it.
+
+Fixed -- Addonbuilder did not include all relevant files when building using Kommander. Fixed by adding CLI parameters and an includes.txt. Many thanks to JaccuziAdmiral for identifying the issue and solving it!
 
 Known -- the build log sometimes turns red even when the build was successful.  I think this is only an issue with Mikero as his log does not give a clear indication of success as the addonbuilder log does. Anyway, this is on my todo list to figure out. But for now treat a red log button as a "warning" that you should click on it and review the log for errors. If there are no errors in the log you should be good. Or if you are anal like me, delete the old pbo and rebuild. It should be green then.
 
