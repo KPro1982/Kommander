@@ -9,3 +9,5 @@ TemplateSettings.json
 Source Code/CreateShortcut.exe
 *.json
 *.txt
+GlobalSettings.json
+Temp.json

@@ -1,16 +1,16 @@
-P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
+P:\@ConfigFinal  ---->>  S:\Mod-Packed\@ConfigFinal
 
 
-P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
+P:\@ConfigFinal  ---->>  S:\Mod-Packed\@ConfigFinal
 
 
 S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
 
 
-P:\NPCPro  ---->>  S:\Mod-Source\NPCPro
+P:\ConfigFinal  ---->>  S:\Mod-Source\ConfigFinal
 
 
-S:\Steam\steamapps\common\DayZ\NPCPro  ---->>  S:\Mod-Source\NPCPro
+S:\Steam\steamapps\common\DayZ\ConfigFinal  ---->>  S:\Mod-Source\ConfigFinal
 
 
 S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons

@@ -465,7 +465,7 @@ function Start-BuildAddonBuilder
 	$project = $projectdrive.TrimEnd('\')
 	$project = "-project=" + $project
 	$paramsetting = $paramsetting + "," + '"' + $packedmodf + '"'
-	$paramsetting = $paramsetting + ", $project" + ", $cliparams"
+	$paramsetting = $paramsetting + ", $cliparams"
 	
 	
 	$params = $paramsetting.Split(',')
