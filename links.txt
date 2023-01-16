@@ -1,16 +1,16 @@
-P:\@PolyTester  ---->>  S:\Mod-Packed\@PolyTester
+P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
 
 
-P:\@PolyTester  ---->>  S:\Mod-Packed\@PolyTester
+P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
 
 
 S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
 
 
-P:\PolyTester  ---->>  S:\Mod-Source\PolyTester
+P:\NPCPro  ---->>  S:\Mod-Source\NPCPro
 
 
-S:\Steam\steamapps\common\DayZ\PolyTester  ---->>  S:\Mod-Source\PolyTester
+S:\Steam\steamapps\common\DayZ\NPCPro  ---->>  S:\Mod-Source\NPCPro
 
 
 S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons

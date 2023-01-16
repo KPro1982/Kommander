@@ -1,16 +1,16 @@
-P:\@TestMod  ---->>  S:\Mod-Packed\@TestMod
+P:\@ConfigFinal  ---->>  S:\Mod-Packed\@ConfigFinal
 
 
-P:\@TestMod  ---->>  S:\Mod-Packed\@TestMod
+P:\@ConfigFinal  ---->>  S:\Mod-Packed\@ConfigFinal
 
 
 S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
 
 
-P:\TestMod  ---->>  S:\Mod-Source\TestMod
+P:\ConfigFinal  ---->>  S:\Mod-Source\ConfigFinal
 
 
-S:\Steam\steamapps\common\DayZ\TestMod  ---->>  S:\Mod-Source\TestMod
+S:\Steam\steamapps\common\DayZ\ConfigFinal  ---->>  S:\Mod-Source\ConfigFinal
 
 
 S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons

@@ -12,5 +12,6 @@
     <File>Wizard.psf</File>
     <File>Globals.ps1</File>
     <File>BuildSettings.psf</File>
+    <File>ReplacementTools.ps1</File>
   </OpenFiles>
 </ProjectState>

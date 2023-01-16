@@ -447,7 +447,9 @@ function Start-BuildAddonBuilder
 	$addonbuilder = Read-SteamCommon
 	$addonbuilderf = Add-Folder -Source $addonbuilder -Folder "DayZ Tools\Bin\AddonBuilder"
 	$addonbuilder = Add-Folder -Source $addonbuilderf -Folder "Addonbuilder.exe"
-	$command = $addonbuilder
+	$command = '"' + $addonbuilder + '"'
+	
+	$cliparams = Read-GlobalParam -key "AddonBuilderParams"
 	
 	$modname = Read-ModParam -key "ModName"
 	Create-BuildFolder -ModName $modname
@@ -457,9 +459,13 @@ function Start-BuildAddonBuilder
 	
 	$packedmodf = Read-GlobalParam -key "PackedModFolder"
 	$packedmodf = Add-Folder -Source $packedmodf -Folder "@$modname\addons"
-	$paramsetting = "P:\" + $modname
-	$paramsetting = $paramsetting + "," + $packedmodf
-	$paramsetting = $paramsetting + ", -project=P:"
+	
+	$projectdrive = Read-GlobalParam -key "ProjectDrive"
+	$paramsetting = Add-Folder -Source $projectdrive -Folder $modname
+	$project = $projectdrive.TrimEnd('\')
+	$project = "-project=" + $project
+	$paramsetting = $paramsetting + "," + '"' + $packedmodf + '"'
+	$paramsetting = $paramsetting + ", $project" + ", $cliparams"
 	
 	
 	$params = $paramsetting.Split(',')
@@ -694,7 +700,6 @@ function Set-BuildSuccess
 	{
 		
 		$buttonOpenBuildLog.BackColor = 'Red'
-		$buttonB.BackColor = 'Red'
 		return $false
 		
 	}
@@ -704,8 +709,7 @@ function Reset-BuildSuccess
 {
 	[CmdletBinding()]
 	param ()
-	$buttonOpenBuildLog.BackColor = 'Transparent'
-	$buttonB.BackColor = 'Transparent'
+	$buttonOpenBuildLog = 'Transparent'
 	
 	
 }
