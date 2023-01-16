@@ -1,13 +1,10 @@
-
-Source Code/Prior Releases/Kommander (rev 2023.1.1).zip
-Source Code/Prior Releases/Kommander 22-12-17 (release).zip
 Temp.json
 GlobalSettings.json
-Source Code/Logs/*.txt
-Logs\*
 TemplateSettings.json
+Source Code/Logs/*.txt
+Logs/
 Source Code/CreateShortcut.exe
-*.json
-*.txt
+
+
+
 GlobalSettings.json
-Temp.json
