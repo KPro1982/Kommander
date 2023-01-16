@@ -10,7 +10,7 @@
 Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'. 
 
 ## New Feature Update
-*Kommander is currently in active development. I am squashing bugs as I find them and adding new features. Expect things to break from time to time and check back here frequently for updates.*
+*Kommander is currently in active development. I am squashing bugs as I find them and adding new features. The releases page contains links to stable releases. Or download from the main page here for the current experiemental build. Expect things to break from time to time and check back here frequently for updates.*
 
 Current experiemental build -- rev. 2023.1.16
 - **1/14/23** added timed archive
