@@ -1049,7 +1049,7 @@ $textnewmodname_TextChanged = {
 }
 
 $buttonhelpadditionmods_Click = {
-	Set-PopupMessage -Message "Codes for regular keys begin with 'k'. Example kN will setup a key bind for the 'N' key. You can use the button provided to obtain a list of code but Kommander does not validate that your entry. IMPORTRANT: In this list, the codes begin KC_.  This needs to be replaced with k. e.g. KC_B because kB."
+	Set-PopupMessage -Message "Codes for regular keys begin with 'k'. Example kN will setup a key bind for the 'N' key. You can use the button provided to obtain a list of code but Kommander does not validate that your entry. IMPORTANT: In this list, the codes begin KC_.  This needs to be replaced with k. e.g. KC_B because kB."
 	Show-messageform_psf
 	
 }

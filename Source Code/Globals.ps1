@@ -685,7 +685,7 @@ function Set-BuildSuccess
 	{
 	
 		$ModName = Read-ModParam -key "ModName"
-		$success = Get-Content -Path $buildlogpath | Select-String -Pattern "renaming Scripts"
+		$success = Get-Content -Path $buildlogpath | Select-String -Pattern "success"
 
 		
 	}
@@ -1239,9 +1239,12 @@ function Link-DayzFolders
 		}
 		
 	}
+	
+	$curfolder = Read-GlobalParam -key "CurrentModFolder"
+	$logfolder = Add-Folder -Source $curfolder -Folder "Kommander\link.log"
 	New-Item -ItemType SymbolicLink -Path $Link -Target $Target
 	$output = $link  + "  ---->>  " + $target + "`n`n"
-	Add-Content -Path "links.txt" -Value $output
+	Add-Content -Path $logfolder -Value $output
 }
 
 
@@ -1266,7 +1269,10 @@ function Remove-AllLinks
 	Remove-FolderLinks -Folder "P:\"
 	$dayzf = Read-GlobalParam -key "GameFolder"
 	Remove-FolderLinks -Folder $dayzf
-	
+	$dayzaddonsf = Add-Folder -Source $dayzf -Folder "Addons"
+	Remove-FileLinks -Folder $dayzaddonsf
+	$workbenchf = Read-GlobalParam -key "WorkbenchFolder"
+	Remove-FolderLinks -Folder $workbenchf
 }
 
 <#
@@ -1295,7 +1301,7 @@ function Remove-FolderLinks
 	)
 	
 	$targetfiles = Get-ChildItem $Folder *.* -Directory
-	
+
 	foreach ($link in $targetfiles)
 	{
 		if ((Get-Item -Path $link.PSPath -Force).LinkType)
@@ -1304,7 +1310,24 @@ function Remove-FolderLinks
 		}
 	}
 }
-
+function Remove-FileLinks
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$Folder
+	)
+	
+	$targetfiles = Get-ChildItem $Folder *.* -File
+	foreach ($link in $targetfiles)
+	{
+		if ((Get-Item -Path $link.PSPath -Force).LinkType)
+		{
+			Remove-Item -Path $link.PSPath -Recurse -Force
+		}
+	}
+}
 
 function Link-All
 {
@@ -1328,11 +1351,40 @@ function Link-All
 	}
 	else
 	{
-		Link-Packed
-		Link-Scripts
-		Link-Source
-		Link-Workbench
-		Link-Addons
+		
+		$linkworkbench = Read-GlobalParam -key "LinkWorkbench"
+		$linkscripts = Read-GlobalParam -key "LinkScripts"
+		$linksource = Read-GlobalParam -key "LinkSource"
+		$linkpacked = Read-GlobalParam -key "LinkPacked"
+		$linkaddons = Read-GlobalParam -key "LinkAddons"
+		
+		if ($linkpacked -eq $true)
+		{	
+			Link-Packed
+		}
+		if ($linkscripts -eq $true)
+		{
+			Link-Scripts
+		}
+		if ($linksource -eq $true)
+		{
+			Link-Source
+		}
+		if ($linkworkbench -eq $true)
+		{
+			Link-Workbench
+		}
+		if ($linkaddons -eq $true)
+		{
+			Link-Addons
+		}
+		
+		
+		
+		
+		
+		
+
 		
 	}
 

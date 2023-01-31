@@ -13,5 +13,6 @@
     <File>Globals.ps1</File>
     <File>BuildSettings.psf</File>
     <File>ReplacementTools.ps1</File>
+    <File>Link All Options.psf</File>
   </OpenFiles>
 </ProjectState>

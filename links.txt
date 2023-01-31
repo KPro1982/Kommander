@@ -1,16 +1,16 @@
-P:\@Tester  ---->>  S:\Mod-Packed\@Tester
+P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
 
 
-P:\@Tester  ---->>  S:\Mod-Packed\@Tester
+P:\@NPCPro  ---->>  S:\Mod-Packed\@NPCPro
 
 
 S:\Steam\steamapps\common\DayZ\Scripts  ---->>  P:\Scripts
 
 
-P:\Tester  ---->>  S:\Mod-Source\Tester
+P:\NPCPro  ---->>  S:\Mod-Source\NPCPro
 
 
-S:\Steam\steamapps\common\DayZ\Tester  ---->>  S:\Mod-Source\Tester
+S:\Steam\steamapps\common\DayZ\NPCPro  ---->>  S:\Mod-Source\NPCPro
 
 
 S:\Steam\steamapps\common\DayZ Tools\Bin\Workbench\Addons  ---->>  S:\Steam\steamapps\common\DayZ\Addons
@@ -38,5 +38,23 @@ S:\Steam\steamapps\common\DayZ\Addons\Scripts.pbo  ---->>  S:\Steam\steamapps\co
 
 
 S:\Steam\steamapps\common\DayZ\Addons\Scripts.pbo.Jacob_Mango_V3.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@CF\addons\Scripts.pbo.Jacob_Mango_V3.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\assets.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\assets.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\assets.pbo.VPP.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\assets.pbo.VPP.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\VPPAdminTools.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\VPPAdminTools.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\VPPAdminTools.pbo.VPP.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\VPPAdminTools.pbo.VPP.bisign
+
+
+S:\Steam\steamapps\common\DayZ\Addons\VPPStaticItems.pbo  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\VPPStaticItems.pbo
+
+
+S:\Steam\steamapps\common\DayZ\Addons\VPPStaticItems.pbo.VPP.bisign  ---->>  S:\Steam\steamapps\common\DayZ\!Workshop\@VPPAdminTools\addons\VPPStaticItems.pbo.VPP.bisign
 
 

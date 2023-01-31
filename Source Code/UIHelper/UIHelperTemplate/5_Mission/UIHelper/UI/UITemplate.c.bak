@@ -63,14 +63,6 @@ class UITemplate extends UIScriptedMenu
 
     }
 
-
-	void CloseMenu()
-	{
-		m_Initialized = 0;
-		GetGame().GetUIManager().HideScriptedMenu(this);
-	}
-	
-	
     override Widget Init()
     {
 		/* 
@@ -113,8 +105,8 @@ class UITemplate extends UIScriptedMenu
     {
 		
 	/*
-		Close the menu with CloseMenu();
-		
+		Close the menu with 
+		GetGame().GetUIManager().HideScriptedMenu(this);
 	*/
 	
     // [INSERTSWITCH]
