@@ -13,6 +13,7 @@ Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'.
 *Kommander is currently in active development. I am squashing bugs as I find them and adding new features. The releases page contains links to stable releases. Or download from the main page here for the current experiemental build. Expect things to break from time to time and check back here frequently for updates.*
 
 Current experiemental build -- rev. 2023.1.17
+- **1/30/23** added additional control over what links are created and when they are created. Added log of links which is saved in the Mod's Kommander folder.
 - **1/14/23** added timed archive
 - **1/10/23** added ability to link without admin privileges via batch 
 - **12/31/22** removed search capability and moved it to KodeWizard, a standalone tool 
