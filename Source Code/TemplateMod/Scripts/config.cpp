@@ -5,7 +5,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.1;
-		requiredAddons[] = {"JM_CF_Scripts", "DZ_Data"}; // add required mods here if any "mod1", "mod2"
+		requiredAddons[] = {"DZ_Data"}; // add required mods here if any "mod1", "mod2"
 	};
 };
 
