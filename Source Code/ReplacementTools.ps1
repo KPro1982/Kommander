@@ -260,6 +260,15 @@ function Edit-BatchFiles
 			$packmod = Add-Folder -Source $packmod -Folder "@$ModName"
 			Edit-TemplateTokens -Source "WB_PACKEDMOD" -Replace $packmod -File $file -Folder $ModFolder
 			
+			# WB_SERVERMODLIST
+			$packmod = Read-GlobalParam -key "PackedModFolder"
+			$packmod = Add-Folder -Source $packmod -Folder "@$ModName"
+			Edit-TemplateTokens -Source "WB_SERVERMODLIST" -Replace $packmod -File $file -Folder $ModFolder
+			
+			# WB_WORKBENCHMODLIST			
+			$packmod = Read-GlobalParam -key "PackedModFolder"
+			$packmod = Add-Folder -Source $packmod -Folder "@$ModName"
+			Edit-TemplateTokens -Source "WB_WORKBENCHMODLIST" -Replace $packmod -File $file -Folder $ModFolder
 			
 			# WB_DAYZFOLDER
 			$dayzf = ""
