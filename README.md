@@ -12,7 +12,8 @@ Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'.
 ## New Feature Update
 *Kommander is currently in active development. I am squashing bugs as I find them and adding new features. The releases page contains links to stable releases. Or download from the main page here for the current experiemental build. Expect things to break from time to time and check back here frequently for updates.*
 
-Current experiemental build -- rev. 2023.1.31
+Current experiemental build -- rev. 2023.2.1
+- **2/1/23** added ability to select different mods to launch with workbench than launch with server / client.
 - **1/31/23** added additional control over what links are created and when they are created. Added log of links which is saved in the Mod's Kommander folder.
 - **1/14/23** added timed archive
 - **1/10/23** added ability to link without admin privileges via batch 
