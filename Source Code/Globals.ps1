@@ -881,6 +881,39 @@ function Use-Launch
 	Start-Sleep -Seconds 10
 	Start-kMPGame
 }
+function Use-ClientLogs
+{
+	[CmdletBinding()]
+	param ()
+	
+	$appdata = $env:LOCALAPPDATA
+	Request-Log -Folder "$appdata\Dayz" -InitialDirectory "$appdata\Dayz" -Filter "All Files (*.*)|*.*|RPT (*.RPT)|*.rpt|Log (*.log)|*.log" -MostRecent
+}
+function Use-ServerLogs
+{
+	[CmdletBinding()]
+	param ()
+	
+	$profilef = Read-GlobalParam -key "ProfilesFolder"
+	Request-Log -Folder $profilef -InitialDirectory $profilef -Filter "All Files (*.*)|*.*|RPT (*.RPT)|*.rpt|Log (*.log)|*.log" -MostRecent
+}
+
+function Merge-Logs
+{
+	[CmdletBinding()]
+	param ()
+	
+	# Copy logs to temp
+	$appdata = $env:LOCALAPPDATA
+	$mostrecentclientlog = Get-ChildItem "$appdata\Dayz" -Filter "script*.log" | sort LastWriteTime | select -last 1
+	
+	$profilef = Read-GlobalParam -key "ProfilesFolder"
+	$mostrecentserverlog = Get-ChildItem $profilef -Filter "script*.log" | sort LastWriteTime | select -last 1
+	
+	
+	
+}
+
 
 function Use-Build
 {
