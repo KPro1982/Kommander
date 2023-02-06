@@ -25,5 +25,6 @@
     <File Build="0" ReferenceFunction="Show-KommandStrip_psf">KommandStrip.psf</File>
     <File Build="0" ReferenceFunction="Show-CreateNewFIle_psf">CreateNewFIle.psf</File>
     <File Build="0" ReferenceFunction="Show-Link_All_Options_psf">Link All Options.psf</File>
+    <File Build="0" ReferenceFunction="Show-Display_SidebySide_psf">Display_SidebySide.psf</File>
   </Files>
 </Project>

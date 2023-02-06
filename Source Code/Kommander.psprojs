@@ -7,12 +7,9 @@
   <OpenFiles>
     <File>DisplayLogs.psf</File>
     <File>GlobalSettings.psf</File>
-    <File>KommandStrip.psf</File>
-    <File>CreateMod.psf</File>
     <File>Wizard.psf</File>
     <File>Globals.ps1</File>
-    <File>BuildSettings.psf</File>
-    <File>ReplacementTools.ps1</File>
-    <File>Link All Options.psf</File>
+    <File>Display_SidebySide.psf</File>
+    <File>KommandStrip.psf</File>
   </OpenFiles>
 </ProjectState>

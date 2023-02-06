@@ -188,8 +188,7 @@ $richoutput_TextChanged={
 
 
 $buttonOpenLogFile_Click={
-	#TODO: Place custom script here
-	#TODO: Place custom script here
+
 	if ($openfiledialog1.ShowDialog() -eq 'OK')
 	{
 		$script:currentlogpath = $openfiledialog1.FileName
