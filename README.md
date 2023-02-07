@@ -25,7 +25,7 @@ Current experiemental build -- rev. 2023.2.7
 
 ## Setup
 
-### SEE WIKI FOR ADDITIONAL SETUP INFORMATION
+### SEE WIKI FOR ADDITIONAL SETUP INFORMATION https://github.com/KPro1982/Kommander/wiki/1---Setup
 
 Kommander is intended to run from a central folder so that there is a single copy of it that is used for all mods. It creates a globalsettings.json in that folder.  It will create a Kommander folder within each mod that contains the mod specific settings, build logs, and additional data.
 
