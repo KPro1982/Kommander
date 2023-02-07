@@ -25,6 +25,8 @@ Current experiemental build -- rev. 2023.2.7
 
 ## Setup
 
+### SEE WIKI FOR ADDITIONAL SETUP INFORMATION
+
 Kommander is intended to run from a central folder so that there is a single copy of it that is used for all mods. It creates a globalsettings.json in that folder.  It will create a Kommander folder within each mod that contains the mod specific settings, build logs, and additional data.
 
 The first time that you run Kommander it will pop up in the global settings form.  Kommander will attempt to locate the game folder, workbench folder, etc.  However, if it can't find it or if its wrong you need to choose the correct folder. You must choose where to put your source code and packed mods.  You can put them anywhere you want. Kommander will make the appropriate links if you run it as administrator.  If not, you must run the included linkall.bat file after you complete the first three steps in the process.
