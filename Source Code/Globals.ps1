@@ -645,7 +645,7 @@ function Get-BuildLogPath
 	elseif ($buildmethod -eq "Mikero")
 	{
 		$buildlogpath = ""
-		Assert-MikeroLogFolder -outpath ([ref]$buildlogpath)
+		$assertresult = Assert-MikeroLogFolder -outpath ([ref]$buildlogpath)
 		$buildlogpath = Add-Folder -Source $buildlogpath -Folder "Scripts.packing.log"
 	}
 	
