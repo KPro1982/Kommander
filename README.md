@@ -12,7 +12,7 @@ Note: That you can use either the .exe to run or the 'Kommander.Package.ps1'.
 ## New Feature Update
 *Kommander is currently in active development. I am squashing bugs as I find them and adding new features. The releases page contains links to stable releases. Or download from the main page here for the current experiemental build. Expect things to break from time to time and check back here frequently for updates.*
 
-Current experiemental build -- rev. 2023.2.1
+Current experiemental build -- rev. 2023.2.7
 - **2/6/23** added side-by-side log view, added start/stop archive timer
 - **2/1/23** added ability to select different mods to launch with workbench than launch with server / client; Added Update Batch Files button which will update batchfiles to reflect additional mods selected.
 - **1/31/23** added additional control over what links are created and when they are created. Added log of links which is saved in the Mod's Kommander folder.
@@ -24,6 +24,8 @@ Current experiemental build -- rev. 2023.2.1
 - **12/11/22** added floating toolbar 
 
 ## Setup
+
+### SEE WIKI FOR ADDITIONAL SETUP INFORMATION https://github.com/KPro1982/Kommander/wiki/1---Setup
 
 Kommander is intended to run from a central folder so that there is a single copy of it that is used for all mods. It creates a globalsettings.json in that folder.  It will create a Kommander folder within each mod that contains the mod specific settings, build logs, and additional data.
 
